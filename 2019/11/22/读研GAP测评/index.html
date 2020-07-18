@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>读研GAP测评 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="读研GAP测评 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/"><meta property="og:locale" content="en"><meta name="description" content="了却浮尘情与义，孤自天涯逐红日  今天中午跟非常优秀的学妹小予聊天，提及当代青年抑郁自闭问题，又谈到“本科后先工作再读研”与“本科毕业无缝衔接读研再工作”的选择，一时感慨不已，本欲高谈阔论一番，但随即一想，身处其中，得也颇丰，失也不少，欢笑与释怀纷踏来过，压力与懊悔也有过，斑驳陆离的经历，恐有片面但未交代清楚的观点或是由于过往经历产生太过激的情绪，遂同小予言，晚上撰文述之（自我挖坑最为难填）。 我 - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2019-11-22T05:44:10.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/"
+    },
+    "headline": "读研GAP测评 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2019-11-22T05:44:10.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "了却浮尘情与义，孤自天涯逐红日  今天中午跟非常优秀的学妹小予聊天，提及当代青年抑郁自闭问题，又谈到“本科后先工作再读研”与“本科毕业无缝衔接读研再工作”的选择，一时感慨不已，本欲高谈阔论一番，但随即一想，身处其中，得也颇丰，失也不少，欢笑与释怀纷踏来过，压力与懊悔也有过，斑驳陆离的经历，恐有片面但未交代清楚的观点或是由于过往经历产生太过激的情绪，遂同小予言，晚上撰文述之（自我挖坑最为难填）。 我 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=读研GAP测评" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=读研GAP测评&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=读研GAP测评" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACJElEQVR42u2cwY7CMAxE+/8/vZxWAhTPjKNWQP1yYWna+lWqw3gc7fH3A+MAEkgggfwCyEOM//mXC5/mno+9z70fU8dXcYGcDbl8aU2wFXQFu4rh4gIJpHvBVZJUsO5BVFwggUwWcbWAd74DCeQZiaMSxT2E+wQSyI7A6IqEMmABeYoKAvJ2kEkhdsXn6dUikLeAbJtIQbBENF/qqgH505CrRTsZiRBW93UCB0gglYhQ4sAZAgpM/Q3kXEhVSLlkqYwANV/NSdEL5CjITqDE2O8aVQoayLmQlbhNhUS6uF/SEQPydpBdoZEUXOrcVpMKyJGQTuh2zkke0P2AxNkN5G0hlRmVFlY7PwRRwQbkSMiuCbpbgHXEMJCzIbub6hKjKWkARKIGyJGQnWTZMfOTZn2kgoAcDZkaB67ISmOUCQnkWMgUMDH6d66PFnMgx0Cmm+CSTUfqPGfuAwlkJyE6hutOs7QUKUCOhnSmvhPAyUa5xEgFEkiXHFViKViVFGnSATkX0m0CSc7riJD0fkACmZjv3Ub+buMJSCA7YsFtZleJlwoNIIGsLkxERNooTQwFIIFMhmsaOWBnlsokBXIkZGKGpgt5x0RwCQvkbMhU0KYNJpdortgDEsjEaOo0MjuNqS0VBOR4yMogTTbhueaATDoggQzNJfWyl42jI/vnHUAC6QSG24zk7rGz2QRIIHcKMRd8p1klEwfIMZDfPIAEEkggPzgetnOWtWrS/xoAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">读研GAP测评</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2019-11-22</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=读研GAP测评&url=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=读研GAP测评&url=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACJElEQVR42u2cwY7CMAxE+/8/vZxWAhTPjKNWQP1yYWna+lWqw3gc7fH3A+MAEkgggfwCyEOM//mXC5/mno+9z70fU8dXcYGcDbl8aU2wFXQFu4rh4gIJpHvBVZJUsO5BVFwggUwWcbWAd74DCeQZiaMSxT2E+wQSyI7A6IqEMmABeYoKAvJ2kEkhdsXn6dUikLeAbJtIQbBENF/qqgH505CrRTsZiRBW93UCB0gglYhQ4sAZAgpM/Q3kXEhVSLlkqYwANV/NSdEL5CjITqDE2O8aVQoayLmQlbhNhUS6uF/SEQPydpBdoZEUXOrcVpMKyJGQTuh2zkke0P2AxNkN5G0hlRmVFlY7PwRRwQbkSMiuCbpbgHXEMJCzIbub6hKjKWkARKIGyJGQnWTZMfOTZn2kgoAcDZkaB67ISmOUCQnkWMgUMDH6d66PFnMgx0Cmm+CSTUfqPGfuAwlkJyE6hutOs7QUKUCOhnSmvhPAyUa5xEgFEkiXHFViKViVFGnSATkX0m0CSc7riJD0fkACmZjv3Ub+buMJSCA7YsFtZleJlwoNIIGsLkxERNooTQwFIIFMhmsaOWBnlsokBXIkZGKGpgt5x0RwCQvkbMhU0KYNJpdortgDEsjEaOo0MjuNqS0VBOR4yMogTTbhueaATDoggQzNJfWyl42jI/vnHUAC6QSG24zk7rGz2QRIIHcKMRd8p1klEwfIMZDfPIAEEkggPzgetnOWtWrS/xoAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#BE-YOURSELF"><span class="post-toc-number">1.</span> <span class="post-toc-text">BE YOURSELF</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#GAP期间工作的收获"><span class="post-toc-number">2.</span> <span class="post-toc-text">GAP期间工作的收获</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#今日其他说法"><span class="post-toc-number">3.</span> <span class="post-toc-text">今日其他说法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#信息不对称、傲慢偏见与键盘侠的无知"><span class="post-toc-number">4.</span> <span class="post-toc-text">信息不对称、傲慢偏见与键盘侠的无知</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <blockquote>
+<p>了却浮尘情与义，孤自天涯逐红日</p>
+</blockquote>
+<p>今天中午跟非常优秀的学妹小予聊天，提及当代青年抑郁自闭问题，又谈到“本科后先工作再读研”与“本科毕业无缝衔接读研再工作”的选择，一时感慨不已，本欲高谈阔论一番，但随即一想，身处其中，得也颇丰，失也不少，欢笑与释怀纷踏来过，压力与懊悔也有过，斑驳陆离的经历，恐有片面但未交代清楚的观点或是由于过往经历产生太过激的情绪，遂同小予言，晚上撰文述之（自我挖坑最为难填）。</p>
+<p>我可以(或只是试图)陈述我的感悟并自圆其说，但大多数情况下我并不想主动地影响身边的人(当然，偶有例外，但是特殊情况我不会写文章)，如所述文字令来客有所思考，已然是莫大之荣幸矣。</p>
+<blockquote>
+<p>以下是某不知名GAPer的（胡乱）发言，以下言论仅基于本人实际学习生活情况，笔者<strong>不</strong>对下述言论或实践的可复用性做担保，着重先说一下：</p>
+</blockquote>
+<p><strong>理想有风险，请审慎评估自身风险承受能力</strong></p>
+<p><strong>理想有风险，请审慎评估自身风险承受能力</strong></p>
+<p><strong>理想有风险，请审慎评估自身风险承受能力</strong></p>
+<h2 id="BE-YOURSELF"><a href="#BE-YOURSELF" class="headerlink" title="BE YOURSELF"></a>BE YOURSELF</h2><p>一个人其实怎么样都好，但是首先，这人得是他/她自己，这人要走的路也是他/她确信的自己。</p>
+<p>这意味着，仅着眼于就业和读研这个问题上，前述的个体不会因为选择工作时看到同学毕业而感到失落，也不会因为选择继续念书时看到同学升迁而感到焦虑。但也并非是想清楚自己想要的就可以这么对别人的成就“佛系”，亲测的确有一段时间很不平衡，好像说曾经在学业上比我弱一些的朋友看起来过得很开心啊，就还是会有些不爽。但是有天晚上我又在嘀咕这类事情的时候，被兰姐披头盖脸一顿怼，说不要让自己困在一种无限死脑细胞的思想里，那时候真的有一种被“骂醒”的感觉，每个人有每个人的好看和难捱，好看的万众瞩目岁月静好，难捱的自我对峙硝烟漫天。</p>
+<p>我最绝望的时候几乎就跟个烂尾楼一样，否定了几乎全部的自己，每天都问自己，还有没有下一个24小时，是不是会像过去听闻过的那些悲伤故事的主角，写一段天妒英才的故事。“写一段天妒英才的故事”，这个有点中二的想法让我放肆地笑到了现在，我并不是个天才啊，只是个很平凡的人，家境、智商情商、颜值、思想深度、眼界格局、勤奋程度都很一般，我甚至怀疑有没有到平均水平，所以那些看起来很悲催的东西也只是不那么顺利而已，哪有那么了不起。如果我都到了能被天妒英才折煞的名单里，那可能地球上没几个人了哈哈哈哈哈哈哈哈</p>
+<p>当然，关于“我并不是个天才，只是个很平凡的人”这个想法，曾经，很抗拒，可能每个有一点小聪明的人，每个稍微认真一点都可以做得比同龄人更好的人，都不敢轻易承认吧。我们从小受到的教育里，时常把小聪明跟天资挂钩，并且努力掩盖所谓天才的努力，以爱因斯坦举例，他并非是坐在办公室就瞎想出了相对论，人家学过黎曼几何的好吗！被誉为“离诺贝尔经济学奖最近的华人”经济学家杨小凯人家在监狱里面的时候跟高知分子的狱友们学了高数的好不好！另一个也在监狱里度过漫长岁月的曼德拉先生订阅了经济学人杂志就牢饭，近一点的Danqi Chen，人家在Github上的contribute数量比我看过源码的库还多……（本废材废起来连自己都怼</p>
+<p>我有时觉得我们文化里的英雄主义色彩也还挺强的，好像很多问题就在静静等甚至唱着情歌来等百年一遇的天才来拯救被巫师囚禁的小可怜美丽答案，而平凡人则要被铺天盖地的营销洗脑全民焦虑，不是这么一回事，看那些写得好的教科书、论文，大师们总是循循善诱鼓动或是迎接更多的年轻人来到人类智慧的前线，而不是筑起铜墙铁壁高楼炮台把守着学术资源，生怕被别的谁抢走了一篇会议论文的想法，也生怕别人觉得他/她不够天才。</p>
+<p>当然这些更像是结果或者表象，说起来很好说，但是可能如何找到自己才是最为关键的地方，这也是很多所谓成功学或鸡汤文并不靠谱的地方：就跟海贼王开篇的前代霸主罗杰一样，只跟大家说，大海里有宝藏，但甚至连根航海指针都不给；但同时很鸡肋的是，每个人的出海故事都不一样，哪怕就都在sunny号上，索隆和路飞、布鲁克和罗宾，都有各自的过往和未来，很少有人能够像《基督山伯爵》里那么描述的一样，遇到一个可以把迷途人的后半程日子“安排”得稳稳当当的指路人。所以这一部分，真实地需要每个人自己，去承受去思考去努力，这是最重要的，但也是最难描述最难复现的，每个人说出来的经历都是故事，多多少少会有删减，只能是说，让身处其中的别的人，觉得不那么孤苦罢了。</p>
+<p>很多人对于自己的定位和自我锚点完全取自于他/她的学校、专业、父母之言云云，这完全没有充分发挥主观能动性，没有调查就没有发言权，没有去试探就否定一个方向，我个人觉得是可惜的。一个人应该是有很多兴趣方向的，multi-task可能的确对于很多人来说降低效率，但是multi-hobby应该是提升幸福感的，但是“兴趣广泛”的一个前提是这个人足够的open mind和谦虚，对于每个领域要有足够少的偏见和思想包袱，比如健身，不能是说“噢，我喝点枸杞水更健康”这种态度，比如日语，也不能是怀抱着一种“小日本子的语言/中二的二次元生物”这样的想法，有了先入为主的排斥，可能自己只会给自己做粉丝，无限证实最初猜测的正确性，那这就玩不下去的。兴趣这种东西就图一乐，干啥非要问问别人说“诶，你小时候拉小提琴，那你考级考了几级呀”……</p>
+<p>就算是有了自己喜欢的方向，如果不是特别细的方向，可能会被一些（此处文明和谐地省略一些定语）人蒙蔽双眼，这些人，其实很懦弱，他们不懂且不敢自己去挑战自己的不懂，发现旁边有个看起来楞头楞脑的人好像有点懂，于是去吹捧别人，甚至是捧杀别人，寄予他们自己无法做到的厚望，或是寄予他们无法控制的柠檬恶意……而被吹捧的人就算明着谦虚，内心多多少少也会骄傲，只有当这人到了一个辽阔的环境、看到了天外那层天，才会明白自己仿若村里才通网的落后分子，进而才学得会真的谦卑，才知道哪些可以是兴趣哪些是想拿来恰饭的技艺。</p>
+<p>我曾经觉得，我不想让那些看到我的时候眼睛里会冒星星的人，变成那些对我无尽冷漠甚至恶意揣测嗤之以鼻的人，但的确有些sad的是，这样的转变的确已经实现了一些，对于这样的现实，我很抱歉，没有成为大家希望或杜撰的样子，没有进大厂做程序员也没有去CMU读CS-Machine Learning；同时我也很抱歉，在我努力去做自己想做的事情期间，也会时常惫懒无赖，但我的确很开心没有太被绑缚，我并不觉得某些顺利留美留英的、学成归来的或所谓“进了大厂”的人有多牛，尤其是那些号称做CV和ML一类的，可能好多连<code>norm</code>是什么都不知道。我并不在乎将要与我交谈的人到底有怎么样的地位，倘使是友，千里必来同席饮茶；我也并不太在意那些离开了的人走得多么决绝，倘使道不同志不合，万里同行必有一散。但是，我会努力让前面说的那个进程，走得慢一些，或者有可能的话，倒着走两圈。</p>
+<h2 id="GAP期间工作的收获"><a href="#GAP期间工作的收获" class="headerlink" title="GAP期间工作的收获"></a>GAP期间工作的收获</h2><p>我觉得收获的东西很多很多，详细说起来可能每一行代码、每一篇博客、每一次跟前辈们的交流都是收获，当然也在大牛团队的压力下自己学了一些东西，但真要总结起来，我觉得也就四个字：<strong>百无禁忌</strong>。不必假想“万一”，先去做做看，或许自己就是之前设想的“万一”的最好的处理者；不必觉得自己到了瓶颈，只是自己最近没好好努力到点子上；不必觉得自己一无是处，只要肯做，一定大有前途；不必为过往的小小成就骄傲，优秀的人可能都不太看得上那一点点东西；不必为过往的失误哀叹，所有的决策都是基于未来；不必追着太多新潮，很基础的东西弄得清楚是更厉害的事情……不必在最好的时间去实现一个策略，也不必怀抱太大的期望，看空，做多，保护自己的梦想不被世俗来侵蚀，时刻怀抱希望并积极寻找破局方法，自由思考，认真求证。</p>
+<h2 id="今日其他说法"><a href="#今日其他说法" class="headerlink" title="今日其他说法"></a>今日其他说法</h2><p>下午程序一直报错，我想肯定是有什么地方没考虑得好，翻开微博停一下当做歇息，看到某圈知名博主老阿姨说了一句：“人这辈子都在不断整合童年的自己”。我们需要一个自洽的哲学来维持自己的生存，而孩提时候的经历犹如史前文明一般，迷雾重重却影响深远，知晓往事的脉络，不一定会开心，但会透彻地知道，自己曾经那些不理解的事情，那些直观的感受，到底是顽皮的懵懂，还是清澈可见他者的心的反射光。</p>
+<h2 id="信息不对称、傲慢偏见与键盘侠的无知"><a href="#信息不对称、傲慢偏见与键盘侠的无知" class="headerlink" title="信息不对称、傲慢偏见与键盘侠的无知"></a>信息不对称、傲慢偏见与键盘侠的无知</h2><p>今天小予有提到一点是说搜集信息，<strong>这是真的很不错很棒的！</strong>只是我想稍微歪一下，我觉得单个的消息本身无用途，是消息加上它存在的背景才有意义。不论是留学就业还是对于一些少数群体的偏见。之前有看到一篇报道是说残疾人轮椅自驾游，那时我觉着，这些叔叔阿姨很棒，而基础设施应该得到重视，但是最近我有了新的想法。</p>
+<p>从极为宏大的视角来看，我们不过是这个圆形星球上不同同心圆或椭圆轨道上运行的一个动点，但这些轨道之间并非星球体一样互不撞轨，而是像蚊香一样，看似一圈一圈连起来其实是一体的线条而已；青春活力、老弱病衰、穷困潦倒、叱诧风云、人微言轻、一言九鼎……都不是哪一类人，而是这个巨大线条的不同段落，而人们在生死之间的时间上“闻道有先后”，每个点运动得快慢不一罢了。所以，所谓强势弱势、主流非主流其实是“风水轮流转”的，因而：</p>
+<blockquote>
+<p>不能总是等到由于这样那样的故事或事故，莫名其妙而又手足无措地成为了少数人，才开始了解少数并吐槽世界主流淹没了他者的色彩</p>
+<p>也不要太过单纯地以为所有的想法可以被所有人理解，当少数被关注，莫名其妙或是处心积虑地成为主流的一部分，才开始理解并负担多者的痛楚</p>
+<p>希望围城或孤岛内外，纵使依旧那样地人来人往或是不复往日模样，也还能是欢笑多于唏嘘</p>
+</blockquote>
+<p>难以想象，一个人是要有多么懦弱、无知与自卑，才需要通过无脑喷这种手法来找寻自己对自己的认同，才需要通过打压弱者才能找到一丝丝的窃喜与存在感，不禁想起动漫《海贼王/航海王》里，原九里大名光月御田在遇到漂流到和之国的皮毛族的犬岚和猫腹蛇被和之国九里的人围起来欺负的时候，说了一番话（引源字幕君原文）：“到此为止了，他们做错了什么呢？害怕异形是因为你们自己无知，有点羞耻心吧，混蛋们”</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-11-22T05:44:10.000Z" itemprop="datePublished">2019-11-22</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">How to get string elements in gota-dataframe</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/11/20/JS-string2floatArray/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">JS-string2floatArray</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

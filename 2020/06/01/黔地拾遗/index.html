@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>黔地拾遗 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="黔地拾遗 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/"><meta property="og:locale" content="en"><meta name="description" content="严正声明：转载请注明出处  序近些年，随着国家及地方政府的一系列有效举措，贵州有了很大很大的发展，也受到了越来越多的关注。在交通上，对内实现了“县县通高速”的宏大工程，小一点的时候不觉得有什么了不起，后来去川西滑雪的路上才明白在高原山区修筑笔直的双向六车道高速其实是非常大成本、也很考验地方政府协调统战工作能力的一个事情；对外则建立起以高铁为载体的网状干道交通，成都、重庆、长沙、广州、南宁、昆明全部 - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2020-06-01T12:18:31.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/"
+    },
+    "headline": "黔地拾遗 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-06-01T12:18:31.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "严正声明：转载请注明出处  序近些年，随着国家及地方政府的一系列有效举措，贵州有了很大很大的发展，也受到了越来越多的关注。在交通上，对内实现了“县县通高速”的宏大工程，小一点的时候不觉得有什么了不起，后来去川西滑雪的路上才明白在高原山区修筑笔直的双向六车道高速其实是非常大成本、也很考验地方政府协调统战工作能力的一个事情；对外则建立起以高铁为载体的网状干道交通，成都、重庆、长沙、广州、南宁、昆明全部 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=黔地拾遗" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=黔地拾遗&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=黔地拾遗" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACO0lEQVR42u2ay27DMAwE/f8/3Z4KBIXEHToJmorji4H4oXEgUsulrq9/cFxCCimkkB8AeRXHz/XHe1e//X6muvZ4rsYVcjbkctIWkKt7VoOvnlu9d/VOIYVME7yC3N2/CxAyrpBC0iS+C5IKRkghXx04O1GxS97V80IKSSHLhT6IjZ2goB/9tAoS8jhIUoi94/zyalHIIyCxebQp/Ff3pYXgba6akEdApqKpKsSqQOguCtiwEvJ4yGrRJ5Ado6sSy0vhLORYSGJYVYDJyEoiOBZiQo6EJIFQDd4BJyaBkEKmSZ6K+5T4K+ERzQEhR0EmkUoFbyWgyW9CCnknyXYaR6mBWjWkhJwNmSZ1ldiTeUUM/ZaJKuRYyKr4imY8CYjwhwgpZMcESC8nAoUUbkLOhuyIh0qEkGBJ4rg09oUcAUlEajKfukYDNmCFHA25CyIaIEQIp0KtbMoLOQqSNimJ2EiCOC0QQgrZapI/ETh00WjvjhbyWEhqPFWbkmgip5tQhJwJmQRr2aBsbqLrmrFCzoSkCZsIgyo4iLhG0S3kCMg0+YmJWgUc2TwSu7RCjoLsmAJpg0dK6rTRL6SQJJHTJhOFiWMIORKSGPQJgn7ELgBvKXMhj4XsTGbaKLprpKKOmJAjIFPAkM0gz2zGa5sDQo6A7DY9SeB0BAdugAopZNgUQgUIMWNjMhdSyEZRVQkLIo6RwBByFGS34UkByMdiE1XIMZDdQow0kYiIjkleyJGQn3wIKaSQQv7h8Q2iOTcVAk4UmQAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">黔地拾遗</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-06-01</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E7%AE%AA%E9%A3%9F%E8%86%8F%E6%A2%81/">箪食膏梁</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=黔地拾遗&url=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=黔地拾遗&url=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACO0lEQVR42u2ay27DMAwE/f8/3Z4KBIXEHToJmorji4H4oXEgUsulrq9/cFxCCimkkB8AeRXHz/XHe1e//X6muvZ4rsYVcjbkctIWkKt7VoOvnlu9d/VOIYVME7yC3N2/CxAyrpBC0iS+C5IKRkghXx04O1GxS97V80IKSSHLhT6IjZ2goB/9tAoS8jhIUoi94/zyalHIIyCxebQp/Ff3pYXgba6akEdApqKpKsSqQOguCtiwEvJ4yGrRJ5Ado6sSy0vhLORYSGJYVYDJyEoiOBZiQo6EJIFQDd4BJyaBkEKmSZ6K+5T4K+ERzQEhR0EmkUoFbyWgyW9CCnknyXYaR6mBWjWkhJwNmSZ1ldiTeUUM/ZaJKuRYyKr4imY8CYjwhwgpZMcESC8nAoUUbkLOhuyIh0qEkGBJ4rg09oUcAUlEajKfukYDNmCFHA25CyIaIEQIp0KtbMoLOQqSNimJ2EiCOC0QQgrZapI/ETh00WjvjhbyWEhqPFWbkmgip5tQhJwJmQRr2aBsbqLrmrFCzoSkCZsIgyo4iLhG0S3kCMg0+YmJWgUc2TwSu7RCjoLsmAJpg0dK6rTRL6SQJJHTJhOFiWMIORKSGPQJgn7ELgBvKXMhj4XsTGbaKLprpKKOmJAjIFPAkM0gz2zGa5sDQo6A7DY9SeB0BAdugAopZNgUQgUIMWNjMhdSyEZRVQkLIo6RwBByFGS34UkByMdiE1XIMZDdQow0kYiIjkleyJGQn3wIKaSQQv7h8Q2iOTcVAk4UmQAAAABJRU5ErkJggg==" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#序"><span class="post-toc-number">1.</span> <span class="post-toc-text">序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#底色酸辣"><span class="post-toc-number">2.</span> <span class="post-toc-text">底色酸辣</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#虾子辣椒与花溪辣椒"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">虾子辣椒与花溪辣椒</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#木姜子"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">木姜子</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#糍粑辣椒"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">糍粑辣椒</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#油辣椒与红油"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">油辣椒与红油</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#糟辣椒"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">糟辣椒</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#红酸汤"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">红酸汤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#白酸汤"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">白酸汤</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基础食材"><span class="post-toc-number">3.</span> <span class="post-toc-text">基础食材</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#特色食材"><span class="post-toc-number">4.</span> <span class="post-toc-text">特色食材</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#折耳根"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">折耳根</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#蕨菜、蕨粑"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">蕨菜、蕨粑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#鱼类一观"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">鱼类一观</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#菌菇类"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">菌菇类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#水果"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">水果</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#呈现形式"><span class="post-toc-number">5.</span> <span class="post-toc-text">呈现形式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#洋芋（土豆）的油炸行为大赏"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">洋芋（土豆）的油炸行为大赏</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#豆腐园子与豆腐果"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">豆腐园子与豆腐果</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#签签烤肉"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">签签烤肉</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#丝娃娃和裹卷"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">丝娃娃和裹卷</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#冰粉冰浆"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">冰粉冰浆</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#香酥鸭"><span class="post-toc-number">5.6.</span> <span class="post-toc-text">香酥鸭</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#破酥包"><span class="post-toc-number">5.7.</span> <span class="post-toc-text">破酥包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对于糍粑的尊重"><span class="post-toc-number">5.8.</span> <span class="post-toc-text">对于糍粑的尊重</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#糯米饭"><span class="post-toc-number">5.9.</span> <span class="post-toc-text">糯米饭</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#普通粉面类"><span class="post-toc-number">5.10.</span> <span class="post-toc-text">普通粉面类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#素粉"><span class="post-toc-number">5.11.</span> <span class="post-toc-text">素粉</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#猪脚粉（白汤）和猪腿肉粉"><span class="post-toc-number">5.12.</span> <span class="post-toc-text">猪脚粉（白汤）和猪腿肉粉</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#奇奇怪怪的清炖粉"><span class="post-toc-number">5.13.</span> <span class="post-toc-text">奇奇怪怪的清炖粉</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#牛肉粉、羊肉粉"><span class="post-toc-number">5.14.</span> <span class="post-toc-text">牛肉粉、羊肉粉</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Special-Section：-贵阳一中食堂"><span class="post-toc-number">5.15.</span> <span class="post-toc-text">Special Section： 贵阳一中食堂</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#烙锅和烧烤"><span class="post-toc-number">5.16.</span> <span class="post-toc-text">烙锅和烧烤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#酸辣烫、豆米火锅、豆花火锅与豆皮火锅"><span class="post-toc-number">5.17.</span> <span class="post-toc-text">酸辣烫、豆米火锅、豆花火锅与豆皮火锅</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#酸汤鱼、糯米大饼、亮欢饭与猪肉石"><span class="post-toc-number">5.18.</span> <span class="post-toc-text">酸汤鱼、糯米大饼、亮欢饭与猪肉石</span></a></li></ol></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <blockquote>
+<p>严正声明：转载请注明出处</p>
+</blockquote>
+<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>近些年，随着国家及地方政府的一系列有效举措，贵州有了很大很大的发展，也受到了越来越多的关注。在交通上，对内实现了“县县通高速”的宏大工程，小一点的时候不觉得有什么了不起，后来去川西滑雪的路上才明白在高原山区修筑笔直的双向六车道高速其实是非常大成本、也很考验地方政府协调统战工作能力的一个事情；对外则建立起以高铁为载体的网状干道交通，成都、重庆、长沙、广州、南宁、昆明全部直连，一个直观的例子是早些时候学姐从学校回湖南我回贵阳，我俩同一趟高铁。</p>
+<p>在宣传曝光上，一方面是国家主流媒体上的曝光度明显增加，“走遍大地神州，醉美多彩贵州”这句宣传语不仅出现在贵州卫视，而且出现在新闻联播之前的黄金广告时段中，春晚分会场一度也设立在黔南侗寨，自然也不用说“国酒茅台为您报时”这样的台词；另一方面则是民间一点的关注，从我小学时候《中国国家地理杂志》的“十大中国最美xx”系列专辑中名列第一的西江千户苗寨，到近年来的“好嗨哦”成为抖音快手平台上的网络热词、电影<a href="https://movie.douban.com/subject/27191492/" target="_blank" rel="noopener">《四个春天》</a>、带着<a href="https://movie.douban.com/subject/26633257/" target="_blank" rel="noopener">《地球最后的夜晚》</a>入围戛纳的<a href="https://zh.wikipedia.org/wiki/%E7%95%A2%E8%B4%9B" target="_blank" rel="noopener">毕赣</a>、知名民谣歌手<a href="https://baike.baidu.com/item/%E9%99%88%E7%B2%92" target="_blank" rel="noopener">陈粒</a>和<a href="https://baike.baidu.com/item/%E5%B0%A7%E5%8D%81%E4%B8%89" target="_blank" rel="noopener">尧十三</a>、综艺《奇葩说》辩手<a href="https://baike.baidu.com/item/%E8%A9%B9%E9%9D%92%E4%BA%91" target="_blank" rel="noopener">詹青云</a>等等极有个人特色和能力的贵州人和他们的作品又频频出现在文娱话题中，随之而来的，不免也是更多对贵州的关注，比如很多人突然发现，原来陈粒和詹青云高中都毕业于贵州顶尖水平的<a href="https://baike.baidu.com/item/%E8%B4%B5%E9%98%B3%E5%B8%82%E7%AC%AC%E4%B8%80%E4%B8%AD%E5%AD%A6" target="_blank" rel="noopener">贵阳一中</a>，朋友圈里的校友们都亲切说，学姐们好棒。</p>
+<p>而在产业上，虽然自古以来贵州都被评价为“人无三两银，天无三日晴，地无三尺平”，但不得不说，还是有一些企业厂商蛮出名，比如茅台、老干妈和云上贵州。但其实贵州还有非常富足的水电资源和矿产资源，在西电东送工程中也贡献良多，还有一些偏化工一点的厂据说也蛮好，但是我个人了解不多故在此就不妄言了。贵州的农业嘛，个人觉得还是比较原始的，毕竟梯田也不是很方便机械化耕作，但是呢也有好处，我可能后面也会聊一聊米面粮油这些基础的食物，或许正是因为地理环境的限制，一些地方反而发展了很有特色的农产品。或许现在贵州蛮中坚的一个力量是旅游业，或许更严格来说是黔南/黔东南苗侗特色的旅游业，可是我还蛮喜欢黔北黔中黔西的食物和风土人情，而且<a href="http://www.guizhou.gov.cn/dcgz/rw/sjssmz/" target="_blank" rel="noopener">在贵州世居的少数民族有17种</a>，还不包括类似<a href="https://baike.baidu.com/item/%E7%A9%BF%E9%9D%92%E4%BA%BA?fromtitle=%E7%A9%BF%E9%9D%92%E6%97%8F&fromid=1401841" target="_blank" rel="noopener">穿青人</a>这样的五十六个民族之外的民族，高考前班主任叫少数民族的同学去办公室领信息登记表，我只记得班上哗啦啦走了一大半……总而言之是，少数民族的文化也蛮丰富的，不仅仅是有侗族大歌和苗寨，汉人的文化的确相对少一点，但起码王阳明龙场悟道衍生出来的阳明宴什么的还是可以聊一聊。</p>
+<p>作为一个自称周游过贵州的贵州人，其实在为家乡发展开心的同时，也总有些许失落，以前的很多东西，没有了或者没有以前那么好了，现在回家，楼下竟然开的是四川豌杂面，而不是贵阳肠旺面大排面，我辛辛苦苦几百公里从成都回贵阳吃四川豌杂面？反而我在成都吃到的酸汤米皮会比贵阳一些地方吃到的要正经……就总会觉得大势之下有些不那么主流的一些细微，反而是我如今觉得很不一样的东西，但是这些不一样或许很难为外地游客所接受，可能很多人也就只是想看看苗族人的服饰顺便买点银饰品、听听侗族大歌、吃一点名字叫做酸汤鱼的菜品，找个写着“多彩贵州欢迎您”的牌子合影或者票圈有个定位而已，真要是上一点什么凉拌折耳根，估计大家就散了。可是如果连我们也跟着散了的话，就都真的成为了一种过客，而不是一种经历。对于风俗文化，固然是千地千貌，但是如果总是拿出那些最广泛被人接受的东西，而隐藏起自己的真正特色，或许也是一种文化的消亡。我记忆中的东西，或许很多现在难以寻觅，就算还在或许也没有曾经我小时候遇到的那么令人惊喜，但总是记下来吧，算是画饼充饥，也算是想想自己早年在同学们都在读书时候，到底干了些什么事情、去了些什么地方、留下了什么样子的回忆或者遗憾。</p>
+<p>由于这是个电子版的文档，所以我想有个大纲，或许是“调味品 -&gt; 米面粮油水 -&gt; 菜和肉 -&gt; 具体食物（小吃 -&gt; 粉面类 -&gt; 正餐）”这样从小到大、从基础到顶层的bottom-top的框架，但是也是因为是电子文档，所以我可以任意地在我想写的部分增加内容，记录的顺序或许与大纲顺序截然不同。</p>
+<blockquote>
+<p>以下正文，各个条目列出来只是怕忘了，日后慢慢更新</p>
+</blockquote>
+<h2 id="底色酸辣"><a href="#底色酸辣" class="headerlink" title="底色酸辣"></a>底色酸辣</h2><h3 id="虾子辣椒与花溪辣椒"><a href="#虾子辣椒与花溪辣椒" class="headerlink" title="虾子辣椒与花溪辣椒"></a>虾子辣椒与花溪辣椒</h3><h3 id="木姜子"><a href="#木姜子" class="headerlink" title="木姜子"></a>木姜子</h3><h3 id="糍粑辣椒"><a href="#糍粑辣椒" class="headerlink" title="糍粑辣椒"></a>糍粑辣椒</h3><h3 id="油辣椒与红油"><a href="#油辣椒与红油" class="headerlink" title="油辣椒与红油"></a>油辣椒与红油</h3><h3 id="糟辣椒"><a href="#糟辣椒" class="headerlink" title="糟辣椒"></a>糟辣椒</h3><h3 id="红酸汤"><a href="#红酸汤" class="headerlink" title="红酸汤"></a>红酸汤</h3><h3 id="白酸汤"><a href="#白酸汤" class="headerlink" title="白酸汤"></a>白酸汤</h3><h2 id="基础食材"><a href="#基础食材" class="headerlink" title="基础食材"></a>基础食材</h2><h2 id="特色食材"><a href="#特色食材" class="headerlink" title="特色食材"></a>特色食材</h2><h3 id="折耳根"><a href="#折耳根" class="headerlink" title="折耳根"></a>折耳根</h3><h3 id="蕨菜、蕨粑"><a href="#蕨菜、蕨粑" class="headerlink" title="蕨菜、蕨粑"></a>蕨菜、蕨粑</h3><h3 id="鱼类一观"><a href="#鱼类一观" class="headerlink" title="鱼类一观"></a>鱼类一观</h3><p>猪嘴鱼/黄腊丁/银鱼/鲢鱼/乌鱼……</p>
+<h3 id="菌菇类"><a href="#菌菇类" class="headerlink" title="菌菇类"></a>菌菇类</h3><p>竹荪/以及毒蘑菇？</p>
+<h3 id="水果"><a href="#水果" class="headerlink" title="水果"></a>水果</h3><p>虽然似乎不是很合理，但是就放在这个地方吧，还是有一些奇奇怪怪的水果可以写，比如牛奶果和各种奇奇怪怪的“pao”</p>
+<h2 id="呈现形式"><a href="#呈现形式" class="headerlink" title="呈现形式"></a>呈现形式</h2><h3 id="洋芋（土豆）的油炸行为大赏"><a href="#洋芋（土豆）的油炸行为大赏" class="headerlink" title="洋芋（土豆）的油炸行为大赏"></a>洋芋（土豆）的油炸行为大赏</h3><p>洋芋粑粑、洋芋片片（丝丝）、洋芋坨坨（条条）</p>
+<h3 id="豆腐园子与豆腐果"><a href="#豆腐园子与豆腐果" class="headerlink" title="豆腐园子与豆腐果"></a>豆腐园子与豆腐果</h3><h3 id="签签烤肉"><a href="#签签烤肉" class="headerlink" title="签签烤肉"></a>签签烤肉</h3><h3 id="丝娃娃和裹卷"><a href="#丝娃娃和裹卷" class="headerlink" title="丝娃娃和裹卷"></a>丝娃娃和裹卷</h3><p>我记得很早之前是没有酸汤丝娃娃的，都是原汤的，后来不知道为什么酸汤丝娃娃成为了主流。但是我站裹卷。</p>
+<h3 id="冰粉冰浆"><a href="#冰粉冰浆" class="headerlink" title="冰粉冰浆"></a>冰粉冰浆</h3><h3 id="香酥鸭"><a href="#香酥鸭" class="headerlink" title="香酥鸭"></a>香酥鸭</h3><p>有一两年这个简直是大热门食物，热门到我现在都觉得我自己会做</p>
+<h3 id="破酥包"><a href="#破酥包" class="headerlink" title="破酥包"></a>破酥包</h3><p>放着吧，我其实对包子一类的东西不是很感兴趣，但是小的时候一度很热门</p>
+<h3 id="对于糍粑的尊重"><a href="#对于糍粑的尊重" class="headerlink" title="对于糍粑的尊重"></a>对于糍粑的尊重</h3><p>成都对于糍粑也就是豆面加红糖水，做工也不是很精细，所以糍粑必然要写</p>
+<h3 id="糯米饭"><a href="#糯米饭" class="headerlink" title="糯米饭"></a>糯米饭</h3><p>有一年还特意约了老同学一起回初中去吃糯米饭，大不如往昔。</p>
+<h3 id="普通粉面类"><a href="#普通粉面类" class="headerlink" title="普通粉面类"></a>普通粉面类</h3><p>这里所谓的“普通”是指在贵阳比较常见，概括来说就是：<code>调味 + 豆芽 + 粉/面 + 骨头汤  + 浇头（肠旺/大排/脆哨/软哨/红烧肉/鸡丝/猪脚……）+ 红油 + 辣椒 + 卤菜（可选） + 泡菜（可选）</code>，这种面怎么说，油是漂在汤上的一层，汤和面都很清淡，只有红油漂一层，撇开油喝汤是很棒的。</p>
+<h3 id="素粉"><a href="#素粉" class="headerlink" title="素粉"></a>素粉</h3><h3 id="猪脚粉（白汤）和猪腿肉粉"><a href="#猪脚粉（白汤）和猪腿肉粉" class="headerlink" title="猪脚粉（白汤）和猪腿肉粉"></a>猪脚粉（白汤）和猪腿肉粉</h3><h3 id="奇奇怪怪的清炖粉"><a href="#奇奇怪怪的清炖粉" class="headerlink" title="奇奇怪怪的清炖粉"></a>奇奇怪怪的清炖粉</h3><p>鸭肉/鹅肉/狗肉</p>
+<h3 id="牛肉粉、羊肉粉"><a href="#牛肉粉、羊肉粉" class="headerlink" title="牛肉粉、羊肉粉"></a>牛肉粉、羊肉粉</h3><h3 id="Special-Section：-贵阳一中食堂"><a href="#Special-Section：-贵阳一中食堂" class="headerlink" title="Special Section： 贵阳一中食堂"></a>Special Section： 贵阳一中食堂</h3><h3 id="烙锅和烧烤"><a href="#烙锅和烧烤" class="headerlink" title="烙锅和烧烤"></a>烙锅和烧烤</h3><h3 id="酸辣烫、豆米火锅、豆花火锅与豆皮火锅"><a href="#酸辣烫、豆米火锅、豆花火锅与豆皮火锅" class="headerlink" title="酸辣烫、豆米火锅、豆花火锅与豆皮火锅"></a>酸辣烫、豆米火锅、豆花火锅与豆皮火锅</h3><h3 id="酸汤鱼、糯米大饼、亮欢饭与猪肉石"><a href="#酸汤鱼、糯米大饼、亮欢饭与猪肉石" class="headerlink" title="酸汤鱼、糯米大饼、亮欢饭与猪肉石"></a>酸汤鱼、糯米大饼、亮欢饭与猪肉石</h3>
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-06-01T12:18:31.000Z" itemprop="datePublished">2020-06-01</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E7%AE%AA%E9%A3%9F%E8%86%8F%E6%A2%81/'>箪食膏梁</a>
+
+</span>
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">最后一次谈SWUFE重点实验室的经历</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/06/01/%E9%A3%9F%E7%89%A9%E8%A7%81%E9%97%BB%E5%BD%95/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">食物见闻录</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

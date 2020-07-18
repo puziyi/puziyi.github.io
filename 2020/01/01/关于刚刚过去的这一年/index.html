@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>关于刚刚过去的这一年 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="关于刚刚过去的这一年 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/"><meta property="og:locale" content="en"><meta name="description" content="你我同在这一星暗淡蓝点，以各自的视角，妄想揣测着无边的浩瀚 时而争执，时而协进，兜兜转转不过高维空间中一点之内的一尘，渺小得只有眼前严重过拟合的规则，殊不知，星海无声唯有璀璨 再有十年过境，星海仍在，却不知人间会是哪般沧桑模样  在世俗意义上，19年的我是我同学朋友们中走得最慢的一个，远远走在后面，远远看着大部分的他们，被浮夸的讯息冲走，也真切地听着，泡沫中传来的那一句句嘲讽和冷漠。我觉得他们很可 - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2020-01-01T06:28:26.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/"
+    },
+    "headline": "关于刚刚过去的这一年 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-01-01T06:28:26.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "你我同在这一星暗淡蓝点，以各自的视角，妄想揣测着无边的浩瀚 时而争执，时而协进，兜兜转转不过高维空间中一点之内的一尘，渺小得只有眼前严重过拟合的规则，殊不知，星海无声唯有璀璨 再有十年过境，星海仍在，却不知人间会是哪般沧桑模样  在世俗意义上，19年的我是我同学朋友们中走得最慢的一个，远远走在后面，远远看着大部分的他们，被浮夸的讯息冲走，也真切地听着，泡沫中传来的那一句句嘲讽和冷漠。我觉得他们很可 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=关于刚刚过去的这一年" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=关于刚刚过去的这一年&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=关于刚刚过去的这一年" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADLElEQVR42u3d0W7qMBBF0fz/T7dPlSiQOXscD9Bq83KvAiRZSI7HxyP1+PoHr0OECBEiRIwjjuL18/6vL94cv//M7bGHC959hp7/7L5EiJhEVBc9e+/shh8u9OziT/D31yT3JULEJKIacOS9aoA/G7zVAwLflwgRb0BUN9ZBpQdC+kFEiPgkRPX/6lhVVFbHRIj4BES1iKkKtzRoyQOgU4CKEPEKBAkK3vHv9rRDhAiAiKFtKNbSYCWBQ/rc5VRchIjm/gQJflNwlgbk2Tm676MZW4SIDYgUdlWBWnkhiK6CutPwWoSIQUQKdEmgdrp4AcVcFUqc/rgiRAwiEqaz6UgLwVQApuJQhIhXIOjmSgqD02RINunjcREiBhGdxhPS3EVCBfLgKM8rQsQAIk0wZIOEhNHkWDdUEyFiAkEX+gS6stmYJji8KBIhYghRFXGpYSUVf50gAgV4IkQMIOLgAQ27NBBOoVsK19oztggRCwiy8O9chDSBke+i0FqEiCEECYNJ0261aCKFYqexV4SIScRKGNwpALsb+XSzRoSICQRpJCGDlCxmSGiQHiplFStCxCYEbXBfmZhWNvPbBaAIEZsRdCGUNlloMJwWTGmhJELEJGK52bwRJhN057siRLwSQUJmEnaRm04F5lKHsggRGxCk8CKbkKSAJIUdbVYRIWIKkRY/dAGTAgbS2EU3/0WImETQgUrD4fRASMdxQ5kIEUOIzmKf3BQJhMnAjYGFCBEDCLI5Tgq5TvBMBnBqFBMhYgpxNSBbWTClRoDqnCJETCPIhEY2TujAXllQtRpURIi4iEgTSjdATgUcuVESUosQMYWovriy2O9McGSTv0SKEDGEIIv5XY1Z9Mcj5xAhYgLR2TQnk1kKmElQlxZZIkRMIlaaU8gk193Er5pSTjc/RYgYQKTB2BnoKWwjoVpqlBEh4hUIGgqgjY+j1zDfOV+7G1OEiAsIMnkdiy9SMJKHDG5QESFiENGdjDro1YeJCBGfhiBNLKTRhBaVlyc7ESI2F4BpIU9Dry5y66JIhIjNQQENfCtk2lRBgdlx4a9tihABEH/5JUKECBEixl7fJhhfTMmZfeEAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">关于刚刚过去的这一年</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-01-01</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=关于刚刚过去的这一年&url=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=关于刚刚过去的这一年&url=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/01/01/%E5%85%B3%E4%BA%8E%E5%88%9A%E5%88%9A%E8%BF%87%E5%8E%BB%E7%9A%84%E8%BF%99%E4%B8%80%E5%B9%B4/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADLElEQVR42u3d0W7qMBBF0fz/T7dPlSiQOXscD9Bq83KvAiRZSI7HxyP1+PoHr0OECBEiRIwjjuL18/6vL94cv//M7bGHC959hp7/7L5EiJhEVBc9e+/shh8u9OziT/D31yT3JULEJKIacOS9aoA/G7zVAwLflwgRb0BUN9ZBpQdC+kFEiPgkRPX/6lhVVFbHRIj4BES1iKkKtzRoyQOgU4CKEPEKBAkK3vHv9rRDhAiAiKFtKNbSYCWBQ/rc5VRchIjm/gQJflNwlgbk2Tm676MZW4SIDYgUdlWBWnkhiK6CutPwWoSIQUQKdEmgdrp4AcVcFUqc/rgiRAwiEqaz6UgLwVQApuJQhIhXIOjmSgqD02RINunjcREiBhGdxhPS3EVCBfLgKM8rQsQAIk0wZIOEhNHkWDdUEyFiAkEX+gS6stmYJji8KBIhYghRFXGpYSUVf50gAgV4IkQMIOLgAQ27NBBOoVsK19oztggRCwiy8O9chDSBke+i0FqEiCEECYNJ0261aCKFYqexV4SIScRKGNwpALsb+XSzRoSICQRpJCGDlCxmSGiQHiplFStCxCYEbXBfmZhWNvPbBaAIEZsRdCGUNlloMJwWTGmhJELEJGK52bwRJhN057siRLwSQUJmEnaRm04F5lKHsggRGxCk8CKbkKSAJIUdbVYRIWIKkRY/dAGTAgbS2EU3/0WImETQgUrD4fRASMdxQ5kIEUOIzmKf3BQJhMnAjYGFCBEDCLI5Tgq5TvBMBnBqFBMhYgpxNSBbWTClRoDqnCJETCPIhEY2TujAXllQtRpURIi4iEgTSjdATgUcuVESUosQMYWovriy2O9McGSTv0SKEDGEIIv5XY1Z9Mcj5xAhYgLR2TQnk1kKmElQlxZZIkRMIlaaU8gk193Er5pSTjc/RYgYQKTB2BnoKWwjoVpqlBEh4hUIGgqgjY+j1zDfOV+7G1OEiAsIMnkdiy9SMJKHDG5QESFiENGdjDro1YeJCBGfhiBNLKTRhBaVlyc7ESI2F4BpIU9Dry5y66JIhIjNQQENfCtk2lRBgdlx4a9tihABEH/5JUKECBEixl7fJhhfTMmZfeEAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <blockquote>
+<p>你我同在这一星暗淡蓝点，以各自的视角，妄想揣测着无边的浩瀚</p>
+<p>时而争执，时而协进，兜兜转转不过高维空间中一点之内的一尘，渺小得只有眼前严重过拟合的规则，殊不知，星海无声唯有璀璨</p>
+<p>再有十年过境，星海仍在，却不知人间会是哪般沧桑模样</p>
+</blockquote>
+<p>在世俗意义上，19年的我是我同学朋友们中走得最慢的一个，远远走在后面，远远看着大部分的他们，被浮夸的讯息冲走，也真切地听着，泡沫中传来的那一句句嘲讽和冷漠。我觉得他们很可悲，不认识自己也不知道自己能去哪里，只靠着车水马龙辗转四处，在人群中迎合在愚昧中投降，毫无当年书生意气，不复当年锐意，还觉得自己可以不要影子，不见阳光就无所谓。</p>
+<p>或许，这一年，后悔吗？的确后悔曾经虚度时光，却是庆幸自己没有慌忙之下就上车。周末跟清水河前辈们盐市口一日游，发现一个很扯的事情，柳湖的水军往往抢着去做市场营销和机器学习/AI算法工程师，而清水河畔的人们对所谓AI工程师却没有那么地趋之若鹜。很多人不以为耻反以为荣地说，这是弯道超车，鄙人还没考驾照，想问下老司机们，弯道超车违反不违反交规，它翻车的概率是否会大一些。</p>
+<p>我确实知道时光匆匆不停留，但我也是确实不知道世界广袤何处留，所以我gap，不是哪个学校拒掉了我，是我发自内心就不想去，我不想这一年这几年和前面十六年一样，有条有理地浑浑噩噩、有所小成地自我怀疑、众人吹捧地自我贬低，那样的生活太扭曲，太灰白，就算是在查尔斯河上，那阳光也照不开沉沉的自我隔阂。就算是过去这一年无尽消极极度沉沦，也好过自我对峙无休止。</p>
+<p>在买入投资物的时候，任何人都可以买入，无非是多一点和少一点，但不是每个人都能够“不乘势追击”，不会见好就收，往往在该退时自大，结局总是深套不敢清仓还奢望着游戏重来。因为这个势它不是军事战斗中的自身气势，而只是人来人往偶然一时的“趋势”，有趋势必然会有反转，金叉而升死叉当离，人之为人的分寸亦是如此。很多人只会在受人关注的一时反复挤压自己为数不多的价值，自我物化为一次性干电池，热了，火了，糊了。他们根本不觉得后市可期，只想早点获利跑路，从此安稳地等着被尘土埋没的日子跳着舞敲着锣到来。可是如果后市实在不好，谁又能真的置身事外。</p>
+<p>新的一年，没有什么计划，把过去这些年想做但不敢做、不能做、没做成的事情做了吧，不想从前从前的那些事情一生遗憾。</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-01-01T06:28:26.000Z" itemprop="datePublished">2020-01-01</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/01/07/%E6%B7%B1%E5%A4%9C%E5%8F%91%E8%A8%80/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">深夜发言</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/12/29/%E4%B8%96%E4%B8%8A%E6%9C%AC%E6%9D%A5%E6%B2%A1%E6%9C%89%E8%B7%AF/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">世上本来没有路</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

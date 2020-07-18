@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>触手可及而不及的惫懒 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="触手可及而不及的惫懒 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/"><meta property="og:locale" content="en"><meta name="description" content="其实我知道远方不远，也知道，那是我舍不得到达的地方，因为怕到了之后无人等候，因为自我的无知，以为那就是天边，以为那就是世界的尽头。没有一个环境和人物可以让人们停步，阻碍自己的其实只是自己的恐惧踌躇和完美想象。 一直以来我都很有完美主义的倾向和实际行动，并且会觉得万事俱备只欠东风是最好的，借箭而归并不是最佳的状态。所以会有拖延，有很多的“舍不得”，因而是个非常拖延的人，也是个没有日日精进的人，自己时 - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="进步发言"><meta property="article:published_time" content="2019-12-07T11:52:30.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="进步发言"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/"
+    },
+    "headline": "触手可及而不及的惫懒 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2019-12-07T11:52:30.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "进步发言",
+    "description": "其实我知道远方不远，也知道，那是我舍不得到达的地方，因为怕到了之后无人等候，因为自我的无知，以为那就是天边，以为那就是世界的尽头。没有一个环境和人物可以让人们停步，阻碍自己的其实只是自己的恐惧踌躇和完美想象。 一直以来我都很有完美主义的倾向和实际行动，并且会觉得万事俱备只欠东风是最好的，借箭而归并不是最佳的状态。所以会有拖延，有很多的“舍不得”，因而是个非常拖延的人，也是个没有日日精进的人，自己时 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=触手可及而不及的惫懒" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=触手可及而不及的惫懒&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=触手可及而不及的惫懒" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADLElEQVR42u3aQW7rMAxF0ex/0/2jAu2HxXepiHZQXE+CprGtE0Cx9MjX1x84XiJEiBAhYhzxKo7////998/3f1304ryr+1TXubrv1bhEiJhEXE6axc1WNyXnXUGvXsm4RIiYRnQn8GrQq3NWA7q6JxmXCBFPIcikrgZNJ3416UWI+CQEXbRVC7cVpnqQihDxNCJNSLJhSRN59QNB7y9CxF0IMqgnXo+mHSJEQAQOb8FRPdTKwYCF5JFUXIQIWJ/oDpQsGKtzqiCZBgYiREwhqhCsXHyFQkw1ecnmqfrCRIiYRFQDoMEavTkJzugXJULEHYjdwXYHTBeGMbgQIWIQsQp7ySKx2tCQxhd6XnzYiRBxAJEWeRWMNKqkDVEKFrbSDhEi3kC8u5GnzV6poYVutESIuAMRHyrNplyysNxpgNnaFIkQsYEgBUDy+Z1QoNoEiRDxBII0g3QD325zV7ouKrKIEHEI0VmokRC6mqBkkUlCChEiJhF0c08mdRpw2hSlwHrZyChCxEFEZzPTbSTpBG7k/BieiRBxGLEKCUiTSvo83TSlgqYIEdMIGhh0F2hlEAwXlbE5RoSIGxF0A0QLkOlzCbw1sUWI2ESQZiqCJoWVTtAcvyARIgYQZICpUSQ9nLpFdtIQI0LEFIIWCVNzVzW41DhMr40ediJEHELQwgYtTu4UGMkXIULEHQhSICTvp7Cts4DcKjyKEHGoGE83MmTBlwZEmxnRGESIGEJ0mrB2NlOkkZdgcDFehIiDiBMDJRuuVNBED0cRIgYRpChCg9+qYEIaV/CGTISIIQRptErN79XCrdPYTtAiREwiSBhGQ4HugDoPWtyhLELEAUSnGbcD2AkGaDOYCBFTCLrIowEXOTrXL3EiRAwgaONJ9V56SJFFJNlI4QWgCBFvILoTkDwQO69VQb9akIoQMYmgxXISEFchGgmN0w8DCpRFiDiAICEXHVw3OMODFiHiwxCpkJICNtrsm84RIeJJRArXSEhWbbhIAQenHSJEHERUYUB1o2oj32loSdd8axUrQkQTsRMUVGHvTqhACo3HwzMRIjYC5U8+RIgQIULE2PEP8IwhbhejH38AAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">触手可及而不及的惫懒</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2019-12-07</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=触手可及而不及的惫懒&url=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=触手可及而不及的惫懒&url=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADLElEQVR42u3aQW7rMAxF0ex/0/2jAu2HxXepiHZQXE+CprGtE0Cx9MjX1x84XiJEiBAhYhzxKo7////998/3f1304ryr+1TXubrv1bhEiJhEXE6axc1WNyXnXUGvXsm4RIiYRnQn8GrQq3NWA7q6JxmXCBFPIcikrgZNJ3416UWI+CQEXbRVC7cVpnqQihDxNCJNSLJhSRN59QNB7y9CxF0IMqgnXo+mHSJEQAQOb8FRPdTKwYCF5JFUXIQIWJ/oDpQsGKtzqiCZBgYiREwhqhCsXHyFQkw1ecnmqfrCRIiYRFQDoMEavTkJzugXJULEHYjdwXYHTBeGMbgQIWIQsQp7ySKx2tCQxhd6XnzYiRBxAJEWeRWMNKqkDVEKFrbSDhEi3kC8u5GnzV6poYVutESIuAMRHyrNplyysNxpgNnaFIkQsYEgBUDy+Z1QoNoEiRDxBII0g3QD325zV7ouKrKIEHEI0VmokRC6mqBkkUlCChEiJhF0c08mdRpw2hSlwHrZyChCxEFEZzPTbSTpBG7k/BieiRBxGLEKCUiTSvo83TSlgqYIEdMIGhh0F2hlEAwXlbE5RoSIGxF0A0QLkOlzCbw1sUWI2ESQZiqCJoWVTtAcvyARIgYQZICpUSQ9nLpFdtIQI0LEFIIWCVNzVzW41DhMr40ediJEHELQwgYtTu4UGMkXIULEHQhSICTvp7Cts4DcKjyKEHGoGE83MmTBlwZEmxnRGESIGEJ0mrB2NlOkkZdgcDFehIiDiBMDJRuuVNBED0cRIgYRpChCg9+qYEIaV/CGTISIIQRptErN79XCrdPYTtAiREwiSBhGQ4HugDoPWtyhLELEAUSnGbcD2AkGaDOYCBFTCLrIowEXOTrXL3EiRAwgaONJ9V56SJFFJNlI4QWgCBFvILoTkDwQO69VQb9akIoQMYmgxXISEFchGgmN0w8DCpRFiDiAICEXHVw3OMODFiHiwxCpkJICNtrsm84RIeJJRArXSEhWbbhIAQenHSJEHERUYUB1o2oj32loSdd8axUrQkQTsRMUVGHvTqhACo3HwzMRIjYC5U8+RIgQIULE2PEP8IwhbhejH38AAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>其实我知道远方不远，也知道，那是我舍不得到达的地方，因为怕到了之后无人等候，因为自我的无知，以为那就是天边，以为那就是世界的尽头。没有一个环境和人物可以让人们停步，阻碍自己的其实只是自己的恐惧踌躇和完美想象。</p>
+<p>一直以来我都很有完美主义的倾向和实际行动，并且会觉得万事俱备只欠东风是最好的，借箭而归并不是最佳的状态。所以会有拖延，有很多的“舍不得”，因而是个非常拖延的人，也是个没有日日精进的人，自己时常感到惭愧，却仍旧不改，自己脑袋里的驳斥与担心往往比真实会发生的批评更多，自己给自己的阻力往往占据总阻力的绝大部分，很多事物不是不会做做不到而是自己不想做，最后常常是被迫去做，能做完，但是，心里极度不情愿，我只有在做自己主动认定为可完成任务的时候，才会斗志满满续航持久，不论难度等级如何。</p>
+<p>这种态度导致了我很偏科，小学偏数学，作文总是只有一半的分，初中是偏骑车所以学校里的课程都被快速消化，高中偏科生物但其他科目没有全都能处理得很好，大学偏科计算机的确也有没有处理好的其他科目，比如数学，我应该多学一些数学才好的，所以其实某种程度上来说，我偏科的科目都不是最“重要”的科目，只是大学我刚好踩到了数据分析和金融科技的好运罢了，但也的确是一个巨大的“陷阱”，因为麻痹于其中所得，不知天高地厚。</p>
+<p>昨天老大问我有理数是稠密的如何证明，虽然我证明对了，但是在他看来，学浅了，应该基于邻域来证明，虽然昨晚上翻阅国内号称最好的数学分析教程，其中所言与我下午所证明其实一样，甚至还不如我的思考那么详细，但是我开始思考说，我对数学是不是太“舔狗”了，才不敢才害怕才念书念得刻板，把它置于一个好像我够不着的地方……再一想其实不存在，因为我对数学，知之甚少，是无知而不是完美主义造成了我的无知，是学得不够，就好像计算机还没有学透C和操作系统一样的彷徨眩晕。</p>
+<p>想起之前看老司机博客，他写自己分析学学得不好，实变函数应当学十遍，要从头再学好几遍，当时还以为是一句玩笑。</p>
+<p>在我第一篇博客写下来的时候，在我觉得写的东西是我日益精进的产物时候，我就已经是在承认自己的不足和过失，log breaks and enjoy troubles 是我写博客的动力和出发点，今既发现数学上仍有不足，理当记录每一次的不足和进步，同时，我昨天还觉着自己看英文的速度赶不上老大，所以我也要break myself in English，不管多么基础多么看似低级的知识点，都希望自己可以沉下心来重新学习，在看不懂的地方看懂，在看懂的地方多想一点，触手可及而不及并不叫远方，只叫做惫懒无知。</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-12-07T11:52:30.000Z" itemprop="datePublished">2019-12-07</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E8%BF%9B%E6%AD%A5%E5%8F%91%E8%A8%80/" rel="tag">#&nbsp;进步发言</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2019/12/07/%E7%94%B2/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">甲</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/12/06/%E6%9C%89%E6%9C%8B%E8%87%AA%E8%BF%9C%E6%96%B9%E6%9D%A5/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">有朋自远方来</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>甲 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="甲 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/12/07/%E7%94%B2/"><meta property="og:locale" content="en"><meta name="description" content="今天整理网盘，找到高中写过的一篇作文，写得可能并没有多好（可能还挺中二的233），它只是我有一天晚上的灵感产物，但是看到它我就想起高中时候熄了灯都躲在被子里看竞赛书的经历，让我想起自己曾经并不是一个时常畏缩的人，就算过往的日子里很多真正想要的事物没有如愿以偿，也不该自我抛弃，就算是想要与世无争，也不该是以自我放纵的方式。前几天想起这篇中二文章还有些感叹说自己清理电脑时候没有妥善保存，但今天算是“失 - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="进步发言"><meta property="article:published_time" content="2019-12-07T11:57:00.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="进步发言"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2019/12/07/%E7%94%B2/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2019/12/07/%E7%94%B2/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2019/12/07/%E7%94%B2/"
+    },
+    "headline": "甲 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2019-12-07T11:57:00.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "进步发言",
+    "description": "今天整理网盘，找到高中写过的一篇作文，写得可能并没有多好（可能还挺中二的233），它只是我有一天晚上的灵感产物，但是看到它我就想起高中时候熄了灯都躲在被子里看竞赛书的经历，让我想起自己曾经并不是一个时常畏缩的人，就算过往的日子里很多真正想要的事物没有如愿以偿，也不该自我抛弃，就算是想要与世无争，也不该是以自我放纵的方式。前几天想起这篇中二文章还有些感叹说自己清理电脑时候没有妥善保存，但今天算是“失 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=甲" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=甲&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=甲" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABkUlEQVR42u3a0W6DMBBE0fz/T7dPlSLKzoyLIOPq8kIUEzhIjr279uur4HiBAAFiC8RLHD/t79e9/+7XTQ/t6r4guhGnnebw8LMHpKARCqIaMXXIqcOdfZ7O431BbIk4dsLkQSD+N2K6Zvru9n8HiMcQLkCZBqek/fIsCuJxRBrorp5vibZB3I6wSau4SRr0Xs7KQTyKmAaaZJJSCDeYgehFuEKIe4BLmqcgGUQvIkmC1eDkCiUyiQJRiUgDXAVQBRM1wYHoRKwUSVYS4agzg6hGuIlJBbiqeCKDYhCViDSZVUGNegn1MiA6EVPHS4uoK4mwjaxAVCCSYHYKhJOgVw6GIKoR7ocu4U3RIPoRrliWbthZ6egguhHJZpxkI4crtILYC+GSnqT47hbfQOyFSILTpAiikuDLi7MgHkNc3Si8WnizGRiICkTSIdPJSi28RcVUEDUIl8ykg9SfJjAQWyHcxOWulW0gtkWki21psQTEHoiVQpoLbJPiGohuRJIAywW1YFEWxD6ITx4gQICoRnwDEgsJOPLtCFAAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">甲</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2019-12-07</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=甲&url=http://puzy.site/2019/12/07/%E7%94%B2/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=甲&url=http://puzy.site/2019/12/07/%E7%94%B2/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2019/12/07/%E7%94%B2/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2019/12/07/%E7%94%B2/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2019/12/07/%E7%94%B2/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/12/07/%E7%94%B2/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2019/12/07/%E7%94%B2/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABkUlEQVR42u3a0W6DMBBE0fz/T7dPlSLKzoyLIOPq8kIUEzhIjr279uur4HiBAAFiC8RLHD/t79e9/+7XTQ/t6r4guhGnnebw8LMHpKARCqIaMXXIqcOdfZ7O431BbIk4dsLkQSD+N2K6Zvru9n8HiMcQLkCZBqek/fIsCuJxRBrorp5vibZB3I6wSau4SRr0Xs7KQTyKmAaaZJJSCDeYgehFuEKIe4BLmqcgGUQvIkmC1eDkCiUyiQJRiUgDXAVQBRM1wYHoRKwUSVYS4agzg6hGuIlJBbiqeCKDYhCViDSZVUGNegn1MiA6EVPHS4uoK4mwjaxAVCCSYHYKhJOgVw6GIKoR7ocu4U3RIPoRrliWbthZ6egguhHJZpxkI4crtILYC+GSnqT47hbfQOyFSILTpAiikuDLi7MgHkNc3Si8WnizGRiICkTSIdPJSi28RcVUEDUIl8ykg9SfJjAQWyHcxOWulW0gtkWki21psQTEHoiVQpoLbJPiGohuRJIAywW1YFEWxD6ITx4gQICoRnwDEgsJOPLtCFAAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <blockquote>
+<p>今天整理网盘，找到高中写过的一篇作文，写得可能并没有多好（可能还挺中二的233），它只是我有一天晚上的灵感产物，但是看到它我就想起高中时候熄了灯都躲在被子里看竞赛书的经历，让我想起自己曾经并不是一个时常畏缩的人，就算过往的日子里很多真正想要的事物没有如愿以偿，也不该自我抛弃，就算是想要与世无争，也不该是以自我放纵的方式。前几天想起这篇中二文章还有些感叹说自己清理电脑时候没有妥善保存，但今天算是“失而复得”，的确快乐，可能是曾经塑造的那个中二家伙真的很想去天堂吧：）</p>
+</blockquote>
+<p>夜幕降临，可星辰畏惧了华灯，悄悄隐在天路某个角落。街灯下，人潮涌起，男男女女或匆匆而行，或携手言老。在这平常的夜晚，小甲像平常一样奔向工作的地方。</p>
+<p>又一次，提前辍学的小甲穿上那滑稽的戏服，带上红红的大鼻子，等到上个节目结束后走向小小的舞台，踉踉跄跄地差点摔一跤，台下一阵笑声。“什么时候我才能不被人这样嘲笑啊！”尽管脸上那夸张的笑容没有改变，但是小甲心中却默默思量着。扔球，接球，早已练熟；装疯，卖傻，家常便饭；表演，打赏，无奈却不得不接受。小甲在这剧场呆了好一段日子，时间带走他的自信与骄傲，使他愈发鄙视自己的无用，憎恨自己荒废了美好的校园时光，每天晚上在这里笑得那么夸张，在他想来，这样的笑，多违心……</p>
+<p>节目很快结束，领了当天的工钱，换回自己在地摊上花几块钱买的那件“耐克”T恤，小甲又开始在繁华的街道上漫无目的地游荡。与此同时，剧场里响起一阵阵掌声，那是“东单女孩”在演唱歌曲，整个场子里的人像是托儿一般整齐地挥手、齐唱。三曲结束，今晚散场了。人们懒洋洋地走出场子，评论着刚刚的节目，唯独没提到小甲的节目，当然，一般人谁会在意，只是，听者，还有一个——小甲。</p>
+<p>“小丑，不管在哪儿我都是个小丑，只配给人拿来‘找自信’，别人都能过得很好，只有我的明天总不能变得更好，我不是小小鸟，我是小小丑！”</p>
+<p>小甲看着来来往往的来消遣的人群，思绪很乱。“甲，我是甲，我很假，我笑得很假，穿得更假，住得， 呃，不假，我连房子都租不起，每天游荡、露宿街头。住的不假，没有的东西都不是假的，有钱、快乐也许  都是 真的！”想着，放声大笑，丝毫不在意旁人投来的鄙夷目光，就这样傻笑着，傻笑着，到了一个小公园，甲干脆利落地躺在长椅上，一会儿便迷糊了。</p>
+<p>半梦半醒中，似乎有个声音在叫甲，甲迷迷糊糊问道：“你是谁啊，是仙子吗？”</p>
+<p>“不是仙子，是天使。”</p>
+<p>“天使？唔，你好像真的有翅膀哎！喂喂 ，天使，你能不能  借我一双翅膀？”甲一脸虔诚问道。</p>
+<p>“翅膀？你拿来有什么用？”</p>
+<p>“那样的话，我就可以飞上天堂，不再做一个卑微的小丑了！”</p>
+<p>天使朝甲挥动双手，冷冷道：“你本 是上 帝的欢喜 天使，竟不愿带给人们欢乐，难怪你会坠落人间。若你想去天堂，就让世界充满欢乐。”话音落下，天使消失。</p>
+<p>甲猛地醒来，望了望天空，喃喃道：“难道我的使命不是养活自己而是让别人快乐吗？”</p>
+<p>良久 ，甲起身，奔向附近一家网吧 ，找了好些有名的喜剧大师表演小丑的视频，认真地看着，这晚，他再也没睡下。第二天，他蹑手蹑脚地探进一家图书馆，转了好半天才找到他想看的书——《表演学》。“这本书好厚啊，我连中学都没上完，一定看不懂的，还是算了吧。昨天一定是睡傻了才会去看那些视频的。”小甲自言自语，当他把那本大块头放回书架时脑海中突然闪现一个冷冷的声音“若你想去天堂，就让世界充满欢乐”。甲不自主地打了个冷颤 ，犹豫一番，还是硬着头皮看起那书来。</p>
+<p>甲在看书，太阳在西移。他 躲在没人会去的黑暗角落一遍遍回想那些大师的表演，试图把大块头上的文字变成小丑的动作。“嘀……嗒……嘀……嗒……”时钟似乎为他停留，为他驻足 ；“铃……”钟声似乎为他而喝彩；太阳慢慢地出来得少了，似乎要给谁让出位置；街不再喧嚣，寒冷似乎要为明星的出现而清扫路面；星星，不再蜷缩在天路僻静的角落，它要用星辰之光告诉华灯，什么叫做永恒的明亮。朝手心哈一口气，甲再次走进剧场，却再无往日的不情愿与自卑。剧场老板照例把他安排在两个“亮点节目”的休息空隙。可这一次，有所不同。</p>
+<p>甲麻利地换好戏服，稳步走到台前，深一鞠躬，露出自然的笑容，认真地表演着杂技，脑子只有一个个的动作。专注，让他听不到伴奏音乐已然结束，也没有人催他下台。人们都专心看着他的表演，小孩子们咯咯地笑着，剧场老板难以掩盖内心的惊讶……甲表演完了，再一鞠躬，紧跟着的，第一次不是叫倒好的声音，而是全场经久不息的掌声……听到这掌声，甲的泪水弄花了彩妆……</p>
+<p>数月后，甲已然成为了城市里人们所赞不绝口的喜剧大师，他每天往返在几个大剧场间。现在的他，仍还没有自己的车，又舍不得打的，于是他就跑，努力地跑，还告诉自己“那个 梦，是 真的。虽然我没有翅膀，可我能够一直奔跑，一直跑到天堂的入口！我现在还不够快乐，是因为还有很多人不快乐。”</p>
+<p>甲越跑越快，以至于都没有注意到，天使在他身后笑着，看着优秀的甲背上慢慢长出的翅膀开心地笑着……</p>
+<p>每个人或许都是折翼而掉落人间的天使，向往天堂的美好，却没有能够带自己飞翔的翅膀，正因为如此，才要忍下迎面吹来的夹杂了冷眼和嘲笑的寒风，更加努力地奔跑，总有一天，折翼会悄悄愈合，飞向天堂。逆风而跑，这样充满戏剧张力的画面多美好；坚持去跑，就是日月也要让道；为梦而跑，逐梦者终会傲立于群山之巅。</p>
+<p>——后记</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-12-07T11:57:00.000Z" itemprop="datePublished">2019-12-07</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E8%BF%9B%E6%AD%A5%E5%8F%91%E8%A8%80/" rel="tag">#&nbsp;进步发言</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2019/12/12/Go-mod-import-gitlab-private-repo/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Go mod import gitlab private repo</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/12/07/%E8%A7%A6%E6%89%8B%E5%8F%AF%E5%8F%8A%E8%80%8C%E4%B8%8D%E5%8F%8A%E7%9A%84%E6%83%AB%E6%87%92/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">触手可及而不及的惫懒</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

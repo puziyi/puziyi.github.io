@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>最后一次谈SWUFE重点实验室的经历 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="最后一次谈SWUFE重点实验室的经历 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/"><meta property="og:locale" content="en"><meta name="description" content="我今天详细完整较为冷静地，最后说一次，我对于SWUFE某重点实验室，到底是为什么以及怎么去的、是怎么待的、为什么走、为什么心寒。以及，我自己到目前为止，认为自己哪些地方错了，我完整写出来，尽量不带自我保护滤镜，我当时若为了什么利什么情而去，我今天就老老实实地怎么写，我会老老实实地写我曾经的轻信、功利、迷茫、找不到自己、随波逐流。此后所述的每一个字，如有任何对不起我曾经队友以及同情怜悯我过往过于偏激 - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2020-07-17T21:45:48.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/"
+    },
+    "headline": "最后一次谈SWUFE重点实验室的经历 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-07-17T21:45:48.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "我今天详细完整较为冷静地，最后说一次，我对于SWUFE某重点实验室，到底是为什么以及怎么去的、是怎么待的、为什么走、为什么心寒。以及，我自己到目前为止，认为自己哪些地方错了，我完整写出来，尽量不带自我保护滤镜，我当时若为了什么利什么情而去，我今天就老老实实地怎么写，我会老老实实地写我曾经的轻信、功利、迷茫、找不到自己、随波逐流。此后所述的每一个字，如有任何对不起我曾经队友以及同情怜悯我过往过于偏激 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=最后一次谈SWUFE重点实验室的经历" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=最后一次谈SWUFE重点实验室的经历&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=最后一次谈SWUFE重点实验室的经历" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAADUCAAAAADBtVLEAAADjElEQVR42u3a23LqQAxEUf//TyevVMKotwaMhWv75eQEsL1IeS4tHT83PA5RokSJEnU71FEcj6+jkzY++/d9zz6/eu3ZfYoSNQm1uuiz11c3srrhHdzqC6ruU5Soaah0kup96efqgSfvpfcpStQ3oDoDBXng07mrgUOUqDug0oS6AqVFcjUpV78TJepbUOVCMQwW6fMr5M4137JKFyXqZBR9qK/+961pkihRJ6E6AWW1KK0CyWoQ6GwC31b1ECXqRFQVmqQFaApPyMO9E6ourylK1ABUCiSrjRp5/wpAv7TqXP/+L0rUEFQqLnfDzjQBV8WCTngjStREFGnMIAvL1UVJMEmLcmkSFyVqKio+kEVAQyZnOil3ri9K1DRUCv5TsZo0YaWFaqexBFc9RIm6EJUGDDo5UkgHlz4vStQkVLWpS5MrbUzsDETd0FSUqGkoGrTQAhwNUOjET5tMRImagNpdQFYL21QkoLj0WlmdFyXqIhRZnNLwZKfARhpBSPFPlKgpqNSEQRo+yOZxK5yESFGiJqG6jbk7i9tqs9lptopFdFGiBqC6JyMh5M6ilhTj0iZSlKiJKDIIkBvvBC3Ve2hjsShRU1Bpo0YDEFocoE2T3Q2iKFGTUKSYnAYNWgBPN95tJkYdL6JEfRBFitmdwnYacGigsnMeUaImoA5wkIumYCahacGi/AOIEjUAlRpCukXleOFNMFk4ixI1AZU2ep0CQGfTSIJOErSWo58oUReidoIXshgmhfG0KKaLWlGiJqGqm6UFtWpC3i3K0TBUlKgpKDo5kgeaBvo7k3K1yBUlahqKBvxxkwbDzg6OnleUqOmo7gBCCw7dSTuBWwOFKFEfQKVGJ9KYQS78Co5OyKJETUahBxM2S6XJlxbbttMkUaI+iOo2d3Sag6vf0Q1kWhiLEjURRYN+UpBrh/qgYTgVGUSJmoYiN7AzwVaIKuQhASluuBIl6iJUtTGjN59CTLJQrb6EOBiJEjUARUIWsjHsNjPS4IU2BYsSNQVFw5VUmItBI2zMWn2JpGlFlKgJqPQgnlWspgtZuqAWJWoSqhv+H+GgG7u02O0EOKJETUN1wpIqhKQTdSoG0EYwUaK+DUVCGRLsdweMdH8vDRSiRA1AdSfJToDZaVApQxxRogahyESabjiF+698IagALkrUEBQNXlJDSGei7QwgeNMpStQA1J0OUaJEiRJ1m+MXiLyyrz9Q4c4AAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">最后一次谈SWUFE重点实验室的经历</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-07-18</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=最后一次谈SWUFE重点实验室的经历&url=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=最后一次谈SWUFE重点实验室的经历&url=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAADUCAAAAADBtVLEAAADjElEQVR42u3a23LqQAxEUf//TyevVMKotwaMhWv75eQEsL1IeS4tHT83PA5RokSJEnU71FEcj6+jkzY++/d9zz6/eu3ZfYoSNQm1uuiz11c3srrhHdzqC6ruU5Soaah0kup96efqgSfvpfcpStQ3oDoDBXng07mrgUOUqDug0oS6AqVFcjUpV78TJepbUOVCMQwW6fMr5M4137JKFyXqZBR9qK/+961pkihRJ6E6AWW1KK0CyWoQ6GwC31b1ECXqRFQVmqQFaApPyMO9E6ourylK1ABUCiSrjRp5/wpAv7TqXP/+L0rUEFQqLnfDzjQBV8WCTngjStREFGnMIAvL1UVJMEmLcmkSFyVqKio+kEVAQyZnOil3ri9K1DRUCv5TsZo0YaWFaqexBFc9RIm6EJUGDDo5UkgHlz4vStQkVLWpS5MrbUzsDETd0FSUqGkoGrTQAhwNUOjET5tMRImagNpdQFYL21QkoLj0WlmdFyXqIhRZnNLwZKfARhpBSPFPlKgpqNSEQRo+yOZxK5yESFGiJqG6jbk7i9tqs9lptopFdFGiBqC6JyMh5M6ilhTj0iZSlKiJKDIIkBvvBC3Ve2hjsShRU1Bpo0YDEFocoE2T3Q2iKFGTUKSYnAYNWgBPN95tJkYdL6JEfRBFitmdwnYacGigsnMeUaImoA5wkIumYCahacGi/AOIEjUAlRpCukXleOFNMFk4ixI1AZU2ep0CQGfTSIJOErSWo58oUReidoIXshgmhfG0KKaLWlGiJqGqm6UFtWpC3i3K0TBUlKgpKDo5kgeaBvo7k3K1yBUlahqKBvxxkwbDzg6OnleUqOmo7gBCCw7dSTuBWwOFKFEfQKVGJ9KYQS78Co5OyKJETUahBxM2S6XJlxbbttMkUaI+iOo2d3Sag6vf0Q1kWhiLEjURRYN+UpBrh/qgYTgVGUSJmoYiN7AzwVaIKuQhASluuBIl6iJUtTGjN59CTLJQrb6EOBiJEjUARUIWsjHsNjPS4IU2BYsSNQVFw5VUmItBI2zMWn2JpGlFlKgJqPQgnlWspgtZuqAWJWoSqhv+H+GgG7u02O0EOKJETUN1wpIqhKQTdSoG0EYwUaK+DUVCGRLsdweMdH8vDRSiRA1AdSfJToDZaVApQxxRogahyESabjiF+698IagALkrUEBQNXlJDSGei7QwgeNMpStQA1J0OUaJEiRJ1m+MXiLyyrz9Q4c4AAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#退出所有社团之后"><span class="post-toc-number">1.</span> <span class="post-toc-text">退出所有社团之后</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一次套瓷与官网项目组成立"><span class="post-toc-number">2.</span> <span class="post-toc-text">第一次套瓷与官网项目组成立</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#九寨沟、会议论文"><span class="post-toc-number">3.</span> <span class="post-toc-text">九寨沟、会议论文</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#国奖评选风波（2017-9-28）、入驻实验室（2017-10-11）、QMall插手（2017-10-25左右）"><span class="post-toc-number">4.</span> <span class="post-toc-text">国奖评选风波（2017.9.28）、入驻实验室（2017.10.11）、QMall插手（2017.10.25左右）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一次投稿"><span class="post-toc-number">5.</span> <span class="post-toc-text">第一次投稿</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Re-write-与-强行移交"><span class="post-toc-number">6.</span> <span class="post-toc-text">Re-write 与 强行移交</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CDAR官网-与-第一届成都80"><span class="post-toc-number">7.</span> <span class="post-toc-text">CDAR官网 与 第一届成都80</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#猕猴桃、师兄甩锅暴露、师姐反水与聚会屏蔽事件"><span class="post-toc-number">8.</span> <span class="post-toc-text">猕猴桃、师兄甩锅暴露、师姐反水与聚会屏蔽事件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#临毕业，为实验室推荐了新的RA、毕业论文思路和文本分享、爬虫系统思路交流各种"><span class="post-toc-number">9.</span> <span class="post-toc-text">临毕业，为实验室推荐了新的RA、毕业论文思路和文本分享、爬虫系统思路交流各种</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#实验室对我的主要影响：打击学术热情、自信、暴力打磨棱角"><span class="post-toc-number">10.</span> <span class="post-toc-text">实验室对我的主要影响：打击学术热情、自信、暴力打磨棱角</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <p>我今天详细完整较为冷静地，最后说一次，我对于SWUFE某重点实验室，到底是为什么以及怎么去的、是怎么待的、为什么走、为什么心寒。以及，我自己到目前为止，认为自己哪些地方错了，我完整写出来，尽量不带自我保护滤镜，我当时若为了什么利什么情而去，我今天就老老实实地怎么写，我会老老实实地写我曾经的轻信、功利、迷茫、找不到自己、随波逐流。此后所述的每一个字，如有任何对不起我曾经队友以及同情怜悯我过往过于偏激的只言片语的朋友的地方，如果让各位失望，让各位觉得小噗滤镜破碎了，鄙人在此先行道歉，我一直都说我没有诸位想的那么好，但是应该也不算太坏太差劲。有关于此的种种情绪细节，今后再不提及，以后面试如果有人问我简历上的项目，也只说项目本身以及自己所做的代码如何进行。</p>
+<h2 id="退出所有社团之后"><a href="#退出所有社团之后" class="headerlink" title="退出所有社团之后"></a>退出所有社团之后</h2><blockquote>
+<p>自己的技术升级与信息收集获取等</p>
+</blockquote>
+<p>大二上（2016年）在社团做完招新的工作，我就退出了所有的组织和社团，专心开始弄Python以及全栈建站的编程技能提升事宜，也在自己寻找方向，假期看了本数据分析，觉得蛮有趣，那会儿就在了解和发展这一块的东西。那时候还很受学校大环境的氛围想着保研想着维持好的社交圈子云云的事情，去请教了当时保研那一届的学长学姐们，知道了一些“路子”和要去勾兑的“大腿”，当然了L老师就是其中之一。</p>
+<p>其实一切可以顺得令人惊叹，因为就在我咨询完过后没两天，我就被上一级熟悉的大佬推荐到一个美模队伍，一个缺编程手的队伍，队友都是大三的学姐，一个是经管的一个是金数的Z学姐（Z的个人实力还不错，现在跟后面会出场的J学姐是硕士同学），这个队呢一开始还是不错，虽然我小一届，但是我编程绝对够这是没得说的，也有面聊过也在看学姐们给我的材料，只是有一天很突然地，Z学姐QQ上单方面地就水了跟我的组队，搞得我和推荐我的大佬都很尴尬。很后来我才知道，那时她不知如何拒绝搭便车好友，便决定对我半路反悔弃置不用，这或许就是为什么她不是学校第一个F的原因。也或许，只是我，注定走不顺在成都的日子。</p>
+<p>那时候正巧XY找我组队统模，一想也行就去组队玩了，这时候就遇到了J学姐和QT学长，这个比赛其实结果也很惨淡，但是本身我也就是去玩的，中途过程很享受，觉得J和QT还算是比较走正路的人，能力也有一些，可以交个朋友这样。大二上浑浑噩噩也就这么过去，最大的收获是遇到认识了J，因为是直系，有给我很多切实的帮助。但是后面我想了想，大抵如果有学弟学妹问我当初我问J的问题，我也会那样详细切实吧，她不是只对我，但我只看到了她而已。大概真是就该转专业不要功利地苟且吧，随波逐流妄想有些小便宜可以占，可能要用四年来重新学会做一个踏实的人。</p>
+<h2 id="第一次套瓷与官网项目组成立"><a href="#第一次套瓷与官网项目组成立" class="headerlink" title="第一次套瓷与官网项目组成立"></a>第一次套瓷与官网项目组成立</h2><blockquote>
+<p>这一次“交锋”之后，我其实不打算跟老师有过多的交流，完成官网即可，只是后来的事情太纷杂，我没有能保守住最开始的初心。</p>
+</blockquote>
+<p>第二个学期一开学，我就给L发了套瓷邮件，详细说明了自己的情况以及期待做的东西（量化相关），结果L很久之后才回我，是因为那时候另一个Z学姐将学院官网重建大任交付于我，而L当时是主管领导，因此，加上了微信。L才说，ok你把官网的设计稿带过来我们聊一聊，以及我好像有看到你的邮件。</p>
+<p>然后约了一个下午办公室见面，我当时在看一本思想非常好的数据挖掘业务的建构逻辑这样的书（因为编程那时候无非调包嘛，就想从头看看怎么建立一个项目），当场被diss，L“建议”我去学习NG的ML网课，看一点有代码量的书。当时我还是很狂傲，聊完就觉得这个老师不太好，因为他迟到很久而且不好好听我的描述，张口闭口“你要是在金信”，还劈头盖脸来一点打压，我回去之后每周也就发发官网进度周报。然后去自己做比赛，加入了倍发实验室，打算自己贯彻自己的想法。</p>
+<h2 id="九寨沟、会议论文"><a href="#九寨沟、会议论文" class="headerlink" title="九寨沟、会议论文"></a>九寨沟、会议论文</h2><blockquote>
+<p>这篇论文是我截止目前最不想要的一篇，因为它，我弄丢了一把老友，还入了三个，那时的我无法解的残局。</p>
+</blockquote>
+<p>九寨沟是做的比赛之中的一个项目，项目进行中我不仅“被队长”还每次开会都被疯狂diss甩脸色，中途还被“跳咬”了一次，这个项目结果不错，但是做的过程，对我来说简直是非常灰暗。当时QT也在组里，他当时在上L的课，说是L的迷弟或许不为过，一次我们需要升级模型，做了些“有趣”的改动，我个人觉得还行，小本科生比赛应该够用，但是当时在组里地位堪忧，此时QT建议问一下L，于是就问了，就发了论文过去，L也觉得很有趣。之后就是QT无数次地“游说”我去找L做研究以及L告诉我俩这可以短平快一个paper，当时呢，不太懂，觉得有paper还蛮厉害，就答应了，但是只能三个人名字，L大义凛然地说“这是你们的paper我就不挂名了”。ok，那种情况下其实我本来想挂队里对我比较友善的老友ZY，但是ZY跟当时带头搞我的人关系太密切，QT与我一合计，需要翻译成英文论文，文字功底相当好的J被我们拉来做了coworker，L这时候非常有心地帮我们逐句修改论文，的确很洗白的操作。但是后面细细想来，其实是帮QT改，一作和通讯是QT并不是我，而且paper整合联系也是QT在弄，其实于我没什么关系，我就是正儿八经的只贡献了idea的那个二作，合情合理，只是当时不懂事。</p>
+<p>三个无法解的局就是，九寨沟组、coworker组以及我-QT-L的奇怪学术组。</p>
+<h2 id="国奖评选风波（2017-9-28）、入驻实验室（2017-10-11）、QMall插手（2017-10-25左右）"><a href="#国奖评选风波（2017-9-28）、入驻实验室（2017-10-11）、QMall插手（2017-10-25左右）" class="headerlink" title="国奖评选风波（2017.9.28）、入驻实验室（2017.10.11）、QMall插手（2017.10.25左右）"></a>国奖评选风波（2017.9.28）、入驻实验室（2017.10.11）、QMall插手（2017.10.25左右）</h2><blockquote>
+<p>可以说，如果没有国奖风波把我名字让老师想起来，或许我压根没有机会进实验室的。但是QMall项目，我觉得有一点过了，当时老师说，以后参加任何比赛要跟他报备云云，可是QM是在套瓷他之前就在酝酿的事情，而且他甚至后面看了商业策划书之后，发了个票圈，也跟我表明有半路拉过来放在自己名下的意思，当时我们在跟大厂聊，所以这个事情我当时觉得他手太长，但是我还是按照他的意思做了一个pre材料，只是压根见不到人，好像也是开会什么的，最终也是水掉了。</p>
+</blockquote>
+<p>但是其实由于第一次会面时候的不好印象，我一直是不太愿意跟L过多接触的，所以并没有主动联系。只是呢，事情就是这么不顺，当时我跟同班男生在绩点小数点后前三位都一样但是略微落后的条件下，凭借有一些比赛和paper二作在最初的时候获得了大多数同学的支持，但是同班男生有一些GPA不服，在未征求我同意甚至未告知我的前提下要求重新投票，辅导员竟然同意，结果最后我只有一票。这种操作当然是轻狂的我所鄙视的，因而要求学院评定，不过这一下L就想起来我还没有找他的事情，于是又跟我说叫我去实验室，还说桌子已经空出来了，你来就先跟一个项目熟悉一下人，后面就自己搞云云的，那时的确有一点感动到，就这么入了坑。</p>
+<p>但是我还有一个创业比赛没有结束，战线拉了快一年，进去实验室没几天L知道了要求看商业策划书，并提供了一些意见，叫我后面做个pre，把区块链的东西加进去，并自己招人主导这个项目。那年，比特币疯涨，我进一步觉得这个老师有点浮夸，虽然做了slide，但是后面似乎开大型会议，也就不了了之。这个项目，主要是原本挂在别的学院下，别人学院付出了很多很多，他这样横插一手，其实，个人很反感。而且这个项目的确我那时候觉得也差不多了，战线太长，原班人马也都累了。</p>
+<h2 id="第一次投稿"><a href="#第一次投稿" class="headerlink" title="第一次投稿"></a>第一次投稿</h2><blockquote>
+<p>接到手里面的材料，逻辑乱七八糟，甚至有部分计算是在excel里面开了一堆表进行计算，不到一个月（11.12）理清项目逻辑、修改算法、跑出全部结果，包括可视化的部分。这期间，上一节所述的QM项目一直在做比赛（校省国级各种路演），QM指导老师的量化相关项目也在跟进中（我个人而言肯定更喜欢量化，跟这边完全合情合理），自己那个学期有5门难度较大的4学分大课以及3门选修。现在回看，可能是进度没有多快甚至还拖进度了，但是在那个时间事件集合下，在老师和师姐连做复杂网络的基础数据分布——幂律分布都不了解的情况下，几乎从0开始接触复杂网络的分析逻辑梳理“祖传”项目，我个人觉得已经是很给力了。</p>
+</blockquote>
+<p>当然顺着就是L所说的“跟项目熟悉一下人”的项目了，说的时候是说的年底投，但是我进去到拿到东西其实10月已经20号左右了，整理的过程中发现一些问题，比如数据是不符合新提出的模型的分布假设的，需要修正模型算法，这时候就是很经典的那个问题了：</p>
+<blockquote>
+<p>老师，这个数据不符合幂律分布怎么办</p>
+<p>什么是幂律分布？</p>
+</blockquote>
+<p>很艰难地把一个手工大项目弄成了一个自动化的项目，至少那一段时间，主笔是跟着老师兄的思路在弄东西，几乎可以说是翻译工作，而我是从无到有几乎独自搞代码，pagerank什么的现成算法当然是调包我承认。</p>
+<p>我承认或许是有人会去做，包括我之前也有本科生在项目组里面，但是一开始我有兴趣有自己想法的时候，并没有搭理我，甚至还略微有些看不起，后面是多方多次可以说是“邀请”我才去的，而且是说的，暂时跟项目，之后我可以做我自己的项目，结果组会只开过一次，我想做的课题（量化投资研究）完全不给我机会，我表达过，没有得到重视。明面上是师兄师姐，爱才心切，其实压根没当回事，我去是想去做自己的ML项目的，而且那时候我自己有可以进一步修改的课题，不是去帮别人打黑工的，没有讲清楚诓骗我去“打黑工”。当然，太轻信的我也有很大过错且需要负主要责任。</p>
+<p>过程中其实我有提出合理的改进思路，但被主笔否决，后来我自己写成毕业论文了，L又追悔莫及地说什么“早知道”云云的好听句子。不过提起毕业论文，BTW，我毕业论文里有一部分是爬虫的东西，本是想着偷个懒，一开始是复制了QT在九寨沟论文时候写的爬虫部分，我以为QT很负责会自己写，结果我第一次查重的时候，爬虫部分贡献了我整篇论文90%的重复率，重复的对象论文是当时QT和J在上的信息爬取课的主讲老师的爬虫论文，我坐在电视机前面（电脑接了电视机当显示屏）看着那一片红色高亮，自己重写了那个部分，重新审视过往，才解开了后面两个残局（第一个残局又是另外的故事了）……</p>
+<h2 id="Re-write-与-强行移交"><a href="#Re-write-与-强行移交" class="headerlink" title="Re-write 与 强行移交"></a>Re-write 与 强行移交</h2><blockquote>
+<p>这段时间我是官网半划水模式，QM老师那边几乎脱轨了没有太多跟进，只是在原有基础上update，可以说除了上课必要的时间，我全部铺在实验室的事情上，周末假期无休；这时候我都还觉得是自己能力不够、事情太多、期末太忙等等自身问题，此时并没有怎么谈，只是觉得移交就移交了，舍不得但是无可奈何，我能怎么办的心态；这段时间之后基本处于闲散状态，项目移交了啊，哪个项目都不要我了的感觉吧，意识到自己是被抛弃的干电池工具人，有点心灰意冷，就出去业界实习了。</p>
+</blockquote>
+<p>当时据说，投了被拒，要重新投，目标很美丽，一篇SCI。我反正是加班加点，只是他们给我的机器实在太差劲，一个结果跑一天真是不怪我。但是当时最惨的是，实验室就剩我一个coder了，所有的项目都需要我加入去辅助编程，最多的时候follow了3,4个项目，一个月拿了300人民币劳务费，一个师兄实在看不下去从自己经费又给了300人民币……这是我除了大一上的奖学金之外，在校收入最少的一次，“300”一度成为一个辛酸的梗。</p>
+<p>其他的就还记得项目90%的代码被强制移交的那天（剩下的10%不在我这边，是数据库师兄的代码），那会儿J刚回来学校答辩毕业论文。中午陪J去答辩教室自己往实验室走的时候，遇到L，L跟我说师兄师姐要跟我说修改意见，结果晚上师兄就直接把final版本代码搞走了，后来我写毕业论文又自己从头写了一遍……晚上十点半被交接完之后穿着防水的外套顺着小雨去找J玩，结果一向跟熟人话多的我几乎一言不发地喝酒到凌晨四点，那天之后的第一天我早上7点半到实验室刷tpo，那天之后的第二天我考托福……那时候就都这么急了，却最后我都毕业了快一年才发，也并没有那个急得房顶冒烟的连数据库都不会连的师兄的名字，做的内容看起来跟当年做的也没什么本质上的太大不同</p>
+<p>我到现在都觉得那天好闷，闷到凌晨都下着很大的雨，闷到那个周末考完托福，有个前辈问我要不要去实习，我二话没说一小时激情写完cv第二天就去面试一两个小时，开始实习，放弃保研，进入我007苦修但是开心的生活，如果非要说有什么不开心，或许是那一年的毕业典礼的白天我在实习，晚上则是发生了这样一段现在回想起来真的是社会性死亡的事情——那天晚上，我跟网站那边的朋友们喝到断片，给J发消息疯狂diss自己，说觉得自己好烂好差劲各种各种的，这些负面情绪在那之前是很少很少的，曾几何时年少轻狂怼天怼地是很多人对我的印象，也是很多人到现在可能都没有更新的一个印象吧，只是它们后面有伴随我很久很煎熬的时光，跟自己家里的事情以及实习工作中遇到的难题叠加在一起，到如今回想起来，我真的感谢柳湖水太脏，所谓杀人诛心，不过如此。</p>
+<h2 id="CDAR官网-与-第一届成都80"><a href="#CDAR官网-与-第一届成都80" class="headerlink" title="CDAR官网 与 第一届成都80"></a>CDAR官网 与 第一届成都80</h2><blockquote>
+<p>的确我也有不对的，低估了难度和自己实习的消耗，但是这些人的态度的确让我更进一步地敬而远之。</p>
+</blockquote>
+<p>当时想蛇吞象的师兄，把事情搞坏了，L打电话问我有没有论文，我听完也就差点在地铁上砸窗户，L拿伯克利直博放在面前让帮个忙，我竟然听了个鬼话就信（伯克利的title真的好用啊），就去帮忙，但是自己的确时间精力无法支撑，中途公司有加量的任务就跑路了。L深夜十一点打电话说我给学校丢脸云云，也不知道为什么，合作方一眼都看出来我是去救脸的，反而这边如此言说了，蛇吞象师兄竟然最后全身而退，也是人间奇景。所以后来的80再叫我去，自然不去了，把鲸鱼叫过去了，似乎她在那边还蛮适应，或许一开始，我就应该让鲸鱼去的。</p>
+<p>具体的也记不清了，那会儿状态就很不好，记忆经常掉包，我现在回想那个夏天只记得有几次莫名奇妙地“清醒”在地铁上完全不记得自己怎么去的；就只记得ZY带我去茶餐厅过生日写了张丑丑的明信片，我在地铁站委屈巴巴地不知道说了些什么，说得ZY红了眼眶，差些花了妆，强忍着眼泪把我赶回了湖边洋房；就只记得那会儿老大开了个南极讲座，拍了一张照片，全白的照片上，一只小企鹅在右上角做出眺望迈步姿势，仿佛能走出画面走向什么很棒的地方……</p>
+<h2 id="猕猴桃、师兄甩锅暴露、师姐反水与聚会屏蔽事件"><a href="#猕猴桃、师兄甩锅暴露、师姐反水与聚会屏蔽事件" class="headerlink" title="猕猴桃、师兄甩锅暴露、师姐反水与聚会屏蔽事件"></a>猕猴桃、师兄甩锅暴露、师姐反水与聚会屏蔽事件</h2><blockquote>
+<p>最为寒心的事情就是自己被蒙在鼓里已经放轻，又有人跑来给你把鼓皮划开让你看个清清楚楚，还顺便举非常现实的例子给你看。</p>
+</blockquote>
+<p>主要跟的那个项目主笔还是我高中校友，当时实习国庆就回家了，弄了很多猕猴桃，想着大家都不容易直接给了她一箱，结果第二天我去实验室，这人把一整箱放在了回收桶里……急的冒烟的那位后来又去强行交接一个项目，数据库又不会连，大家才知道他到底多菜……只是直到另一个师姐被他们也逼到反水，我才知道我背了实验室多少的莫须有黑锅、被恶意屏蔽了多少次聚会、被说了多少坏话、被无名了几次、被当成傻子多久……</p>
+<p>而当我什么都知道了，那年的团年会，愣是连外国留学生都召集，唯独偏偏避着我，甚至还说我故意不去云云，T哥直接问我，你咋不去团年呢这不团结啊，不要太独行侠了，我一脸蒙圈地说，压根不知道，没人通知我，反手直接跟L说，你实验室的博士竟然要排挤一个小本科生噢……我承认我当时心里面相当的不爽这些事情，但是我现在认真一想也觉得自己就是tech service的RA，这个定位下我完全可以接受以上这些事情。但是又压根没有让我参与到论文的各个环节中，体验相当不好，好像是什么机密一样，不论是L授意还是主笔自己搞事情，我都觉得氛围不好，又不像RA，或者说，学术收获不如RA，金钱收获不如外包。</p>
+<p>所以最寒心的其实是，我想认真做事情且努力了，但没有做事情的机会，还被诬陷，不被尊重。</p>
+<h2 id="临毕业，为实验室推荐了新的RA、毕业论文思路和文本分享、爬虫系统思路交流各种"><a href="#临毕业，为实验室推荐了新的RA、毕业论文思路和文本分享、爬虫系统思路交流各种" class="headerlink" title="临毕业，为实验室推荐了新的RA、毕业论文思路和文本分享、爬虫系统思路交流各种"></a>临毕业，为实验室推荐了新的RA、毕业论文思路和文本分享、爬虫系统思路交流各种</h2><blockquote>
+<p>作为对于学院、老师、学长学姐们培养我的回报与感激。</p>
+</blockquote>
+<p>这时候其实大师兄回来了，据说新的RA起薪3k保底，多劳多得；L要去了我的毕业论文说是给下一届的参考；师兄拿着我帮忙画的爬虫架构图去安排新人做事情……我只剩哑然的笑，送别当年的天真，接纳当下的落差和澄澈。历史发展是一个进程，有的人看不到日出天明，但这些人曾在黑暗里点灯。</p>
+<h2 id="实验室对我的主要影响：打击学术热情、自信、暴力打磨棱角"><a href="#实验室对我的主要影响：打击学术热情、自信、暴力打磨棱角" class="headerlink" title="实验室对我的主要影响：打击学术热情、自信、暴力打磨棱角"></a>实验室对我的主要影响：打击学术热情、自信、暴力打磨棱角</h2><p>我大二开始就一心做量化，所以我从来也没有很喜欢复杂网络分析这个领域，我只是觉得cool，要做可以做，但我自己绝对不会亲自去做，这段经历，在学术上在编程上其实于我而言，提升很小，还不如我后来实习工作时候解决一个因子优化学到的东西多，浪费耽误了我本科很宝贵的可以用来自学的脱产时间，也一定程度上地带着我走了一些弯路，一步之遥走成了千山万水的遥，路漫漫只剩自我消磨无尽头；所收获“果与利”的也远比我被告知的少很多（可能1%都没有），功利与自身发展而言都很鸡肋……但是在这之中的挣扎，的的确确是推动我实现独立自由、思想成熟、三观自洽的一个事件一个契机，从这个角度来看，这些年的前因后果串成了此时此刻自我的高实现高认可，也算是不辜负这一路的风尘吧。</p>
+<p>本以为，漫长回忆，会写哭，可是，可惜，并没有。</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-07-17T21:45:48.000Z" itemprop="datePublished">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/07/19/test/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">test</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">黔地拾遗</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

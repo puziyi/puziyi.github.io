@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>无节制消费的元凶 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="无节制消费的元凶 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/"><meta property="og:locale" content="en"><meta name="description" content="消费一开始是刚需，再后来是欲望，现在是文化与理念。 昨天看了纪录片无节制消费的元凶（The Men Who Made Us Spend），虽说其中一些案例早已在市场商业营销课程中听说过，甚至因为要学支付手段，信用卡更是绕不过去，但是这部纪录片用一连串的对话组织起来，其中有消费者有从业者有科研工作者，事情好玩就好玩在，different voices composed a fifty-minute  - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="观感"><meta property="article:published_time" content="2020-02-25T01:36:00.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="观感"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/"
+    },
+    "headline": "无节制消费的元凶 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-02-25T01:36:00.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "观感",
+    "description": "消费一开始是刚需，再后来是欲望，现在是文化与理念。 昨天看了纪录片无节制消费的元凶（The Men Who Made Us Spend），虽说其中一些案例早已在市场商业营销课程中听说过，甚至因为要学支付手段，信用卡更是绕不过去，但是这部纪录片用一连串的对话组织起来，其中有消费者有从业者有科研工作者，事情好玩就好玩在，different voices composed a fifty-minute  - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=无节制消费的元凶" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=无节制消费的元凶&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=无节制消费的元凶" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACqklEQVR42u3c204DMQxF0f7/T8MTEqDEZ5/JVALN7ktp56IVhEnsuH19/MPHS7Ro0aIfiH4Nj6/jv8/7caPF6+/vre73+zhxiBbdoJd/9Jsb7553qGlwq+fRIVp0gZ4CcAWbsOnnFRSdI1r0Deh0bHef1WTTXC9a9LvRu4mjWRDtBiFa9DvQTWDtQNP9pvvfvsoT/Xg0TWzf/fyWbFz049BN0EyTSpMokwA8rpqKfix6d3FKSEnhkRaB8MQlWjREp2CYgiglwylZSL800aKvoqebTgup1bnTe+n83XHRoik6TQTLi0MxcjdZ0AR56xEt+iJ6WtyfTiYpoR5dokVD9LT4T8d2gZoGm66pijWiRW8CkSzSU0A1zQFpUhEt+gqaFGXubKwikxbeKBItegjEpoDYNBXSZJg0EIgWTdApaW2brEgRnS6ycFFdtOhNINKAS8VEMsFcmchEiybopsmPDJLCp2tisUa0aFiAnDaJ6CYoaf6mC6Y4uYgWXRYgaeCQonjT9CJa9Ak6beJfCUy64Dr6IINo0WByaYoxBEYHhq8VLfrC3jjZ0KeTUjuAyzOiaNGgSaUtuNAgnYqQ9U6AaNHggwx3NJ3QAZKCpmjRLZps/qSEliSvtOFwXHyJFg3QqUGQLGRootAU6atijWjRMBDTjegGPtlURQ0yokUDNCk60qaTtIl60gQgWjRFk0BpipPNoOnCSbToBt0UW6bFzUnyOyW96L+HaNHFF+2kQZHEtPkF4A5I0aLDZwJQIMDGw6a5ik5WokU36FQkaYOLbPCTRdk4I4oWfcOXZjfF8JQUvIqHaNF3o2ni2hZ2UiPWUSCKFh0ST1JEPNngr6umokUfLpimoEGbPHBgeKNItOhiHzFtgDZB27yOgxEt+ob69F96iBYtWvSD0J/N/yvJsMhXSgAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">无节制消费的元凶</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-02-25</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=无节制消费的元凶&url=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=无节制消费的元凶&url=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACqklEQVR42u3c204DMQxF0f7/T8MTEqDEZ5/JVALN7ktp56IVhEnsuH19/MPHS7Ro0aIfiH4Nj6/jv8/7caPF6+/vre73+zhxiBbdoJd/9Jsb7553qGlwq+fRIVp0gZ4CcAWbsOnnFRSdI1r0Deh0bHef1WTTXC9a9LvRu4mjWRDtBiFa9DvQTWDtQNP9pvvfvsoT/Xg0TWzf/fyWbFz049BN0EyTSpMokwA8rpqKfix6d3FKSEnhkRaB8MQlWjREp2CYgiglwylZSL800aKvoqebTgup1bnTe+n83XHRoik6TQTLi0MxcjdZ0AR56xEt+iJ6WtyfTiYpoR5dokVD9LT4T8d2gZoGm66pijWiRW8CkSzSU0A1zQFpUhEt+gqaFGXubKwikxbeKBItegjEpoDYNBXSZJg0EIgWTdApaW2brEgRnS6ycFFdtOhNINKAS8VEMsFcmchEiybopsmPDJLCp2tisUa0aFiAnDaJ6CYoaf6mC6Y4uYgWXRYgaeCQonjT9CJa9Ak6beJfCUy64Dr6IINo0WByaYoxBEYHhq8VLfrC3jjZ0KeTUjuAyzOiaNGgSaUtuNAgnYqQ9U6AaNHggwx3NJ3QAZKCpmjRLZps/qSEliSvtOFwXHyJFg3QqUGQLGRootAU6atijWjRMBDTjegGPtlURQ0yokUDNCk60qaTtIl60gQgWjRFk0BpipPNoOnCSbToBt0UW6bFzUnyOyW96L+HaNHFF+2kQZHEtPkF4A5I0aLDZwJQIMDGw6a5ik5WokU36FQkaYOLbPCTRdk4I4oWfcOXZjfF8JQUvIqHaNF3o2ni2hZ2UiPWUSCKFh0ST1JEPNngr6umokUfLpimoEGbPHBgeKNItOhiHzFtgDZB27yOgxEt+ob69F96iBYtWvSD0J/N/yvJsMhXSgAAAABJRU5ErkJggg==" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>消费一开始是刚需，再后来是欲望，现在是文化与理念。</p>
+<p>昨天看了纪录片<a href="https://movie.douban.com/subject/25945379/" target="_blank" rel="noopener">无节制消费的元凶（The Men Who Made Us Spend）</a>，虽说其中一些案例早已在市场商业营销课程中听说过，甚至因为要学支付手段，信用卡更是绕不过去，但是这部纪录片用一连串的对话组织起来，其中有消费者有从业者有科研工作者，事情好玩就好玩在，different voices composed a fifty-minute record about one single phenomenon，只是，制片者主动带领大家从anti-business的角度去看罢了。有些人看完之后发表影评说“智商税”“买买买”之类的话，也有人说它偏见偏激。但是我个人觉得，it describes how people turn ordinary needs into business huge。从刚需的交换，到支撑现代国家经济运转的理念，消费，在计划内换新和计划外购买之间的循环中，<strong>has been shaping</strong> our society and ourselves。</p>
+<p>一次购买在钱货两清时就已经完成，但消费并不是，它是一个螺旋，或者，更为生动地描述，一个漩涡，不仅让靠得近的人深陷，而且有很强的外部带动效应。</p>
+<p>想起，各种网红的“出圈”，一开始他们是有自己的一个舒适活动范围，到后来吃起了百家饭。李佳琦一开始只做美妆，他可以日试口红三百只，以辛勤工作回应“男孩子怎么卖口红呀”的质疑，但是他这样的带货漩涡，不断壮大，他或许自愿，但同时也可能是被巨大的粉丝购买力冲顶着、被利益敏感的商家货物裹挟着，开始直播煎蛋。早些时侯北大国法院的几位教授公然“怒斥”网红教授薛兆丰，经济学没有无差异曲线，人们并不真的知道水和钻石哪个更贵，更有甚者直言薛，打着北大的名头捞钱。有很多人眼红网络“大咖”财源滚滚，也有少部分人驳斥知识付费型割韭菜行为……人生只有两种选择，要么庸俗，要么孤独。</p>
+<p>之前买Sony DPT的时候在网上看测评，有人拿了一堆尺寸都不一样的电子墨屏幕的阅读器希望网友们可以帮忙对比，有人说，首先得有人至少有其中两个，有人说，比来比去的根本动力是余额不足以买下所有。大多数功能作用相当的产品都是如此，不是每一个人都有买下看到的所有动漫影视手办的能力，因而市场不可能无限延展，哪怕是以放宽信贷的形式再增加一些，也远远不是无限增加，所以厂商之间必须竞争现有的“存量市场”，或是来一队“野蛮人”开拓一片“新兴蓝海”。需求是人们有意愿有能力的购买量，供给是有意愿且有能力的生产量。</p>
+<p>很多耳机发烧友吐槽苹果无线耳机“丑”，手机摄像头被吐槽“浴霸”，工作站被说是“垃圾桶”，也有很多高级奢侈品品牌推出一些直击审美边缘的单品，“丑东西”或许不怎么好听，但却容易识别，丑到大众皆知，皆知其拥有者具有较高的身份地位金钱支柱，只需要带着耳机走在街上，飘飘地把包放下，就能在消费主义的浪潮下，迎接羡艳的目光。That‘s enough。奇、伟、瑰、怪都成为特征，且是“富有的特征”。而一般的品牌设计，除了冠以“青春/探索”二字的特别版本可能会“出格前卫”，大都千人一面ordinary，乍看之下，并不知道这个看着像是又不像是mac的笔记本到底是magicbook还是mibook，识别度甚至不如小红点ThinkPad……时隔多年当摩托罗拉出现在联想的展会推出折叠翻盖触屏手机，我脑中想的不是京东方A的柔性屏，而是“Hello Moto”的开机声音，提到超级玛丽也会想起“dididididi”的BGM，这些也是特征和标志，但还只是商品的特质，不是人的标志。消费者和商家都已经知道，可以通过消费来表达，我们是谁，想成为谁。</p>
+<blockquote>
+<p>商品的意义从来没有像今天一样高贵，三两件外在物品便可以轻易定义一个人的价值，而种种营销话术更像是一根根勒往当代青年的套马绳，网住一个是一个，生死不论。</p>
+<p>—— 知名朋克・real博主・半佛仙人</p>
+</blockquote>
+<p>所以很多物件，无论是实物还是虚拟的，都做起了“人靠衣装”的意识灌输。且不说有一些物化女性的营销暗示，光说最近全民集合准备团战的王者峡谷，其中的“皮肤”和“英雄”就很有一番讨论的空间。很早时候的游戏里也有皮肤装备云云，那时候大家去搞装备皮肤更多是为了某些加成效果，但现在感觉更多的是，一种实力的明示（可能是走位的实力，可能是刷卡的实力）。之前看一个电竞主播打游戏，加载队伍的时候，他评论道“噢，对面是一个8块钱的皮肤，一个送的免费皮肤，和三个没有皮肤，这把稳了”，如果这个主播没瞎说，他也就刚十八的样子。从儿童到小消费者，他们知道从小就有糖果和玩具，日益长大的他们是越来越多的超级消费者，“我们不必一到十八岁，就长大”。</p>
+<p>关于游戏，联想到最近大家都在上网课，很多平台都承受不住网络请求的冲击，只有阿里钉钉和qq云课堂还屹立不倒，有的小学生在网上问怎么搞崩服务器，有人开玩笑说，等小学生搞懂了就可以去qq上班，以前给鹅厂充钱，以后鹅厂给你打钱。手机还没有全民标配的时候，腾讯就做了很多游戏，那时候就有人调侃说是，“少年，想变强吗？充钱吧（充完之后）充了也没用”，颇有葵花宝典的感觉。但是“充钱 =&gt; 即刻获得满足”这样的事情，一遍一遍地薅着人们头上本就不多的羊毛。我们这一代人，谁还没有给鹅厂充过钱呢，彩虹钻石八心八箭总有一款适合你。以前充蓝钻可以打好多游戏，现在充个绿钻可以听周杰伦，总而言之言而总之，给人们指明一个障碍或是一种“损失/失去”，然后提供一个“you pay, you gain, you win”的快捷渠道，收获皆大欢喜。只是在网络里大多数情况是买方被动的，“pay =&gt; gain”流程上几乎没有阻碍，最大的阻碍都已经被京东当/次日达了。所以知识付费踩着同样的步子摸了钱袋子，但却可以什么都不留下，因为知识是需要买方主动的，知识付费很多情况是：“我懂了，不，你不懂”，分享知识的人不必要讲得多么严谨，只要是让别人“觉得懂了”，就已经达到了目的，至于，课后，付费学习者略一思索，觉得好像还是不会，也不去自习复习预习，那“又是另一门生意了”；想一想，就连最为“原始古老”的知识付费形式——上学校——就算是最好学校最好班级的老师，也都不能保证每个人考试能考满分的啊。</p>
+<p>当然对于每一个人来说，商品的偏好，可以有很多选择的标准，无所谓对错。但我们其实都很想看到，消费漩涡里涌出金币。最近的疫情让很多平时嚷着“老子今天不上班”的人也开始热爱工作，终端消费市场被拴上了脖子，经济社会的齿轮仿佛没有加润滑油，咔蹦咔蹦地跳，比让一个70斤的小瘦子做20公斤的卧推看着还悬乎，疾病和损失的恐慌在金融市场上打肿了全球投资者的脸。</p>
+<p>今早看到消息说受疫情影响，韩国厂商海力士三星都受到了较大的影响，我看到三星关工厂的时候还是没有什么触感的，但是看到说海力士（SK Hynix）隔离员工，我突然意识到，这次疫情的冲击及其后期影响，没有一个国家承受得起，也没有一个国家可以置身其外，这时候是真的，“love for wuhan, love for human”，也真的是“风月同天”。一场瘟疫，比一场海啸地震，甚至比一次金融危机，都更为可怕，是无差异穿透型全面立体的打击。为什么这么说，因为海力士虽然好像不怎么“有名”，虽然也有不少人觉得它质量兼容性各方面弱一些，但它的确在电子领域贡献了很多块内存条，尤其是给Apple Mac，它是半导体赛道上，挺重要的一员。诚惶诚恐地说，全球范围内，东亚三国在半导体和软件上的产业优势相对来说，略高于其在农业医疗能源产业的优势……之前新加坡不停工不停课还办万人宴会，有很多同学就在抗议，当时就有人说，这种代价它受不起，我们也不一定扛得了多久。</p>
+<p>昨天看到文艺界知名书店——单向书店，也已经开始公开叫喊活下去，在中国的文化里，读书人向来隐忍得更多。这段时间的确空闲许多，但银行并不会延期发放贷款账单，屯粮屯食物总是支出，在家打游戏可能还免不了氪金，就算是学习也会有些零散的支出，很多平日不太注意管理个人财产的年轻人（此处暂不包括学生，主要讨论已有工作的年轻人），很多往日的主力超级消费者，如果不是物流停了，可能下个月9号就要去老爸老妈那边再当一回小甜心了；这一次很多店铺春节打烊之后再也开不起来，很多工作者因而一放年假就可能放了一整年的假，有些人要过的难关，不是买口罩和防护，而是疫情没了工作也没了，花呗还不起房贷还不上，连买口罩的钱都没有，某种程度上，这更加难堪，毕竟按照规划大家都是要小康的；更进一步，如果大量的消费者的收入不再足以支撑其消费，债务链条一旦破裂，消费自指消费的循环崩塌，那又是另一番惨痛的危机，当然，可能也会是机遇，只是谁也不敢保证自己会是其中幸存着走到机遇面前的那一个，不论是个人，还是如今林立的各类巨头公司。</p>
+<p>的确，商业公司耍了些手段让消费者为更多的东西买单，这有些讨厌，但是如果有效有活力的消费停止了，所有人都将面临更加讨厌的事情，病毒尚且有抗体可以反击，尚且可以洗手带口罩进行防范，但对于经济社会，对于个人和群体组织而言，小平同志曾经说：“尽量用发展来解决问题”……</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-02-25T01:36:00.000Z" itemprop="datePublished">2020-02-25</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E8%A7%82%E6%84%9F/" rel="tag">#&nbsp;观感</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/02/27/Second-Birthday/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Second Birthday</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">两日三见叔本华</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

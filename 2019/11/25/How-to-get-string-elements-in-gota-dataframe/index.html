@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>How to get string elements in gota-dataframe | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="How to get string elements in gota-dataframe | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/"><meta property="og:locale" content="en"><meta name="description" content="In the gota-dataframe, we can easily get the numerical value in the dataframe. We can use the function (Series) Float to parse a []float64 type column of a certain dataframe, but we cannot similarly g - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="gota, dataframe, string"><meta property="article:published_time" content="2019-11-25T05:27:12.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.115Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.115Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="gota, dataframe, string"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/"
+    },
+    "headline": "How to get string elements in gota-dataframe | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2019-11-25T05:27:12.000Z",
+    "dateModified": "2020-07-18T13:40:07.115Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "gota, dataframe, string",
+    "description": "In the gota-dataframe, we can easily get the numerical value in the dataframe. We can use the function (Series) Float to parse a []float64 type column of a certain dataframe, but we cannot similarly g - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=How to get string elements in gota-dataframe" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=How to get string elements in gota-dataframe&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=How to get string elements in gota-dataframe" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACQ0lEQVR42u2awZLCMAxD+/8/zZ72wtSS3IVZqF4uhaElLzONI8s+Hl8wDiCBBBLID4A8xHj+/ff787PPn9V96bxAdkOevrTiTyeIM2B3VfMC2Q05QSQb6WxBycLsPUACOdw8BWW1sAkaSCBfAZlsFCcuLm0uIKshp4PeieHp2QliI2yA7IV0idi7ri/NFoG8DWRkHC1Mg2QjvsVVA/I2kEqougCsXnolkichEqkgIGsgJzGQJFeJSeqE9OkigKyEdGL3imGqFpwaCUB2QyaHf/rypwldIjaA7IVURaWNeE3FxCQuVrsbyArIVOimgT01AoAE8iyYpxNIkRo0h6yEMZCVkOrAd6IiCdovCeZAVkG6ApFL/NMJVaIXi14gayDToKsCtQvoaSOpNQeArII8guEK6xvTVBVIgeyFdA3tzixIAnxaVJUFUCCrIBPD0y3ICQi5QSbRDWQlpBOqCmZrlLrDITpxgKyATAuUiamlAntibgEJZFq0TEwB13C8aaIHshcynXCTtG3MAmlKAFkJGRuaFwK1S+wuFUCBvD2kK26mTUlJgfPPhhWQFZBJ0WlbvJcJv7gnVkFA3hoyFRLKFNhsqrSJCcheSDcczKZRTgndtTkA5G0hr0zkEinVeLdqygOyFjJp+JiKUOqzKwTYYgCQ1ZD2sDdi2E2aNKCMzUtAAvnwTciuIB8bpaoYCiSQQXK/ERRJ04gUNEBWQ24SsM1zSZF/1VAHZAXkJhHbFOHjoP3qbBHIr4b85AEkkEAC+Y/jB0Qj1JPHtU3DAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">How to get string elements in gota-dataframe</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2019-11-25</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/Golang/">Golang</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=How to get string elements in gota-dataframe&url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=How to get string elements in gota-dataframe&url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACQ0lEQVR42u2awZLCMAxD+/8/zZ72wtSS3IVZqF4uhaElLzONI8s+Hl8wDiCBBBLID4A8xHj+/ff787PPn9V96bxAdkOevrTiTyeIM2B3VfMC2Q05QSQb6WxBycLsPUACOdw8BWW1sAkaSCBfAZlsFCcuLm0uIKshp4PeieHp2QliI2yA7IV0idi7ri/NFoG8DWRkHC1Mg2QjvsVVA/I2kEqougCsXnolkichEqkgIGsgJzGQJFeJSeqE9OkigKyEdGL3imGqFpwaCUB2QyaHf/rypwldIjaA7IVURaWNeE3FxCQuVrsbyArIVOimgT01AoAE8iyYpxNIkRo0h6yEMZCVkOrAd6IiCdovCeZAVkG6ApFL/NMJVaIXi14gayDToKsCtQvoaSOpNQeArII8guEK6xvTVBVIgeyFdA3tzixIAnxaVJUFUCCrIBPD0y3ICQi5QSbRDWQlpBOqCmZrlLrDITpxgKyATAuUiamlAntibgEJZFq0TEwB13C8aaIHshcynXCTtG3MAmlKAFkJGRuaFwK1S+wuFUCBvD2kK26mTUlJgfPPhhWQFZBJ0WlbvJcJv7gnVkFA3hoyFRLKFNhsqrSJCcheSDcczKZRTgndtTkA5G0hr0zkEinVeLdqygOyFjJp+JiKUOqzKwTYYgCQ1ZD2sDdi2E2aNKCMzUtAAvnwTciuIB8bpaoYCiSQQXK/ERRJ04gUNEBWQ24SsM1zSZF/1VAHZAXkJhHbFOHjoP3qbBHIr4b85AEkkEAC+Y/jB0Qj1JPHtU3DAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>In the gota-dataframe, we can easily get the numerical value in the dataframe. We can use the function <code>(Series) Float</code> to parse a <code>[]float64</code> type column of a certain dataframe, but we cannot similarly get non-number.</p>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ColFloat: [820, 821, 822, 823]</span></span><br><span class="line"></span><br><span class="line">number := dataframe.Col(<span class="string">"ColFloat"</span>).Float()[<span class="number">0</span>]</span><br><span class="line">fmt.Println(number)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Display: 820</span></span><br></pre></td></tr></table></figure>
+
+<p>If the compiler runs the code like <code>(Series) String</code>, it returns an unindexable string like <code>[C, C++, Golang, Python]</code> (yeah, including the pair of square brackets), according to the definition of it.</p>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ColString: ["C", "C++", "Golang", "Python"]</span></span><br><span class="line"></span><br><span class="line">str := dataframe.Col(<span class="string">"ColString"</span>).String()</span><br><span class="line">fmt.Println(str)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Display: [C, C++, Golang, Python]</span></span><br></pre></td></tr></table></figure>
+
+<p>So, how can I get the <code>Golang</code> string only, without square brackets or other elements?</p>
+<p>Since the function <code>(DataFrame) Col</code> returns value in <code>series.Series</code> type, elements can be returned by function <code>(Series) Elem</code>, which would return the element of a series for the given index(and be careful with the panic of “out of bounds”). So with code like the following block, the value <code>Goalng</code> should be printed on the screen.</p>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ColString: ["C", "C++", "Golang", "Python"]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// variableA1 := dataframe.Col("ColA").Elem(IndexA1).String()</span></span><br><span class="line"></span><br><span class="line">str := dataframe.Col(<span class="string">"ColString"</span>).Elem(<span class="number">2</span>).String()</span><br><span class="line">fmt.Println(str)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Display: Golang</span></span><br></pre></td></tr></table></figure>
+
+<p>One step further, we also can touch numbers with the <code>DataFrame.columns</code> and <code>(DataFrame) Elem</code>, whose demo had been written <a href="https://github.com/go-gota/gota#interfacing-with-gonum" target="_blank" rel="noopener">in the docs</a>.</p>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> matrix <span class="keyword">struct</span> &#123;</span><br><span class="line">	DataFrame</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(m matrix)</span> <span class="title">At</span><span class="params">(i, j <span class="keyword">int</span>)</span> <span class="title">float64</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> m.columns[j].Elem(i).Float()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>And the way here to call columns is reasonable since the <a href="https://github.com/go-gota/gota/blob/master/dataframe/dataframe.go" target="_blank" rel="noopener">DataFrame struct</a> contains member <code>columns</code>:</p>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> DataFrame <span class="keyword">struct</span> &#123;</span><br><span class="line">	columns []series.Series</span><br><span class="line">	ncols   <span class="keyword">int</span></span><br><span class="line">	nrows   <span class="keyword">int</span></span><br><span class="line">	Err     error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Or call a more concise function <code>(DataFrame) Elem</code>, if we have both row and column index of certain elements.</p>
+<p>Ref:</p>
+<ul>
+<li><a href="https://godoc.org/github.com/kniren/gota/dataframe#DataFrame.Col" target="_blank" rel="noopener">Full Doc of gota-dataframe</a></li>
+<li><a href="https://godoc.org/github.com/go-gota/gota/series#Series.Elem" target="_blank" rel="noopener">Full Doc of gota-series</a></li>
+</ul>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-11-25T05:27:12.000Z" itemprop="datePublished">2019-11-25</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.115Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/Golang/'>Golang</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/gota/" rel="tag">#&nbsp;gota</a>
+
+<a class="post-tags-list-item" href="/tags/dataframe/" rel="tag">#&nbsp;dataframe</a>
+
+<a class="post-tags-list-item" href="/tags/string/" rel="tag">#&nbsp;string</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2019/11/27/Wine-on-Ubuntu-19-10/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Wine and WeChat on Ubuntu 19.10</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/11/22/%E8%AF%BB%E7%A0%94GAP%E6%B5%8B%E8%AF%84/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">读研GAP测评</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

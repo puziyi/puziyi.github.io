@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>一些有趣的事情/观点 —— 大型书摘收藏夹 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="一些有趣的事情&#x2F;观点 —— 大型书摘收藏夹 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/"><meta property="og:locale" content="en"><meta name="description" content="文艺复兴并非是繁华盛世的光荣，反而是在黑死病瘟疫肆虐、落魄孱弱、兵荒马乱、暴君林立的意大利。薄伽丘的《十日谈》故事背景就是一些年轻人为了躲避瘟疫去到附近的山上居住，讲故事打发时间 米开朗基罗曾经找人（康迪维）帮他写自传，隐瞒他曾经找老师学习过的事实，自诩天授艺术天赋，直到后来瓦萨里去找米开朗基罗的爸爸求证签字，表明米开朗基罗的确跟老师学习过 以上来自 &amp;gt;&amp;gt; 翻电 - 意大利文艺复兴时期 - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="小板凳"><meta property="article:published_time" content="2020-05-04T14:51:01.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="小板凳"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/"
+    },
+    "headline": "一些有趣的事情/观点 —— 大型书摘收藏夹 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-05-04T14:51:01.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "小板凳",
+    "description": "文艺复兴并非是繁华盛世的光荣，反而是在黑死病瘟疫肆虐、落魄孱弱、兵荒马乱、暴君林立的意大利。薄伽丘的《十日谈》故事背景就是一些年轻人为了躲避瘟疫去到附近的山上居住，讲故事打发时间 米开朗基罗曾经找人（康迪维）帮他写自传，隐瞒他曾经找老师学习过的事实，自诩天授艺术天赋，直到后来瓦萨里去找米开朗基罗的爸爸求证签字，表明米开朗基罗的确跟老师学习过 以上来自 &amp;amp;gt;&amp;amp;gt; 翻电 - 意大利文艺复兴时期 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=一些有趣的事情/观点 —— 大型书摘收藏夹" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=一些有趣的事情/观点 —— 大型书摘收藏夹&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=一些有趣的事情/观点 —— 大型书摘收藏夹" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACuElEQVR42u3cS3LiUBBEUfa/6e6p26GqvPmQ3UHoMmGALB85KFQ//PrzgY+XaNGiRT8Q/VoeX1//54eHY74fl479enxyiBbdoC/f9N9OeAXZXkvnnZ5Xh2jRBfoqYCbEFfTqQqcLmI7fHKJF34Wmx0zH0iAXLfp/oUmQkgRKtOifRqfEZgKlxKdNnG7J8kQ/Hp0K2996vrUaF/1YNG7+LUVAE1A0AG/pmop+JDo1XdIvmpL+JlkixYFo0Sforbky3QxSctXexNaLFi0aojfkltxMGFIwpONjIIoWPaA3fAq8GDhLYB41LkWLhmjSQCcDomkRgAZwusGIFk3QKFEJNwnScGyKhnpJRbToJWFKy1ekQUmKA/JHEC36BL2+8WFQkaQoLSmmhEq06AZNCsu7G5LrQGhq4IgWXaDbkzdNRLIkjhYORYuG6OaDny58p8XYdCFxoC9adLHv0SxvNw347dxvbyGIFr0k6umEJHiaAndbgomBKFr0UgSghgkoDlJzsglA0aJP0DSBaZe1TgJxvRmJFg3QKelJxWgKLjqIQg1P0aLL/nRavkpDT3pzIYWHaNHvokmgpASKoE+KDNGiG3Qa/qTh/gRKTZ908WizRrTo4kuUG4YEVjoXXXiJWZ5o0UNhexJktIGYiuK03CJa9Cn63YQoNeqbpmfM8kSLBrkHWao6GfpsN5qm8S5adLPvkZanaNGQFl/aBjvqMIkWHZrqZMh5UvCmwjktKIoWTdDVQP21f3k3BRId+tddU9GiD/8R/IZtkp8UmFWWJ1r00FQnw1DSQG+DNA1Rx4RJtOiAJkl6uiHQZCh9AFTTLdGiD9CkEE1LKWhZMBlEi74BnRb9muVaNLTfGqCiRRdoulxIllrSUIguXt2S5Yl+JJomNjQJok11MkB6qxoX/Uj0Jz1EixYt+kHov+Ngapi3kHgAAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">一些有趣的事情/观点 —— 大型书摘收藏夹</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-05-04</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=一些有趣的事情/观点 —— 大型书摘收藏夹&url=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=一些有趣的事情/观点 —— 大型书摘收藏夹&url=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACuElEQVR42u3cS3LiUBBEUfa/6e6p26GqvPmQ3UHoMmGALB85KFQ//PrzgY+XaNGiRT8Q/VoeX1//54eHY74fl479enxyiBbdoC/f9N9OeAXZXkvnnZ5Xh2jRBfoqYCbEFfTqQqcLmI7fHKJF34Wmx0zH0iAXLfp/oUmQkgRKtOifRqfEZgKlxKdNnG7J8kQ/Hp0K2996vrUaF/1YNG7+LUVAE1A0AG/pmop+JDo1XdIvmpL+JlkixYFo0Sforbky3QxSctXexNaLFi0aojfkltxMGFIwpONjIIoWPaA3fAq8GDhLYB41LkWLhmjSQCcDomkRgAZwusGIFk3QKFEJNwnScGyKhnpJRbToJWFKy1ekQUmKA/JHEC36BL2+8WFQkaQoLSmmhEq06AZNCsu7G5LrQGhq4IgWXaDbkzdNRLIkjhYORYuG6OaDny58p8XYdCFxoC9adLHv0SxvNw347dxvbyGIFr0k6umEJHiaAndbgomBKFr0UgSghgkoDlJzsglA0aJP0DSBaZe1TgJxvRmJFg3QKelJxWgKLjqIQg1P0aLL/nRavkpDT3pzIYWHaNHvokmgpASKoE+KDNGiG3Qa/qTh/gRKTZ908WizRrTo4kuUG4YEVjoXXXiJWZ5o0UNhexJktIGYiuK03CJa9Cn63YQoNeqbpmfM8kSLBrkHWao6GfpsN5qm8S5adLPvkZanaNGQFl/aBjvqMIkWHZrqZMh5UvCmwjktKIoWTdDVQP21f3k3BRId+tddU9GiD/8R/IZtkp8UmFWWJ1r00FQnw1DSQG+DNA1Rx4RJtOiAJkl6uiHQZCh9AFTTLdGiD9CkEE1LKWhZMBlEi74BnRb9muVaNLTfGqCiRRdoulxIllrSUIguXt2S5Yl+JJomNjQJok11MkB6qxoX/Uj0Jz1EixYt+kHov+Ngapi3kHgAAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>文艺复兴并非是繁华盛世的光荣，反而是在黑死病瘟疫肆虐、落魄孱弱、兵荒马乱、暴君林立的意大利。薄伽丘的《十日谈》故事背景就是一些年轻人为了躲避瘟疫去到附近的山上居住，讲故事打发时间</p>
+<p>米开朗基罗曾经找人（康迪维）帮他写自传，隐瞒他曾经找老师学习过的事实，自诩天授艺术天赋，直到后来瓦萨里去找米开朗基罗的爸爸求证签字，表明米开朗基罗的确跟老师学习过</p>
+<p>以上来自 &gt;&gt; <a href="https://music.163.com/#/program?id=902949131" target="_blank" rel="noopener">翻电 - 意大利文艺复兴时期的艺术</a></p>
+<hr>
+<p>意识是在身体发生变化之后产生的</p>
+<p>以上来自 &gt;&gt; <a href="https://music.163.com/#/program?id=902950676" target="_blank" rel="noopener">翻电 - 意识新探</a></p>
+<hr>
+<p>哲学思考难得产生值得付诸文字以与他人分享的果实</p>
+<p>科学主义，像别的很多主义一样，多半是反对者使用的名号</p>
+<p>科学似乎给我们提供了世界的真相。但在这幅从大爆炸到基因的严整画面中没有哪里适合容纳我们欢愉和悲苦，我们的道德诉求与艺术理想</p>
+<p>社会生物学也许名声可疑，不过这不要紧，堂而皇之的显学经济学在原理方面和社会生物学初无二致</p>
+<p>剩下一个怯魅的世界</p>
+<p>物理学和化学、数学和逻辑烙有它们的特定文化创造者的印记，殊不亚于人类学和历史学</p>
+<p>1959年，有一个科学家，C. P. 斯诺，在剑桥做了一个讲演，题目叫作“两种文化与科学革命”，斯诺站在科学文化一边，对人文学者的流行态度提出质疑。当时所谓人文主要是指文学，在当时的大学里，文学教授很骄傲很自豪，看不起科学，觉得学科学的没什么文化，不懂莎士比亚，不会引用荷马，懂点专业，怎么算有文化呢？技术你可以到专科学校去学，而大学应该是要学文化的。斯诺反对这种态度，他认为，我们现在生活在科技的世界里，科学揭示了关于世界的很多新的真理，你们人文学者却连科学的基本常识都不知道，怎么算是合格的学者呢？科学和科学家在大学里应该有更高的地位。<br>后来的局面发展像斯诺所愿望的那样，应该说，超出了他的愿望。今天的局面已经完全颠倒过来了。电子学、生物学、理论物理学，这些学科在大学里是最重要的学科，在社会上得到了广泛的尊重。人文知识分子反过来叫苦了，你出去说你是教哲学的或者你是教现代文学的，人们心想，瞎混混的，没什么真才实学。</p>
+<p>正如有识之士指明的，一饮一啄莫非前定固然取消了个人的道德责任，然而，无缘无故的随机事件也并不增加道德责任的分量。</p>
+<p>牛顿的英文版《原理》现在每年还出售约700部，这本书的买主不是学力学或学数学的学生，而是文科学生。</p>
+<p>数学的最大特点在于进行长程推论而不失真，因此，科学可以借数学语言通达感官远远不及的世界而仍保持真实。但反过来，数学对理解充满感性的日常世界只有很少的、间接的帮助。</p>
+<p>启蒙时代，人们觉得自己最聪明，从前的人不免糊涂愚昧。然而到了后启蒙时代，思想家变得比较谨慎，留心不要把历史上存在过的东西简单地宣判为一种错误，存在必具有某种合理性，我们须努力去发现如今看似荒唐的东西在当时的历史条件下有何种合理性。这一基本态度在黑格尔那里得到了最系统的阐释。</p>
+<p>所谓人事之外另有天命，事实虽是如此，天命固然难于逆料，但是它好像是含着深潜的意义，好像是有目的的。</p>
+<p>马林诺夫斯基说到世间的事物好像含着深潜的意义，好像是有目的的，这时他已经在提示，人不仅应付世界，而且要理解世界。列维—斯特劳斯用最平白的话说，对野蛮人和对我们一样，“宇宙既是满足需要的手段，同样也是供思索的对象”</p>
+<p>黑猩猩不会那么愚蠢，靠求签拜菩萨来求子嗣，这无非是说，对于黑猩猩来说，没有菩萨。</p>
+<p>以上来自 &gt;&gt; <a href="https://book.douban.com/subject/27139938/" target="_blank" rel="noopener">陈嘉映 - 哲学 科学 常识</a></p>
+<hr>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-05-04T14:51:01.000Z" itemprop="datePublished">2020-05-04</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E5%B0%8F%E6%9D%BF%E5%87%B3/" rel="tag">#&nbsp;小板凳</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/05/06/%E6%89%B9%E9%87%8F%E6%BB%91%E7%A8%BD/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">批量滑稽</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/05/03/%E6%AC%B2%E6%9C%9B%E3%80%81%E9%81%93%E5%BE%B7%E4%B8%8E%E8%87%AA%E6%88%91/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">欲望、道德与自我</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

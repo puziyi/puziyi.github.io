@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="website"><meta property="og:url" content="http://puzy.site/"><meta property="og:locale" content="en"><meta name="description" content="Zoey Pu - Zoey&#39;s Dev">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    "url": "http://puzy.site",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAAAAABx8Un7AAABPklEQVR42u3aSw6DMAxFUfa/6XaKIH5+ThNDpZtJP1Q5SA3+BI7PA+MABQWdQg8xzsdvEwS/i+YB7UWHf/r5x5f3V8yeB7QVVZNFC2n0OZoH9D3o6NjoZED/C3UXHOi70OjiV0l5W5YB/RnNCjP3dWk1CDqNWo3PxAL6uWsDnUZVgHeCvirKrSwDuhxVxZcTQLKAAtqPZsm5stlRKsxAt6HRha+Cu2qcZJEG2oKq4B1NqPCpYht0KepsWmRBQwUY0H60vPlvJG07y4BuQZ0gEZ1gFhisLAO6HM2Krih4OJtbt2AB2oLObnI4m9FpcADdgroNbhQE0kYY9BHUuRE/W7jJDUnQraizgKoPyaQPzIA+imbfWw0V6CtQd/FYQQW0FXUecqo20OkNPtBtaOVGfNZcqUQO2oN2DlBQ0NL4AvkHsgLMZrz/AAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/07/19/test/" rel="bookmark">test</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        规范
+
+统一使用LaTex输出数学公式，参见：[Pandoc数学一节]
+使用$表示行内输出；使用$$表示显示模式输出：
+
+    <a href="/2020/07/19/test/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-07-19</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/" rel="bookmark">最后一次谈SWUFE重点实验室的经历</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        我今天详细完整较为冷静地，最后说一次，我对于SWUFE某重点实验室，到底是为什么以及怎么去的、是怎么待的、为什么走、为什么心寒。以及，我自己到目前为止，认为自己哪些地方错了，我完整写出来，尽量不带自我保护滤镜，我当时若为了什么利...
+    <a href="/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-07-18</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/" rel="bookmark">黔地拾遗</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+严正声明：转载请注明出处
+
+序近些年，...
+    <a href="/2020/06/01/%E9%BB%94%E5%9C%B0%E6%8B%BE%E9%81%97/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-06-01</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E7%AE%AA%E9%A3%9F%E8%86%8F%E6%A2%81/">箪食膏梁</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/06/01/%E9%A3%9F%E7%89%A9%E8%A7%81%E9%97%BB%E5%BD%95/" rel="bookmark">食物见闻录</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        咸柠檬
+    <a href="/2020/06/01/%E9%A3%9F%E7%89%A9%E8%A7%81%E9%97%BB%E5%BD%95/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-06-01</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E7%AE%AA%E9%A3%9F%E8%86%8F%E6%A2%81/">箪食膏梁</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/05/13/Tensorflow-in-Golang/" rel="bookmark">Tensorflow in Golang</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Cool, we are about to build sophisticated research tools with TensorFlow(Golang)! However, it is a little bit unfa...
+    <a href="/2020/05/13/Tensorflow-in-Golang/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-05-13</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/Golang/">Golang</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/" rel="bookmark">后浪之阳观</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        这些天，对于《后浪》对于B站，已经有太多太多的批评和抨击，刚脑子里飘出一句话叫做“推己及人”，突然有了一点阳间的、积极向上、辩证一点的看法，毕竟这世上的事物发展，大潮之下必有逆流。
+从另一个角度来思考，《后浪》可能...
+    <a href="/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-05-08</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/05/06/%E7%A7%91%E5%B9%BB%E7%9A%84%E8%B6%85%E7%8E%B0%E5%AE%9E%E7%BB%86%E8%8A%82/" rel="bookmark">科幻的超现实细节</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        小的时候只是觉得酷炫，但是最近重温了一堆经典科幻片，觉得很real，也会觉得人类好像在消费娱乐主义之下真的没啥进步
+比如黑客帝国，以前只觉得看到neo停住子弹很cool，但是现在会想那些在矩阵里面的人，血池里泡着当...
+    <a href="/2020/05/06/%E7%A7%91%E5%B9%BB%E7%9A%84%E8%B6%85%E7%8E%B0%E5%AE%9E%E7%BB%86%E8%8A%82/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-05-06</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/05/06/%E7%A0%B4%E8%B4%A5%E7%9A%84%E7%BC%94%E9%80%A0/" rel="bookmark">破败的缔造</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        年少轻狂一点的时候，义愤地声讨社会的破败人性的无赖，恍然半夜梦中醒，发现早就是在破败之下做无赖人，助纣为虐。我曾经过去现在未来会说的失望或者乱象，和我自己，其实一体两面地，都是这世间破败痕迹的杰出缔造者，或许正是如此类似的轮转，...
+    <a href="/2020/05/06/%E7%A0%B4%E8%B4%A5%E7%9A%84%E7%BC%94%E9%80%A0/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-05-06</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/05/06/%E6%89%B9%E9%87%8F%E6%BB%91%E7%A8%BD/" rel="bookmark">批量滑稽</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+“原创不易”。我不知道，为什么事情不能自己好好做，很多观点，绝非是一般人独立产生的，但是一般人也是可以独立地自己认真做好自己能做的事情的，原创不易的意思是，大家都在抄袭？然后坚守着不抄的人应该得到表扬？犯错的成...
+    <a href="/2020/05/06/%E6%89%B9%E9%87%8F%E6%BB%91%E7%A8%BD/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-05-06</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/" rel="bookmark">一些有趣的事情/观点 —— 大型书摘收藏夹</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        文艺复兴并非是繁华盛世的光荣，反而是在黑死病瘟疫肆虐、落魄孱弱、兵荒马乱、暴君林立的意大利。薄伽丘的《十日谈》故事背景就是一些年轻人为了躲避瘟疫去到附近的山上居住，讲故事打发时间
+米开朗基罗曾经找人（康迪维）帮他写...
+    <a href="/2020/05/04/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <time>2020-05-04</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/2/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

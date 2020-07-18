@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>一段精彩的发言 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="一段精彩的发言 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/"><meta property="og:locale" content="en"><meta name="description" content="知乎上一个问题叫做“看哈利波特英文原版需要多好的英文水平？”，然后这个问题下，有一个令人幡然解惑的回答，来自知乎用户召唤法师，大胆转录一下原文，说得非常耿直。  如果只是读懂的话： 你可以这样类比，英语，就和编程语言一样，你学编程语言需要先把所有函数都背会了才能读别人的代码吗？？？别想着什么先提高自己的编程能力再去学习别人的代码，那都是扯淡，你不去学习真正有用真正厉害的东西，怎么提高自己的编程能力 - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="小板凳"><meta property="article:published_time" content="2020-03-23T07:04:37.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="小板凳"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/"
+    },
+    "headline": "一段精彩的发言 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-03-23T07:04:37.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "小板凳",
+    "description": "知乎上一个问题叫做“看哈利波特英文原版需要多好的英文水平？”，然后这个问题下，有一个令人幡然解惑的回答，来自知乎用户召唤法师，大胆转录一下原文，说得非常耿直。  如果只是读懂的话： 你可以这样类比，英语，就和编程语言一样，你学编程语言需要先把所有函数都背会了才能读别人的代码吗？？？别想着什么先提高自己的编程能力再去学习别人的代码，那都是扯淡，你不去学习真正有用真正厉害的东西，怎么提高自己的编程能力 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=一段精彩的发言" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=一段精彩的发言&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=一段精彩的发言" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACsklEQVR42u3dW27CQBQEUfa/afJLIuZ29dhBQlP8ICIDx0jmPpM8nl94e4gWLVr0gejHcPv1hJfHV475e+zrfXKIFk3R04uujvn7oun+9TkTfnSIFl2gE+LdselN0kmkC1K06P9Cpzdsg0+6gEWL/gR6SmzeBZ13x5IAJlr0XegpSV+9+HRSTeJ1e5Yn+nj0VFB+8v62alz00ejY9AuF6argTYlR+iK41DUVfTSaJEIk2ZmCxJgEwURMtGiKbgoAmiilIEWPWyZMokUDdEqgmqBDC+TVey6bmaJFQ/SUDKVilCJI8zIOTEWLBmg6IErF725xsDohXI2LFj0kTKQwpYGCBqGmES9aNEVPDUHyhulCI8GFBBjRommzZkpq6JJKSuRpM2f8oESLhuj0ZDIMxQNM0KBZfjCiRQN0W8CmxZWpUd4Gpjj8FC26HOi3CypN4Jku2mWwEy26RLeJTCpMScOyKhZEi4Zo0iAkyTxtmO8Mn0SLvpJPp0K3uTCnk5qWVuosT7To0PyjP2+KW3IhVsNP0aJDs2Z63MLaBB8NRUWL3li8ookUWahKFyFpZqJlQtGiy19kIEuxpPGYFgPiiYgWDdBkCZsub5PmTwpaOCKKFl021cmgJzVjdhvy1YKsaNFw+Jm++FPhSxYOmyUY0aIpmi5f06KBFMd0wRZv1ogWvRgUkRemjXByIdPCQbToXfRO8p6CRxo+pYAjWvQumjYLp8UqMlSix4sWvYtuGpBTMpVOplm8urVrKvo4NFmM3Umk0nAzJU5bDUjRop/8D1eSJngqaknzfRxEiRZdoOlAaBookZNsEia81Sta9A3/3IAWvXRRERW/okXfhJ6KTRJwaJC63GESLRokTCn5IQVuM8C/pQgQfTy6GcTTgWcqZsmAv96sES36y26iRYsWfRD6B36R2xksIAbKAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">一段精彩的发言</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-03-23</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=一段精彩的发言&url=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=一段精彩的发言&url=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/03/23/%E4%B8%80%E6%AE%B5%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%8F%91%E8%A8%80/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACsklEQVR42u3dW27CQBQEUfa/afJLIuZ29dhBQlP8ICIDx0jmPpM8nl94e4gWLVr0gejHcPv1hJfHV475e+zrfXKIFk3R04uujvn7oun+9TkTfnSIFl2gE+LdselN0kmkC1K06P9Cpzdsg0+6gEWL/gR6SmzeBZ13x5IAJlr0XegpSV+9+HRSTeJ1e5Yn+nj0VFB+8v62alz00ejY9AuF6argTYlR+iK41DUVfTSaJEIk2ZmCxJgEwURMtGiKbgoAmiilIEWPWyZMokUDdEqgmqBDC+TVey6bmaJFQ/SUDKVilCJI8zIOTEWLBmg6IErF725xsDohXI2LFj0kTKQwpYGCBqGmES9aNEVPDUHyhulCI8GFBBjRommzZkpq6JJKSuRpM2f8oESLhuj0ZDIMxQNM0KBZfjCiRQN0W8CmxZWpUd4Gpjj8FC26HOi3CypN4Jku2mWwEy26RLeJTCpMScOyKhZEi4Zo0iAkyTxtmO8Mn0SLvpJPp0K3uTCnk5qWVuosT7To0PyjP2+KW3IhVsNP0aJDs2Z63MLaBB8NRUWL3li8ookUWahKFyFpZqJlQtGiy19kIEuxpPGYFgPiiYgWDdBkCZsub5PmTwpaOCKKFl021cmgJzVjdhvy1YKsaNFw+Jm++FPhSxYOmyUY0aIpmi5f06KBFMd0wRZv1ogWvRgUkRemjXByIdPCQbToXfRO8p6CRxo+pYAjWvQumjYLp8UqMlSix4sWvYtuGpBTMpVOplm8urVrKvo4NFmM3Umk0nAzJU5bDUjRop/8D1eSJngqaknzfRxEiRZdoOlAaBookZNsEia81Sta9A3/3IAWvXRRERW/okXfhJ6KTRJwaJC63GESLRokTCn5IQVuM8C/pQgQfTy6GcTTgWcqZsmAv96sES36y26iRYsWfRD6B36R2xksIAbKAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>知乎上一个问题叫做“<a href="https://www.zhihu.com/question/48119865" target="_blank" rel="noopener">看哈利波特英文原版需要多好的英文水平？</a>”，然后这个问题下，有一个<a href="https://www.zhihu.com/question/48119865/answer/247060097" target="_blank" rel="noopener">令人幡然解惑的回答</a>，来自知乎用户<a href="https://www.zhihu.com/people/zhao-huan-fa-shi" target="_blank" rel="noopener">召唤法师</a>，大胆转录一下原文，说得非常耿直。</p>
+<blockquote>
+<p>如果只是读懂的话：</p>
+<p>你可以这样类比，英语，就和编程语言一样，你学编程语言需要先把所有函数都背会了才能读别人的代码吗？？？别想着什么先提高自己的编程能力再去学习别人的代码，那都是扯淡，你不去学习真正有用真正厉害的东西，怎么提高自己的编程能力？就靠背几个函数？或是学几个所谓的编程技巧？；相反，你只有去读，去写，才能提升自己的编程能力，英语也是一样的，不要想着先提高自己的英文水平再去读名著。。。</p>
+<p>你需要明白一个最简单的道理，我们大脑的记忆机制是：它只会留下对我们有用的东西！！！换句话话说，只有你用了，它才会记住。</p>
+<p>所以我告诉你，直接去读，不要想多了，一边放着电子书，一边放着 google 翻译，不会的词直接查，慢慢的你的脑子会自动帮你记住你常用的东西！每天看的话，就像当初我学英语一样，三个月后，正常的交流，一般的文档没有问题。</p>
+<p>不要被什么英语考级吓唬住了，我见过很多平时英语考试分高的朋友遇到外国人都哑火了。。。语言是工具，只有你去用它干它本应该做的事情，水平才会变的越高！</p>
+</blockquote>
+<p>这看起来很好理解，就跟增重长身体的“增量恢复”类似的，如果不需要，身体不会倾向于留存能量，只有大量运动刺激，脑子才会后知后觉的知道，噢好，我给你安排物资，你长；也像是今年的口罩，很好产，但是之前没有需求，疫情刚来，缺口非常大，而当需求很大了，国内的产能产量迅速提升，也是“增量恢复”的。</p>
+<p>可是老实说，我真还一直觉得，语法很久没有怎么学，又有些偷懒一直没有看完张满胜的三本书，的确遇到长长句子的时候，会有一些“虚”，但是讲道理，我这每天瞎看瞎写，反而能听得舒服看得舒服，现在写东西grammarly也不怎么报错了，这比看完语法书应该更有说服力的，看完开发手册，还是会写bug，但是至少，得去写。</p>
+<p>我大学分数最低的一门课是硬笔书法，我的自由选课除了PPT制作是奔着刷分去的，其他基本都选的博弈论人类学啥的硬核课，书法课却是无心之举，因为选课的时候刚好看乔布斯看得有点入迷，他说他在大学最后一门课也是此生最有用的一门课是书法课，当时我也是最后一学期的课就选了这个，算是致敬颠覆世界的脑袋，而且也很幸运很感激的是，这个课教给我的，真的很多，乔帮主诚不欺我。虽然我没有把行书学得自己也可以写得飘逸悦目，虽然最后分高的同学中很多本身就从小练书法底子很好，虽然虽然虽然……但是这个课教给我的学习之道是其他所有课都没有能剖析给我看的，我用这个“道”后面自己反思了很多过往的得失，学了更多的东西。</p>
+<p>先说一下我书法选修课的老师，据她说，她是四川省书法家协会的会员，然后早年好像是文工团做音乐的，印象中她写书法也不是很“童子功”，小的时候学练字没有怎么领悟到精髓，后来慢慢才总结出一套自己的风格和教学的方法，用的教材也就是她自己一个手写稿的影印本字帖和两个书法本子，笔就是随便拿一支（当然最好是钢笔），当时有很多人去蹭课或者第一节课过去买练习册回去自己练，总而言之，是个比较权威但不很古板的老老师。</p>
+<p>上课的教法也不“奇”，她在黑板上教一个字/偏旁/间架结构，然后我们在她的影印书上临写（对，直接临，不是摹写），下课写作业就是在本子上把课上写的摹写一下，再临写几遍，交了作业她会逐个字看，然后标红做得好和不好的地方。某种程度上来说，是很传统的教法，但是一个学期十六周走下来，就算是我这种有时忙得上课前一小时去教室补作业的人，写字水平都有了很大的提升，一些做得好的同学，一个学期之后还可以在朋友圈大秀一波。</p>
+<p>当然，这个看起来也就是所谓的一万小时/刻意练习那一套，但是我觉得其中有一些点很重要。</p>
+<p>首先是“无前提地沉浸”，都会写字，为什么很多人不会写真的行书？因为很多人觉得，啊，我楷书还写得不好，等我先去练一下楷书，练好了再练行书；但是我的体验是，会写字，就去直接练，楷书写得不好很多是因为间架结构掌握得不好，学完再写楷书也会有提升，不要延迟这个冲动。数学、英语也都是类似的，有时候看机器学习或者金融的证明，公式密密麻麻，很有直接跳过的冲动，但是这种时候，耐着性子去看一眼，还是很有可能看懂，英文也是，有些段落或许生词多一点，但是大概还是能有个概念。这里材料真的很重要，看丘维声老师的代数课可能就比其他的材料能够更有效地刺激到位，之前我不是很会做俯卧撑和平板支撑，完全没有肌肉发力感，会觉得手臂受不了，结果最近看了个基础的动作教学，学了一下身体稳定技巧，明显就有提升，手臂借力也少了。</p>
+<p>其次是，“学即用”，这是因为我那个学期有点忙，课都比较难，自己又还在维护很多项目，不太能静下心来写字，我就在上其他课的时候，用学到的行书技法去记笔记，一开始只会诸如“的”这样的字，其他的要么忘了要么还没学，就都先写着楷书，忘了的回去抽空瞄一眼，还没学的后面学的时候也更有印象，所以虽然我是上课前赶作业的人，但是并不意味着我一周只写三个小时行书（三节课加作业），所以我可以赶得完作业也不是靠胡写一通。这个其实对应到数学里面的“做题”，或是英文里面的刷题刷词刷文章，反复熟悉逻辑/笔顺/音形义，形成一种肌肉记忆。</p>
+<p>然后是，“反向传播”，也就是，找错并修正。这需要有个参考系，不然并不知道错得多么离谱，修正其实是一体的，就像写代码，报错之后肯定要改啊，grammarly报错了也要改的，这就得记着什么问题可能经常犯，多注意一下就好。这一步很重要，我以前写东西会乱写，因为自己没有纠错的自我觉悟，又没有人帮我改，就困惑，越搞越迷茫，无所适从。所以这时候，需要用工具，需要从别人的做法里面熟悉规则（不要迷信”权威“，兼听则明）。</p>
+<p>之后是，“持续输入输出”，输入输出越密集越好，因为可以加快反向修正的速度。比如我很长一段时间怎么都不会拼写 <em>regime</em>，结果最近很多关于疫情防控的讨论，有一些人就反反复复说这个东西，有天我就（又）查了一下拼写，而且刺激到位了，查了之后就真的记得了。</p>
+<p>最后是，“迭代”。回头看，做得不够好，就可以update一下，不是说明之前自己不好，而是现在自己的品鉴水平能力提高了，可以更深入地自我修正、反向传播。</p>
+<p>前面这些算是“方法”，但是总得有“动机”吧，我就咸鱼咸着不也很好，我就拖延拖着又不会死还忙里偷闲了不好吗。想起很早年我请教一位很上进的学姐，她积极努力的动力是什么，怎么保持自己精力充沛地在大学浪学习？当时她说，<strong>什么鬼噢，你又洗我脑壳，不小心走到不得不努力的绝路上罢了</strong>。</p>
+<p>而且讲道理我还挺有完美主义倾向的，时而会觉得说，做完了这个就没有了感觉空空的，但其实大多数情况，并不是想象中的这样完美和空虚，有些问题它可能是个套娃，一层一层去的路上，走得越快，越能看到自己的逼仄，也会进步得越快，走得慢，也只有到最后DDL的时候才发现是个套娃问题，然后倍感懊悔。就算是个直线问题，做完一个，一定还会有下一个，而且可能还没做完下一个就来了，“烦恼会解决烦恼”。</p>
+<p>所有的东西，大多数的事情，实际去做，才是最为有效的路径，很多问题，我们是想不出来的，不管毕业于西财上财清华北大还是伯克利哥伦比亚，一个智商正常的人想不出来的问题，另一个智商正常乃至稍微高一点的人其实也不能一下子就想出来；但是我们可以而且大多数情况也是仅可以<strong>人肉遍历错误，总结一条大路</strong>。在有所小小成就的时候，别人或许说甚至自己也会觉得，能够成功是因为找到了门道，然后走的高速路；但是只有身处其中一步一步踩坑了才知道，的确走了高速路，但是这个路也是自己造的，硬生生把山巅谷底踏成坦途，把一步之遥的轻松走成千山万水的诗画篇章，然后在画卷的一角，按上自己的朱红刻章，就可以了。</p>
+<p>最后，其实还有这两个相关的发言也相当精彩：</p>
+<ul>
+<li><p><a href="https://www.zhihu.com/question/376770747/answer/1056048852" target="_blank" rel="noopener">有哪些数学是你怎么学都学不会的？</a></p>
+</li>
+<li><p><a href="http://www.yinwang.org/blog-cn/2020/03/23/wisdom-of-intelligence" target="_blank" rel="noopener">对智商的怀疑</a></p>
+</li>
+</ul>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-03-23T07:04:37.000Z" itemprop="datePublished">2020-03-23</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E5%B0%8F%E6%9D%BF%E5%87%B3/" rel="tag">#&nbsp;小板凳</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/03/24/%E4%BD%95%E6%97%A5%E6%9B%BE%E5%85%B4%E7%9B%9B%E9%BC%8E%E5%A4%A9/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">何日曾兴盛鼎天</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/03/23/What-do-you-care-what-other-people-think/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">What do you care what other people think</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

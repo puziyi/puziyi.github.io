@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>后浪之阳观 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="后浪之阳观 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/"><meta property="og:locale" content="en"><meta name="description" content="这些天，对于《后浪》对于B站，已经有太多太多的批评和抨击，刚脑子里飘出一句话叫做“推己及人”，突然有了一点阳间的、积极向上、辩证一点的看法，毕竟这世上的事物发展，大潮之下必有逆流。 从另一个角度来思考，《后浪》可能可以是对当今青年妄想主义的一次无情打破，是一次同理心与共情能力的社会教育，也是一次深刻的“幸存者偏差”的数理教育；当今同辈大都看到了偏差，当今长辈大都看到了幸存，但未必我们看到了教育和发 - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2020-05-08T09:59:07.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/"
+    },
+    "headline": "后浪之阳观 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-05-08T09:59:07.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "这些天，对于《后浪》对于B站，已经有太多太多的批评和抨击，刚脑子里飘出一句话叫做“推己及人”，突然有了一点阳间的、积极向上、辩证一点的看法，毕竟这世上的事物发展，大潮之下必有逆流。 从另一个角度来思考，《后浪》可能可以是对当今青年妄想主义的一次无情打破，是一次同理心与共情能力的社会教育，也是一次深刻的“幸存者偏差”的数理教育；当今同辈大都看到了偏差，当今长辈大都看到了幸存，但未必我们看到了教育和发 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=后浪之阳观" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=后浪之阳观&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=后浪之阳观" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACNUlEQVR42u2cy27DMAwE/f8/3V4LQ+IODRdNxdEliePHxDCl5ZLI9fUPxiWkkEIK+QGQVzHu39+P+fn5vn13/Gr76rpCzoZcPrS37dXJdvutznd/ra4r5GxI8oCTYKuCrhNYQgpZ7by7wPJh34Cs9hNSyDcgaaB1JnchhewIjB0YmaQrQfGqChLyOMgkEn7r9dVsUchjILF5tAmUXRDQAHrVVRPyCEgqcivRkETv6hyVCBZSyM7FW4YTMAl2N0ZIISvzngjjnWAhJkIruoUcAZkWfRI0HUMfJ2VCjoUk4oAYB+XEXAjllmEl5PGQlcCtEqzuYkAMiDJbFHIcZJqYq0m5Mv2TCYaMfSHHQlYJEk3qaZE0iWchZ0OSSZoGxpNGulhsEnIkZErYqZHVKYhGoSzkWMhUaCdAnWZlshgIKSQtVpZFdGBGJTGDVJCQR0NSEYALRA+LpqXoFXIUJDUJOo1NSTinHy2kkB0jnpr1lWimRVMh50LSRR+dGIDRxjwhZ0KSomd6T5viH0/mQo6C7DSCxMaOpuCIN0HIkZAdE4qYCWliTw0AQgpZCV8iWKlopsaYkEKmwmYVNCkp6xRNlz9KyJGQaXSa5Enze8tAEHIkJG34SCI3FQho8iakkAmAig2ShHUKpEIKmQyCTmPx08JqDBwhhQwmfkcEpyJrbBQRUsgr/4lgFVC0iQ67akKOg3xa7CSTf5XglfsIORaSLPpdoyoFC7o5Qo6E/OQhpJBCCvmH4xvf97aVYPn55AAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">后浪之阳观</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-05-08</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=后浪之阳观&url=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=后浪之阳观&url=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/05/08/%E5%90%8E%E6%B5%AA%E4%B9%8B%E9%98%B3%E8%A7%82/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACNUlEQVR42u2cy27DMAwE/f8/3V4LQ+IODRdNxdEliePHxDCl5ZLI9fUPxiWkkEIK+QGQVzHu39+P+fn5vn13/Gr76rpCzoZcPrS37dXJdvutznd/ra4r5GxI8oCTYKuCrhNYQgpZ7by7wPJh34Cs9hNSyDcgaaB1JnchhewIjB0YmaQrQfGqChLyOMgkEn7r9dVsUchjILF5tAmUXRDQAHrVVRPyCEgqcivRkETv6hyVCBZSyM7FW4YTMAl2N0ZIISvzngjjnWAhJkIruoUcAZkWfRI0HUMfJ2VCjoUk4oAYB+XEXAjllmEl5PGQlcCtEqzuYkAMiDJbFHIcZJqYq0m5Mv2TCYaMfSHHQlYJEk3qaZE0iWchZ0OSSZoGxpNGulhsEnIkZErYqZHVKYhGoSzkWMhUaCdAnWZlshgIKSQtVpZFdGBGJTGDVJCQR0NSEYALRA+LpqXoFXIUJDUJOo1NSTinHy2kkB0jnpr1lWimRVMh50LSRR+dGIDRxjwhZ0KSomd6T5viH0/mQo6C7DSCxMaOpuCIN0HIkZAdE4qYCWliTw0AQgpZCV8iWKlopsaYkEKmwmYVNCkp6xRNlz9KyJGQaXSa5Enze8tAEHIkJG34SCI3FQho8iakkAmAig2ShHUKpEIKmQyCTmPx08JqDBwhhQwmfkcEpyJrbBQRUsgr/4lgFVC0iQ67akKOg3xa7CSTf5XglfsIORaSLPpdoyoFC7o5Qo6E/OQhpJBCCvmH4xvf97aVYPn55AAAAABJRU5ErkJggg==" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>这些天，对于《后浪》对于B站，已经有太多太多的批评和抨击，刚脑子里飘出一句话叫做“推己及人”，突然有了一点阳间的、积极向上、辩证一点的看法，毕竟这世上的事物发展，大潮之下必有逆流。</p>
+<p>从另一个角度来思考，《后浪》可能可以是对当今青年妄想主义的一次无情打破，是一次同理心与共情能力的社会教育，也是一次深刻的“幸存者偏差”的数理教育；当今同辈大都看到了偏差，当今长辈大都看到了幸存，但未必我们看到了教育和发展。为什么我会突然这样想？</p>
+<p>看看这网络上，有多少的“刚下飞机”，有多少的流量网红，有多少崇古思潮，有多少鸡汤文，有多少的洋大人，有多少的“北大卖猪”偏见，有多少的“本科出身论”和多少的“读书无用论”……在“浪”的推击下，倘使以“我这一代”反推“其余任何一代”，应该可以明白，“台面上的”都只是时代随机甚至利益纠葛刻意甄选的戏子，“台面下的/台幕后的”才是花样的真实的年华岁月</p>
+<p>固然是有马云，更多的是退休在家养花的杭师范毕业的教书先生；固然是有明尼东，更多的是辍学的宿迁兄弟，更多的是大学毕业下海下得倾家荡产的老一辈，更多的人大毕业仕途不顺的三十年副科长；固然是“大师云集”的民国，更多的是目不识丁的草民，在青壮年时候亲历家国动荡，他们的家族，可能没有一个人会知道五星红旗是什么；固然是大清华贵满汉全席，可那时候的读书人尚且不能赞美清风；固然是崖山之前汉人正统，郑和下西洋、民族资本主义萌芽，王阳明还不是一路贬谪一路叹“呜呼伤哉，乌为乎来为兹山之鬼乎”；固然是大唐盛世，写着“诗史”的诗圣杜甫都只能蜷缩在草屋中被村野孩童劫了屋顶去，更何谈盛世民生？就算是写一写“门泊窗含”之诗，千年之后，尚且自诩聪明如我，都要亲自到了成都，等一个夏日看过火烧云看过西岭雪，才知道他写的并非迷梦虚幻，更何谈广泛意义上的理解包容与大同？人一定会痛苦孤独且有失偏颇</p>
+<p>那我们这些，说得直白一些，家境出身相貌智商甚至努力程度都“平平无奇”的人，就翻不起浪吗？就只能是所谓的干电池和韭菜吗？就此生如此了吗？我们这一代年轻人，就只能成天在网络上谩骂、在现实中自闭、毫无血气、在二十岁的大二就开始垂垂老矣吗？甚至就连我们这些，在学校里在简历上还是很TOP的人，都只能在这次疫情这场风波里向这个扯淡的时代投降、沉溺在过往的看似光鲜里、把自己关在小阁楼在自怨自艾中消磨一切吗？现在的所作所为，就算是有千难万险的借口，但真的丝毫不会被当年意气风发要考北大的那个十七岁多一点的小朋友在自己的作文里批判吗？</p>
+<p>前人曾说，“要用发展的眼光看问题”，我说，如今的我们或许只是天空中漂浮的白云中，小小的一个水分子吧，或许好一点，是结晶体核心的那个分子，漂泊无依不踏实好像很是浮躁。但有朝一日，气压沉闷，大雨滂沱，将去往山川河流，奔涌着去看看那容纳万千的大海，呼朋引伴地，随着月亮的潮汐力量，瞬间升起在朗朗光照下的粼粼，那时候人们一定会说“嚯，好一个后浪，晶莹的浪花向上蒸腾，年轻人向天境进发”，说完也根本不会想一下，那本就是所有人，最初的起点</p>
+<p>唐人有诗云：</p>
+<p>自小刺头深草里，而今渐觉出蓬蒿</p>
+<p>时人不识凌云木，直待凌云始道高</p>
+<p>愿与诸君共勉之，为了让这个世界在我们自己的眼里一天天变得更符合我们自己的期许而努力生活吧</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-05-08T09:59:07.000Z" itemprop="datePublished">2020-05-08</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/05/13/Tensorflow-in-Golang/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Tensorflow in Golang</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/05/06/%E7%A7%91%E5%B9%BB%E7%9A%84%E8%B6%85%E7%8E%B0%E5%AE%9E%E7%BB%86%E8%8A%82/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">科幻的超现实细节</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>两日三见叔本华 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="两日三见叔本华 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/"><meta property="og:locale" content="en"><meta name="description" content="其实这个名字还是很耳熟眼熟的，但是一直没有认真了解，这几天关注的一个财经博主连发了几篇叔本华，也看了一下，感觉有些观点角度很棒，算是稍微有了一些直观感性的认识，刚刷知乎偶偶然又看到一边他，就觉得，缘分到了。就去豆瓣的叔本华小组逛了逛，很有趣是发现一个讨论叫做喜欢叔本华的同志们的 MBTI 性格类型是？，贴子里面的测试链接没打开，我就搜索了一下找了两套不太相同的量表，结果一个测出来是INFP，一个测 - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="叔本华"><meta property="article:published_time" content="2020-02-24T11:34:45.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="叔本华"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/"
+    },
+    "headline": "两日三见叔本华 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-02-24T11:34:45.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "叔本华",
+    "description": "其实这个名字还是很耳熟眼熟的，但是一直没有认真了解，这几天关注的一个财经博主连发了几篇叔本华，也看了一下，感觉有些观点角度很棒，算是稍微有了一些直观感性的认识，刚刷知乎偶偶然又看到一边他，就觉得，缘分到了。就去豆瓣的叔本华小组逛了逛，很有趣是发现一个讨论叫做喜欢叔本华的同志们的 MBTI 性格类型是？，贴子里面的测试链接没打开，我就搜索了一下找了两套不太相同的量表，结果一个测出来是INFP，一个测 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=两日三见叔本华" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=两日三见叔本华&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=两日三见叔本华" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACqElEQVR42u3by07DMBRF0fz/T8OEQQX2PftYoVKV3QlVaZKVCtf3xfX1gY9LtGjRoh+IvobH63v+nODntd/vez129Xz1fuwQLRqil3/0m9d3F1gdt/vdbyx1iBbdoFeLaAfdAaYbmm6MOkSLvhM9bR7TjaQPonGIFn0XercRTIhpcxEt+h3oKcgnGwpJDEgwdUuUJ/rx6CmhfOfP27Jx0Y9Go8If3HTSwkvnu7VqKvqxaFJMaYOpVIgkH4ho0afoFLTT4kxzHvKhLM8rWjREkyILLU42CcOUHIgWfYqeNgLaHGoK6rvrTkGYaNENegrmyZc/2RhoIX4K4kSLbtAtuD2mCcbGLwPRogE6JaJk8aSN4nRzwkV10aIXaHpxUlBsGvxTsTImAaJFh3iaNG5i8lkkCAQbozzRomHz8xROiuQkaVhucqJFAzQdGGyT0jSA0ia+okWfoFPBkDxvbjIVPtFCFC0aJAGpmJIK43FBgSALTYuJFj0kAU3jJg6TgMLMdA0UMIkWHTaXaZOgwdFpITI1/0WLbtC0AZ8S1/Q6bR6hwSvRosEwYRpcbYKmuKAOFrBo0RQ9BTRp2I8sUDJ8iAcRRYuGaNowogXEVHgkwwKiRZ+im2SAFtXTMU2SPO6IokUP8x4nDXvyPlrcRJuSaNEFmha8SWOHNJXo76rJGtGiwwYxFXOagdeEStcSLbpBN01IslmcJAJ4eEC0aDhr2jQg6XEpQaYDs6JFt+iYTF7snxGac1SBv2jRJZosiNQ8IjdFFuq0oEWLbtB0AaYi/EnBhm5GokW3aLJg6FB407wnDVDRou9ENwum+acEEoyJFv0f6NQQSoMAdCNCQZlo0QWaNPabAkwzZIUHtkSLhmgy2HdSeCeDLE3zSbRogv6kh2jRokU/CP0Nd23MGvhQl8UAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">两日三见叔本华</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-02-24</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E8%81%8A%E6%96%8B/">聊斋</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=两日三见叔本华&url=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=两日三见叔本华&url=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/02/24/%E4%B8%A4%E6%97%A5%E4%B8%89%E8%A7%81%E5%8F%94%E6%9C%AC%E5%8D%8E/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACqElEQVR42u3by07DMBRF0fz/T8OEQQX2PftYoVKV3QlVaZKVCtf3xfX1gY9LtGjRoh+IvobH63v+nODntd/vez129Xz1fuwQLRqil3/0m9d3F1gdt/vdbyx1iBbdoFeLaAfdAaYbmm6MOkSLvhM9bR7TjaQPonGIFn0XercRTIhpcxEt+h3oKcgnGwpJDEgwdUuUJ/rx6CmhfOfP27Jx0Y9Go8If3HTSwkvnu7VqKvqxaFJMaYOpVIgkH4ho0afoFLTT4kxzHvKhLM8rWjREkyILLU42CcOUHIgWfYqeNgLaHGoK6rvrTkGYaNENegrmyZc/2RhoIX4K4kSLbtAtuD2mCcbGLwPRogE6JaJk8aSN4nRzwkV10aIXaHpxUlBsGvxTsTImAaJFh3iaNG5i8lkkCAQbozzRomHz8xROiuQkaVhucqJFAzQdGGyT0jSA0ia+okWfoFPBkDxvbjIVPtFCFC0aJAGpmJIK43FBgSALTYuJFj0kAU3jJg6TgMLMdA0UMIkWHTaXaZOgwdFpITI1/0WLbtC0AZ8S1/Q6bR6hwSvRosEwYRpcbYKmuKAOFrBo0RQ9BTRp2I8sUDJ8iAcRRYuGaNowogXEVHgkwwKiRZ+im2SAFtXTMU2SPO6IokUP8x4nDXvyPlrcRJuSaNEFmha8SWOHNJXo76rJGtGiwwYxFXOagdeEStcSLbpBN01IslmcJAJ4eEC0aDhr2jQg6XEpQaYDs6JFt+iYTF7snxGac1SBv2jRJZosiNQ8IjdFFuq0oEWLbtB0AaYi/EnBhm5GokW3aLJg6FB407wnDVDRou9ENwum+acEEoyJFv0f6NQQSoMAdCNCQZlo0QWaNPabAkwzZIUHtkSLhmgy2HdSeCeDLE3zSbRogv6kh2jRokU/CP0Nd23MGvhQl8UAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>其实这个名字还是很耳熟眼熟的，但是一直没有认真了解，这几天关注的一个财经博主连发了几篇叔本华，也看了一下，感觉有些观点角度很棒，算是稍微有了一些直观感性的认识，刚刷知乎偶偶然又看到一边他，就觉得，缘分到了。就去豆瓣的叔本华小组逛了逛，很有趣是发现一个讨论叫做<a href="https://www.douban.com/group/topic/5778703/" target="_blank" rel="noopener">喜欢叔本华的同志们的 MBTI 性格类型是？</a>，贴子里面的测试链接没打开，我就搜索了一下找了两套不太相同的量表，结果一个测出来是INFP，一个测出来是INTP，这俩的类型分析介绍还有些符合我现在的状态，适合写写东西 &amp; 做做分析 &amp; 码码代码（类型描述在前面的链接里有，就不赘述了）。回组里一看，好家伙，一眼望去全是“IN**”，我这俩类型出现频率也是非常的高，INFP更是大多数，“NF”据说是理想主义的标配，出现得也很多次，有一种，“小众之中大家都有相似感受”的体验，古人云，有朋自远方来，不亦乐乎。</p>
+<p>组里的新人导航贴子下面有这样一种声音叫做“太年轻没有经历不要读”，或是说“深刻，根本不可能看得懂”，这反而让我非常兴奋好奇，真是应该读一读！先看看大家印象深刻的只言片语：</p>
+<blockquote>
+<p>一种纯粹靠读书学来的真理，与我们的关系，就像假肢、假牙、蜡鼻子甚或人工植皮。而由独立思考获得的真理就如我们天生的四肢：只有它们才属于我们</p>
+</blockquote>
+<p>这句对我来说，甚至有些许的疗愈，我是一个自己想得很多，但最近读学得自己觉得远不够的状态，它肯定了我的思考，但是也说明，不应该只是思考，正如不应该纯粹靠读书来学。</p>
+<blockquote>
+<ul>
+<li>人的意志是一个永不停止的追求</li>
+<li>幸福只是欲望的暂时中止</li>
+<li>人生只有两种选择，要么庸俗，要么孤独</li>
+<li>人生是悲剧，一页页翻过而已</li>
+<li>人可以做他想做的，但不能意志他所意志的</li>
+</ul>
+</blockquote>
+<p>这些想法都很有人的感觉吧，或者说，一个社会人的感觉，因为如果是全然的”隐士“，其语境中恐怕不会有所谓”庸俗“和”孤独“这样具有一定群体性隐喻的词语，读来似乎有些许的彷徨，和自问自答。</p>
+<p>打算看看专著，总而言之，言而总之，就是下面这样的一个推荐顺序(出处：<a href="https://www.douban.com/group/topic/27566434/" target="_blank" rel="noopener">豆瓣网友Dravrah</a>)，虽然我想直接看看意志与表象，但细细一想，读读《思想随笔》或者《人生的智慧》看似更恰时一些。最近在看SICP，看英文原版，时而用中文版的校对看看自己有没有看走神理解产生重大偏误，看着看着觉得中文译出来，有些刻意酝酿的代码变量名字都不够美了，所以决定下狠功夫最近把英文给认真攻克掉，然后空出时间，再下点功夫学习德语和日语，然后去看看德文和日文的一些经典论述，想来应该更能有共鸣。</p>
+<blockquote>
+<p>一般刚开读，最简单的是韦启昌先生译的《叔本华论道德与自由》，《叔本华美学随笔》，《思想随笔》，《人生的智慧》，</p>
+<p>然后读商务印书馆的范进译的《叔本华论说文集》，</p>
+<p>然后读《充足理由律的四重根》，</p>
+<p>然后读《作为意志和表象的世界》，当然能读原文是最好的</p>
+</blockquote>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-02-24T11:34:45.000Z" itemprop="datePublished">2020-02-24</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E8%81%8A%E6%96%8B/'>聊斋</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E5%8F%94%E6%9C%AC%E5%8D%8E/" rel="tag">#&nbsp;叔本华</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/02/25/%E6%97%A0%E8%8A%82%E5%88%B6%E6%B6%88%E8%B4%B9%E7%9A%84%E5%85%83%E5%87%B6/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">无节制消费的元凶</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/02/04/fcitx-%E9%97%AA%E9%80%80/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">fcitx 闪退</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

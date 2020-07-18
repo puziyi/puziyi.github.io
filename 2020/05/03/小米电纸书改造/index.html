@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>小米电纸书改造 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="小米电纸书改造 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/"><meta property="og:locale" content="en"><meta name="description" content="入手原因 &#x2F; 考虑我之前的上古 kindle 4 被我搞坏而退出历史舞台了，虽然有骚尼板子，但毕竟一方面大不方便揣兜里，另一方面，虽然有人已经提供了刷机方法，但是有点贵不舍得刷，还是老老实实拿着看paper比较好吧。 小的这种电纸书，最主流的考虑肯定是kindle，但是我之前有过了，想换一下，当年刷机也就是多看for kindle，而且我对小米生态链的评价的确会比小米手机的评价高一些，而且安卓系统 - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2020-05-03T14:46:17.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.119Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.119Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/"
+    },
+    "headline": "小米电纸书改造 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-05-03T14:46:17.000Z",
+    "dateModified": "2020-07-18T13:40:07.119Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "入手原因 / 考虑我之前的上古 kindle 4 被我搞坏而退出历史舞台了，虽然有骚尼板子，但毕竟一方面大不方便揣兜里，另一方面，虽然有人已经提供了刷机方法，但是有点贵不舍得刷，还是老老实实拿着看paper比较好吧。 小的这种电纸书，最主流的考虑肯定是kindle，但是我之前有过了，想换一下，当年刷机也就是多看for kindle，而且我对小米生态链的评价的确会比小米手机的评价高一些，而且安卓系统 - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=小米电纸书改造" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=小米电纸书改造&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=小米电纸书改造" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACr0lEQVR42u3dSW7jQBBEUd7/0vbKgCywMn4UJQ/g18bt1vRodHYOlYKPj394O0SLFi36huhjuH3d/+2JD3//fF96vcfHr74fnyNaNESf/qMf3mB1MasLmi6wcogWXaCnACTB+vy8Cb56fHSIFv0C9ISZLpAkENGifxu9KqJoUjr7s2jR70Kv3pwUNdP9KWm9pcoTfXs0aWx/4uvLu3HRt0THod9JAZQST2qEaaLanpqKvjU6DRivNqMkcaVBpWjRO+gpwFYv1D53FaQpqEWLbtG7gxhyYEQSytQYiBbdosnAJRVTU0JoDk2nplq0aIpuB4TTwSdpAKZg3WoCRIteBGIqcGjhRAeQ6StKLqJFh9qDLl9RdCrAaGCLFt2i2+BIQ/A4dCmSzzK5iBZdNAF0KSUtYU0Dd5Ks6pMA0aJDMb4TMG3BX/0nIFo0RNPEQQuh5sMR1ZKtaNEAvXozEihT8U4XAJrBjWjRO/se6TCfHgalx5AlL9Gid9CrF05DGNoopCUWcpGiRTfoVLxcvZAUzPTASrRoim7Au8NIMoxByUu0aIBuh4tpqEgXW+igRrToHXRKAmRw2AQnHeaPnYto0bBHJB8uWAXjFKQ0CMdCSrRogKbLsM1B6c6y7OXORbToIghXIDJ4JB+6oYetokVTdBoUpgRBLiolJrR0KFo0rKdpEdQGHB1e4mGkaNHlfJoUL/TAkxRMokW/A90ssJKhelsw0YG8aNEUTZvW9D0Z1qQLjT8I0aIBmiyzpgSRktE0MKcNh2jRDXp3aYQ2w2koRBoR0aJbdHpzstCdFmFJ8I9DH9GiX4AeF6EuNMKkwYhDddGiL6BTM5oCML12PawRLfriL1ZKRXsawNMBzVh0iRZd7pqmZddY0MBF71SA4ampaNEb8+m/dBMtWrToG6E/AYgQ+giQn3k+AAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">小米电纸书改造</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2020-05-03</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/For-fun/">For fun</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=小米电纸书改造&url=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=小米电纸书改造&url=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2020/05/03/%E5%B0%8F%E7%B1%B3%E7%94%B5%E7%BA%B8%E4%B9%A6%E6%94%B9%E9%80%A0/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACr0lEQVR42u3dSW7jQBBEUd7/0vbKgCywMn4UJQ/g18bt1vRodHYOlYKPj394O0SLFi36huhjuH3d/+2JD3//fF96vcfHr74fnyNaNESf/qMf3mB1MasLmi6wcogWXaCnACTB+vy8Cb56fHSIFv0C9ISZLpAkENGifxu9KqJoUjr7s2jR70Kv3pwUNdP9KWm9pcoTfXs0aWx/4uvLu3HRt0THod9JAZQST2qEaaLanpqKvjU6DRivNqMkcaVBpWjRO+gpwFYv1D53FaQpqEWLbtG7gxhyYEQSytQYiBbdosnAJRVTU0JoDk2nplq0aIpuB4TTwSdpAKZg3WoCRIteBGIqcGjhRAeQ6StKLqJFh9qDLl9RdCrAaGCLFt2i2+BIQ/A4dCmSzzK5iBZdNAF0KSUtYU0Dd5Ks6pMA0aJDMb4TMG3BX/0nIFo0RNPEQQuh5sMR1ZKtaNEAvXozEihT8U4XAJrBjWjRO/se6TCfHgalx5AlL9Gid9CrF05DGNoopCUWcpGiRTfoVLxcvZAUzPTASrRoim7Au8NIMoxByUu0aIBuh4tpqEgXW+igRrToHXRKAmRw2AQnHeaPnYto0bBHJB8uWAXjFKQ0CMdCSrRogKbLsM1B6c6y7OXORbToIghXIDJ4JB+6oYetokVTdBoUpgRBLiolJrR0KFo0rKdpEdQGHB1e4mGkaNHlfJoUL/TAkxRMokW/A90ssJKhelsw0YG8aNEUTZvW9D0Z1qQLjT8I0aIBmiyzpgSRktE0MKcNh2jRDXp3aYQ2w2koRBoR0aJbdHpzstCdFmFJ8I9DH9GiX4AeF6EuNMKkwYhDddGiL6BTM5oCML12PawRLfriL1ZKRXsawNMBzVh0iRZd7pqmZddY0MBF71SA4ampaNEb8+m/dBMtWrToG6E/AYgQ+giQn3k+AAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#入手原因-考虑"><span class="post-toc-number">1.</span> <span class="post-toc-text">入手原因 &#x2F; 考虑</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#改造结果"><span class="post-toc-number">2.</span> <span class="post-toc-text">改造结果</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#普遍操作方法及流程"><span class="post-toc-number">3.</span> <span class="post-toc-text">普遍操作方法及流程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一个插曲"><span class="post-toc-number">4.</span> <span class="post-toc-text">一个插曲</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Ubuntu-工具及命令"><span class="post-toc-number">5.</span> <span class="post-toc-text">Ubuntu 工具及命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用安装顺序"><span class="post-toc-number">6.</span> <span class="post-toc-text">应用安装顺序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#支持-OTG"><span class="post-toc-number">7.</span> <span class="post-toc-text">支持 OTG</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <h2 id="入手原因-考虑"><a href="#入手原因-考虑" class="headerlink" title="入手原因 / 考虑"></a>入手原因 / 考虑</h2><p>我之前的上古 kindle 4 被我搞坏而退出历史舞台了，虽然有骚尼板子，但毕竟一方面大不方便揣兜里，另一方面，虽然有人已经提供了刷机方法，但是有点贵不舍得刷，还是老老实实拿着看paper比较好吧。</p>
+<p>小的这种电纸书，最主流的考虑肯定是kindle，但是我之前有过了，想换一下，当年刷机也就是多看for kindle，而且我对小米生态链的评价的确会比小米手机的评价高一些，而且安卓系统肯定可以延展的，会比较好玩，于是入了小米多看电纸书（结果还送了我一个大台灯）。</p>
+<h2 id="改造结果"><a href="#改造结果" class="headerlink" title="改造结果"></a>改造结果</h2><p>既有基础的书架管理、无线传输和百度云盘同步这样的多看原生系统功能，又通过安卓系统安装了个人比较习惯用的网易蜗牛读书水墨版、kindle、扇贝阅读和藏书馆APP，使得我可以在电纸书上继续使用对应的账户进度和权益，而且我还加装了文件管理器，使得电纸书支持OTC-U盘传输文件，我手机平板上可以看的书基本都可以在这边继续，不同终端设备之间冗余高一点，切换也流畅一些。</p>
+<h2 id="普遍操作方法及流程"><a href="#普遍操作方法及流程" class="headerlink" title="普遍操作方法及流程"></a>普遍操作方法及流程</h2><p>其实一开始没太多想，照着知乎上说的，连电脑版的360或者豌豆荚，然后把桌面和要用的软件给装上就行</p>
+<p>详细参考 &gt;&gt; <a href="https://www.zhihu.com/question/356958118" target="_blank" rel="noopener">zhihu - 小米多看电子书是否可以装 app?</a></p>
+<h2 id="一个插曲"><a href="#一个插曲" class="headerlink" title="一个插曲"></a>一个插曲</h2><p>我还特意去网吧弄了一下，结果回来一看，文件管理器和阅读软件都读不到设备的存储器，自带的蓝夜和无线传书都有问题，内部存储器的状态显示的是未挂载，其实当时是想退货了的，但是我毕竟刷了机，要退的话，恢复出厂设置咯，但是就给恢复好了……我又懒得去网吧用windows电脑，想了下ubuntu肯定也可以引导安装apk的，所以go on</p>
+<h2 id="Ubuntu-工具及命令"><a href="#Ubuntu-工具及命令" class="headerlink" title="Ubuntu 工具及命令"></a>Ubuntu 工具及命令</h2><p>归根到底，是安卓系统开发调试的问题。Linux肯定也可以启动某种服务，以使得可以在电脑上引导apk安装进安卓设备中的。</p>
+<ul>
+<li>[安卓设备] 进入开发者模式，启动USB调试，通过USB线插到电脑上，USB传输功能选择”传文件“；</li>
+<li>[电脑终端] 安装adb，<code>sudo apt install adb</code>；</li>
+<li>[电脑终端] 检测设备连接，<code>adb devices</code>。如果成功会有：<code>List of devices attached</code>和 <code>xxxxxxxxxx    device</code>这样的两行显示设备连接情况；</li>
+<li>[电脑终端] 引导APK安装到设备中，<code>adb install-multiple -r -t [pathtoapk]</code></li>
+<li>[电脑终端] 引导设备重启，<code>adb reboot</code></li>
+<li>[安卓设备] 断开电脑连接，拔掉线</li>
+</ul>
+<p>引导过程详细参考 &gt;&gt; <a href="https://blog.csdn.net/lvi_166/article/details/82979191" target="_blank" rel="noopener">Ubuntu 下 通过 ADB 安装 Apk 和导出手机中的 Apk</a></p>
+<h2 id="应用安装顺序"><a href="#应用安装顺序" class="headerlink" title="应用安装顺序"></a>应用安装顺序</h2><p>桌面软件 &gt;&gt; <a href="https://www.coolapk.com/apk/cn.modificator.launcher" target="_blank" rel="noopener">E-Ink Launcher</a></p>
+<p>悬浮球下载 &gt;&gt; <a href="https://sn9.us/file/11753764-413719210" target="_blank" rel="noopener">悬浮球.apk</a>， 这里感谢一下悬浮球的开发者<a href="https://shipengliang.com/software-exp/%E5%B0%8F%E7%B1%B3%E5%A4%9A%E7%9C%8B%E7%94%B5%E7%BA%B8%E4%B9%A6-%E5%AE%89%E8%A3%85%E6%82%AC%E6%B5%AE%E7%90%83%E5%9B%BE%E6%96%87%E6%8C%87%E5%8D%97.html" target="_blank" rel="noopener">时鹏亮</a>，很好用，个人觉得比zhihuer提到的<a href="https://www.wandoujia.com/apps/6554475" target="_blank" rel="noopener">虚拟按键大师・微桌面</a>简洁方便很多</p>
+<p>方案一： 先安装桌面，再安装豌豆荚之类的手机助手，重启设备，通过豌豆荚下载需要的阅读软件，其中需要给豌豆荚授予安装第三方应用的权限，没有返回键，但是可以直接回桌面，再进入豌豆荚继续安装；之后就可以开始使用了</p>
+<p>方案二： 先安装桌面，再直接安装其他的阅读软件和悬浮球，重启设备，开始使用</p>
+<p>方案三： 悬浮球first的安装流程。这个方案是我在挑选悬浮球的时候，发现有前辈其实也写了基于终端命令行的经验，方案流程其实类似方案一，只是他是基于Windows系统，然后悬浮球作为安装入口这样而已。</p>
+<p>详细跳转博客 &gt;&gt; <a href="https://shipengliang.com/software-exp/%E5%B0%8F%E7%B1%B3%E5%A4%9A%E7%9C%8B%E7%94%B5%E7%BA%B8%E4%B9%A6-%E5%AE%89%E8%A3%85%E6%82%AC%E6%B5%AE%E7%90%83%E5%9B%BE%E6%96%87%E6%8C%87%E5%8D%97.html" target="_blank" rel="noopener">小米多看电纸书 安装悬浮球图文指南</a></p>
+<p>B站视频 &gt;&gt; <a href="https://www.bilibili.com/video/BV1gE411j7oS/" target="_blank" rel="noopener">Mark 教程 - 小米多看电纸书安装悬浮球和第三方 APP</a></p>
+<h2 id="支持-OTG"><a href="#支持-OTG" class="headerlink" title="支持 OTG"></a>支持 OTG</h2><p>自带的文件管理器我尝试了一下，对U盘的识别还是有点问题，于是额外装了一个<a href="https://www.coolapk.com/apk/com.estrongs.android.pop" target="_blank" rel="noopener">ES文件浏览器</a>，加上之后插U盘上去就会提示是否用ES文件浏览器打开U盘，打开之后可以正常地在U盘和电纸书之间移动文件，可以直接选择打开方式，也可以把书放在<code>Books</code>里面，回到多看桌面里面去看，但是要刷新一下才能看得到新加入的书籍。</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-05-03T14:46:17.000Z" itemprop="datePublished">2020-05-03</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.119Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/For-fun/'>For fun</a>
+
+</span>
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/05/03/%E6%AC%B2%E6%9C%9B%E3%80%81%E9%81%93%E5%BE%B7%E4%B8%8E%E8%87%AA%E6%88%91/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">欲望、道德与自我</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/04/13/Ticktick-CPP/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Ticktick::C++</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>

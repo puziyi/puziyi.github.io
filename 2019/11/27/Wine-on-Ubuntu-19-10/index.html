@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>Wine and WeChat on Ubuntu 19.10 | Zoey&#39;s Dev</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="Wine and WeChat on Ubuntu 19.10 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/"><meta property="og:locale" content="en"><meta name="description" content="弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境 安装 Wine1234567891011121314151617&#x2F;&#x2F; 启用i386架构sudo dpkg --add-architecture i386&#x2F;&#x2F; 下载仓库密钥wget -nc https:&#x2F;&#x2F;dl.winehq.org&#x2F;wine-builds&#x2F;winehq.keysudo apt-key add winehq.key&#x2F;&#x2F;  - Zoey Pu - Zoey&#39;s Dev"><meta name="keywords" content="wine, wechat"><meta property="article:published_time" content="2019-11-27T02:57:31.000Z"><meta property="article:modified_time" content="2020-07-18T13:40:07.115Z"><meta property="og:updated_time" content="2020-07-18T13:40:07.115Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="wine, wechat"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/",
+    "@type": "BlogPosting",
+    "logo": "http://puzy.site/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/"
+    },
+    "headline": "Wine and WeChat on Ubuntu 19.10 | Zoey&#39;s Dev",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://puzy.site/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2019-11-27T02:57:31.000Z",
+    "dateModified": "2020-07-18T13:40:07.115Z",
+    "author": {
+        "@type": "Person",
+        "name": "Zoey Pu",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zoey&#39;s Dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://puzy.site/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://puzy.site/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "wine, wechat",
+    "description": "弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境 安装 Wine1234567891011121314151617// 启用i386架构sudo dpkg --add-architecture i386// 下载仓库密钥wget -nc https://dl.winehq.org/wine-builds/winehq.keysudo apt-key add winehq.key//  - Zoey Pu - Zoey&#39;s Dev"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=Wine and WeChat on Ubuntu 19.10" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Wine and WeChat on Ubuntu 19.10&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://puzy.site&text=Wine and WeChat on Ubuntu 19.10" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB0klEQVR42u3awY6DMAyEYd7/pXdPK3GIPeMshzD8XFqptPkqhcDYuX4OPC5QoECBWqCu5nA+v5/z9/7+6o4DKgu1nHQLlEJUv+WMAyoPtZrg1WAVoPuuGgfUd1BqcewWWefCAfU9VHVzdhZMhQeVjVI3UHUBTD7791MCqONRKjg89fpomgF1LMouPgzDQhVKH626gDoStVrwukKHWii7QCFDLqgIVLfgOSHTfVBc/en26gP1alQVEKpzJuc5hV1QWahuIGdiq2Dghg5QOagO101eZ1CnuA8qD1U1hHYG7RZJJ0yAykCpG6n7MLj7PVB5qG5CVsFgWrDdKu6Dei3KWejUhgkX0QVRUDko50tugX636AEqE+Vu5NrdTOiEEFBZqC5AqMKq21SSFweoCJRaIN0ifXdhuI1JUBko2cQZFincogeobJTT7FGhYacpbnXbQb0apYKDG1xVQ7wcB1QMajJJJ8Wz8QUAKgLl3FSdooXdvO7+LKgIlFsIcwqr0/AxLsSCeg1qsmlmuui6DSVQeajxxgZRaHMaB/LJE1Qsym0MuRvEylAL6hOo7uHM3ThRFf9BZaO6wLBzqEIZqGzUJAy4k3/6W6ByUCcdoECBAnU7fgHaJTGAOEsptQAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">Wine and WeChat on Ubuntu 19.10</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2019-11-27</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/Unix-Linux-FreeBSD/">Unix/Linux/FreeBSD</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=Wine and WeChat on Ubuntu 19.10&url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=Wine and WeChat on Ubuntu 19.10&url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB0klEQVR42u3awY6DMAyEYd7/pXdPK3GIPeMshzD8XFqptPkqhcDYuX4OPC5QoECBWqCu5nA+v5/z9/7+6o4DKgu1nHQLlEJUv+WMAyoPtZrg1WAVoPuuGgfUd1BqcewWWefCAfU9VHVzdhZMhQeVjVI3UHUBTD7791MCqONRKjg89fpomgF1LMouPgzDQhVKH626gDoStVrwukKHWii7QCFDLqgIVLfgOSHTfVBc/en26gP1alQVEKpzJuc5hV1QWahuIGdiq2Dghg5QOagO101eZ1CnuA8qD1U1hHYG7RZJJ0yAykCpG6n7MLj7PVB5qG5CVsFgWrDdKu6Dei3KWejUhgkX0QVRUDko50tugX636AEqE+Vu5NrdTOiEEFBZqC5AqMKq21SSFweoCJRaIN0ifXdhuI1JUBko2cQZFincogeobJTT7FGhYacpbnXbQb0apYKDG1xVQ7wcB1QMajJJJ8Wz8QUAKgLl3FSdooXdvO7+LKgIlFsIcwqr0/AxLsSCeg1qsmlmuui6DSVQeajxxgZRaHMaB/LJE1Qsym0MuRvEylAL6hOo7uHM3ThRFf9BZaO6wLBzqEIZqGzUJAy4k3/6W6ByUCcdoECBAnU7fgHaJTGAOEsptQAAAABJRU5ErkJggg==" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装-Wine"><span class="post-toc-number">1.</span> <span class="post-toc-text">安装 Wine</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装winetricks"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装winetricks</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置Wine-bottle"><span class="post-toc-number">3.</span> <span class="post-toc-text">配置Wine bottle</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置中文环境"><span class="post-toc-number">4.</span> <span class="post-toc-text">配置中文环境</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装微信"><span class="post-toc-number">5.</span> <span class="post-toc-text">安装微信</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修改启动路径"><span class="post-toc-number">6.</span> <span class="post-toc-text">修改启动路径</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Ref"><span class="post-toc-number">7.</span> <span class="post-toc-text">Ref</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <p>弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境</p>
+<h2 id="安装-Wine"><a href="#安装-Wine" class="headerlink" title="安装 Wine"></a>安装 Wine</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 启用i386架构</span><br><span class="line">sudo dpkg --add-architecture i386</span><br><span class="line"></span><br><span class="line">// 下载仓库密钥</span><br><span class="line">wget -nc https://dl.winehq.org/wine-builds/winehq.key</span><br><span class="line">sudo apt-key add winehq.key</span><br><span class="line"></span><br><span class="line">// 添加库</span><br><span class="line">// For Ubuntu 19.10 only</span><br><span class="line">sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main'</span><br><span class="line"></span><br><span class="line">// 安装wine</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install --install-recommends winehq-stable</span><br><span class="line"></span><br><span class="line">// 安装完成检查版本</span><br><span class="line">wine --version</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装winetricks"><a href="#安装winetricks" class="headerlink" title="安装winetricks"></a>安装winetricks</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 如果需要卸载已安装的旧版本</span><br><span class="line">sudo apt-get remove winetricks</span><br><span class="line">// 获取最新版本</span><br><span class="line">wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks</span><br><span class="line">// 添加执行权限</span><br><span class="line">chmod +x winetricks</span><br><span class="line">// 放到系统全局目录</span><br><span class="line">sudo mv -v winetricks /usr/local/bin</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置Wine-bottle"><a href="#配置Wine-bottle" class="headerlink" title="配置Wine bottle"></a>配置Wine bottle</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir Wine</span><br><span class="line">cd Wine</span><br><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat winecfg</span><br><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat winetricks</span><br><span class="line"></span><br><span class="line">// 在弹出窗口里选择安装Windows DLL组件riched20.dll和riched32.dll</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置中文环境"><a href="#配置中文环境" class="headerlink" title="配置中文环境"></a>配置中文环境</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">winetricks corefonts gdiplus riched20 riched30 wenquanyi</span><br><span class="line">winetricks regedit</span><br><span class="line"></span><br><span class="line">// 在弹出窗口中import中文注册表</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装微信"><a href="#安装微信" class="headerlink" title="安装微信"></a>安装微信</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat wine WeChat_C1018.exe</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改启动路径"><a href="#修改启动路径" class="headerlink" title="修改启动路径"></a>修改启动路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.local/share/applications/wine/Programs/WeChat/WeChat.desktop</span><br><span class="line"></span><br><span class="line">Exec = Exec=env WINEPREFIX="/home/xxx/Wine/WeChat" LC_ALL=zh_CN.UTF-8 wine /home/xxx/Wine/WeChat/drive_c/'Program Files (x86)'/Tencent/WeChat/WeChat.exe</span><br><span class="line"></span><br><span class="line">// 其中`LC_ALL=zh_CN.UTF-8`是为了加载中文环境（系统默认英文）。</span><br></pre></td></tr></table></figure>
+
+<p>重启，扫码登录</p>
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
+<li><a href="https://wiki.winehq.org/Ubuntu" target="_blank" rel="noopener">WineHQ offical guide</a></li>
+<li><a href="https://tecadmin.net/install-wine-on-ubuntu/" target="_blank" rel="noopener">A blog form Rahul</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/76331687" target="_blank" rel="noopener">zhihu</a></li>
+<li><a href="https://ferrolho.github.io/blog/2018-12-22/wechat-desktop-on-linuxhttps://ferrolho.github.io/blog/2018-12-22/wechat-desktop-on-linux" target="_blank" rel="noopener">Ferrolho’s blog</a></li>
+<li><a href="https://forum.ubuntu.org.cn/viewtopic.php?t=290155" target="_blank" rel="noopener">中文配置</a></li>
+<li><a href="https://blog.abreto.net/archives/2018/05/ubuntu-18-04-wine-chinese-problem-solution.html" target="_blank" rel="noopener">字体相关</a></li>
+<li><a href="https://blog.csdn.net/buildcourage/article/details/80871141" target="_blank" rel="noopener">Wine操作介绍</a></li>
+</ul>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-07-18");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-11-27T02:57:31.000Z" itemprop="datePublished">2019-11-27</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-18T13:40:07.115Z" itemprop="dateModified">2020-07-18</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/Unix-Linux-FreeBSD/'>Unix/Linux/FreeBSD</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/wine/" rel="tag">#&nbsp;wine</a>
+
+<a class="post-tags-list-item" href="/tags/wechat/" rel="tag">#&nbsp;wechat</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2019/11/27/Linux-%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Linux 挂载硬盘</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">How to get string elements in gota-dataframe</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    </body>
+
+</html>
