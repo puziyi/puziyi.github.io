@@ -416,12 +416,6 @@
 <p>已知每次耗时可以利用 <code>time.Since()</code> 获得，由此可以猜测通过累计每一次耗时即可获得总耗时，此时应当注意这样一个细节： <code>func Since(t Time) Duration</code>，因此变量声明时需要将总耗时声明为一 <code>time.Duration</code> 类型变量。</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> startA time.Time</span><br><span class="line"><span class="keyword">var</span> startB time.Time</span><br><span class="line"><span class="keyword">var</span> elapsedA time.Duration</span><br><span class="line"><span class="keyword">var</span> elapsedB time.Duration</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">	startA = time.Now()</span><br><span class="line">	<span class="keyword">for</span> &#123;</span><br><span class="line">		<span class="keyword">if</span> &#123;</span><br><span class="line">			<span class="comment">// do sth.</span></span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="comment">// Module A</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	elapsedA += time.Since(startA)</span><br><span class="line">	startB = time.Now()</span><br><span class="line">	<span class="keyword">for</span> &#123;</span><br><span class="line">		<span class="comment">// Module B</span></span><br><span class="line">	&#125;</span><br><span class="line">	elapsedB += time.Since(startB)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fmt.Println(<span class="string">"Running Time"</span>, elapsedA, elapsedB)</span><br></pre></td></tr></table></figure>
 
-			
-                        <div class="mathjax-block">
-                            
-
-                        </div>
-                    
                     </article>
                     
 
@@ -501,6 +495,7 @@
     </div>
 </div>
 
+    
 
 
             <!-- ### Footer ### -->

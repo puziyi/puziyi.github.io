@@ -410,12 +410,6 @@
                         <p>由于go-echarts的<a href="https://github.com/go-echarts/go-echarts-assets" target="_blank" rel="noopener">静态资源库</a>是放在Github托管，平时在本地测试项目画图时候需要等待一段时间才能拿到需要用的<code>.js</code>和<code>.css</code>文件，这还挺不爽的，遇到网络不好的时候，甚至直接fail掉需要重新跑一遍项目才可以，于是我们就想，应该需要把静态资源缓存起来，或者直接放在本地，减少开支。之前在<em>静态资源响应及报文头部属性修改</em>中有说如何让浏览器缓存文件，今天主要讨论一下go-echarts本地调用的一点小问题。</p>
 <p>如<a href="https://go-echarts.github.io/go-echarts/docs/assets_file#%E6%9C%AC%E5%9C%B0%E5%BC%95%E7%94%A8" target="_blank" rel="noopener">官方文档</a>所述，本地调用只需要在全局配置中将目标host改为本地，即有<code>charts.InitOpts{AssetsHost: &quot;http://127.0.0.1::8083/assets/&quot;}</code>，但是，我类似地修改代码，发现这样并不可取，浏览器加载不了相关的静态文件，因为我的路由配置已经是将静态文件直接丢到了<code>http.Handle(&quot;/static/&quot;, http.StripPrefix(&quot;/static/&quot;, addHeader(http.FileServer(http.Dir(&quot;static&quot;)), staticHeader)))</code>这样的路由表里面，所以，前面的<code>http://127.0.0.1::8083</code>这些对于我来说已经在路由管理中处理了，因此我只需要在全局设置中这样写<code>charts.InitOpts{AssetsHost: &quot;/static/assets/&quot;}</code>即可使得本地Go服务调用我已经弄到本地的静态资源去渲染前端。</p>
 
-			
-                        <div class="mathjax-block">
-                            
-
-                        </div>
-                    
                     </article>
                     
 
@@ -497,6 +491,7 @@
     </div>
 </div>
 
+    
 
 
             <!-- ### Footer ### -->

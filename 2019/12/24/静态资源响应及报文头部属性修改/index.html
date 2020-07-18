@@ -413,12 +413,6 @@
 <h2 id="http-handler-and-it’s-ServeHTTP-interface"><a href="#http-handler-and-it’s-ServeHTTP-interface" class="headerlink" title="http.handler and it’s ServeHTTP interface"></a><code>http.handler</code> and it’s <code>ServeHTTP</code> interface</h2><h2 id="Final-implementation"><a href="#Final-implementation" class="headerlink" title="Final implementation"></a>Final implementation</h2><figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// addHeader shows how to return a http.Handler</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">addHeader</span><span class="params">(handler http.Handler, header <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>)</span> <span class="title">http</span>.<span class="title">Handler</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> http.HandlerFunc(<span class="function"><span class="keyword">func</span><span class="params">(w http.ResponseWriter, r *http.Request)</span></span> &#123;</span><br><span class="line">		<span class="keyword">for</span> key, value := <span class="keyword">range</span> header &#123;</span><br><span class="line">			w.Header().Set(key, value)</span><br><span class="line">		&#125;</span><br><span class="line">		handler.ServeHTTP(w, r)</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// static resource web cache http header</span></span><br><span class="line">staticHeader := <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>&#123;</span><br><span class="line">	<span class="string">"Cache-Control"</span>: <span class="string">"public, max-age=604800"</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// call</span></span><br><span class="line">http.Handle(<span class="string">"/static/"</span>, http.StripPrefix(<span class="string">"/static/"</span>, addHeader(http.FileServer(http.Dir(<span class="string">"static"</span>)), staticHeader)))</span><br></pre></td></tr></table></figure>
 <p>By this way, these static resource can be checked in a web browser, in the zone of response headers, we can see the atrribute <code>Cache-Control</code> valid value.</p>
 
-			
-                        <div class="mathjax-block">
-                            
-
-                        </div>
-                    
                     </article>
                     
 
@@ -500,6 +494,7 @@
     </div>
 </div>
 
+    
 
 
             <!-- ### Footer ### -->

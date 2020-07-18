@@ -412,12 +412,6 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// 卸载Git</span><br><span class="line">yum remove git</span><br><span class="line"></span><br><span class="line">// 安装依赖</span><br><span class="line">yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker</span><br><span class="line"></span><br><span class="line">// 下载源码</span><br><span class="line">wget https://www.kernel.org/pub/software/scm/git/git-2.21.1.tar.gz</span><br><span class="line">tar xzf git-2.21.1.tar.gz</span><br><span class="line"></span><br><span class="line">// 编译安装</span><br><span class="line"><span class="built_in">cd</span>  git-2.21.1</span><br><span class="line">make prefix=/usr/<span class="built_in">local</span>/git all</span><br><span class="line">make prefix=/usr/<span class="built_in">local</span>/git install</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"export PATH=<span class="variable">$PATH</span>:/usr/local/git/bin"</span> &gt;&gt;/etc/bashrc</span><br><span class="line"><span class="built_in">source</span> /etc/bashrc</span><br><span class="line"></span><br><span class="line">// 检查安装状态</span><br><span class="line">git --version</span><br><span class="line">&gt;&gt; git version 2.21.1</span><br></pre></td></tr></table></figure>
 <p><a href="https://segmentfault.com/a/1190000016955110" target="_blank" rel="noopener">ref</a></p>
 
-			
-                        <div class="mathjax-block">
-                            
-
-                        </div>
-                    
                     </article>
                     
 
@@ -497,6 +491,7 @@
     </div>
 </div>
 
+    
 
 
             <!-- ### Footer ### -->
