@@ -414,6 +414,12 @@
 <p>想起之前看老司机博客，他写自己分析学学得不好，实变函数应当学十遍，要从头再学好几遍，当时还以为是一句玩笑。</p>
 <p>在我第一篇博客写下来的时候，在我觉得写的东西是我日益精进的产物时候，我就已经是在承认自己的不足和过失，log breaks and enjoy troubles 是我写博客的动力和出发点，今既发现数学上仍有不足，理当记录每一次的不足和进步，同时，我昨天还觉着自己看英文的速度赶不上老大，所以我也要break myself in English，不管多么基础多么看似低级的知识点，都希望自己可以沉下心来重新学习，在看不懂的地方看懂，在看懂的地方多想一点，触手可及而不及并不叫远方，只叫做惫懒无知。</p>
 
+			
+                        <div class="mathjax-block">
+                            
+
+                        </div>
+                    
                     </article>
                     
 
@@ -494,6 +500,7 @@
 </div>
 
 
+
             <!-- ### Footer ### -->
             <footer class="text-center">
     <!-- footer copyright -->
@@ -540,8 +547,40 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 <!-- Comment -->
 
 
-<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- ### Custom Footer ### -->
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
 
 </html>

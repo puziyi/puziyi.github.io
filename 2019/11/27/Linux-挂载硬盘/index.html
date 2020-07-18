@@ -413,6 +413,12 @@
 <h2 id="挂载NTFS硬盘及分区"><a href="#挂载NTFS硬盘及分区" class="headerlink" title="挂载NTFS硬盘及分区"></a>挂载NTFS硬盘及分区</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 创建mount point</span><br><span class="line">sudo mkdir /media/mPu(目录自行定义名字)</span><br><span class="line"></span><br><span class="line">// 挂载硬盘</span><br><span class="line">sudo mount -t ntfs-3g /dev/xxx(硬盘或分区号) /media/mPu</span><br><span class="line"></span><br><span class="line">// 解除挂载</span><br><span class="line">sudo umount /dev/nvme0n1p4</span><br></pre></td></tr></table></figure>
 <p>Ref: <a href="http://deng.youqiang.me/1013.html" target="_blank" rel="noopener">难得糊涂的博客</a></p>
 
+			
+                        <div class="mathjax-block">
+                            
+
+                        </div>
+                    
                     </article>
                     
 
@@ -495,6 +501,7 @@
 </div>
 
 
+
             <!-- ### Footer ### -->
             <footer class="text-center">
     <!-- footer copyright -->
@@ -541,8 +548,40 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 <!-- Comment -->
 
 
-<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- ### Custom Footer ### -->
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
 
 </html>

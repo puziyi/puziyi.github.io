@@ -412,6 +412,12 @@
 <p>很多super hero / the one 的故事，主角都是很有能力但却只能将就将就地过着生活。从商业的角度来想，的确，混得一般般的人多，会有更大的市场共鸣。但是现实一点地想，有不错能力的人其实很少，他/她如果是因为坚守遵循自己的一套规律来开心地生活，才没有四处走穴捞钱，导致日子过得没有很华贵，那或许这才是他/她能够成为hero的根本原因，其实并不是因为平凡。平凡从不是可贵的，可贵的是能力出众但仍拥有平凡的心。</p>
 <p>国内一众爽片/爽文所没有刻画没有抓住的点也就是这个，总是说得好像普通人有机会就可以称霸天下。有个神奇的机遇固然重要，但是如果没有一定的操守，屠龙者要么半路被欲望斩杀，要么与恶龙同归于尽，要么变成恶龙，比如摄政王大儿子，比如橡木盾索林，比如白袍萨鲁曼……只有是霍比特人那样的心性纯朴，才能够在私藏过好一会儿阿肯宝石之后，带着至尊魔戒开开心心地回到夏尔正常生活几十年，没事写写自传，老了去阿门洲安度晚年看看精灵……</p>
 
+			
+                        <div class="mathjax-block">
+                            
+
+                        </div>
+                    
                     </article>
                     
 
@@ -486,6 +492,7 @@
 </div>
 
 
+
             <!-- ### Footer ### -->
             <footer class="text-center">
     <!-- footer copyright -->
@@ -532,8 +539,40 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 <!-- Comment -->
 
 
-<!-- ### Custom Footer ### --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- ### Custom Footer ### -->
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
 
 </html>
