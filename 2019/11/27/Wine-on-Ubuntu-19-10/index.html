@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Wine and WeChat on Ubuntu 19.10&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Unix-Linux-FreeBSD/">Unix/Linux/FreeBSD</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -435,17 +411,11 @@
                     <article id="post-content">
                         <p>弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境</p>
 <h2 id="安装-Wine"><a href="#安装-Wine" class="headerlink" title="安装 Wine"></a>安装 Wine</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 启用i386架构</span><br><span class="line">sudo dpkg --add-architecture i386</span><br><span class="line"></span><br><span class="line">// 下载仓库密钥</span><br><span class="line">wget -nc https://dl.winehq.org/wine-builds/winehq.key</span><br><span class="line">sudo apt-key add winehq.key</span><br><span class="line"></span><br><span class="line">// 添加库</span><br><span class="line">// For Ubuntu 19.10 only</span><br><span class="line">sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main'</span><br><span class="line"></span><br><span class="line">// 安装wine</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install --install-recommends winehq-stable</span><br><span class="line"></span><br><span class="line">// 安装完成检查版本</span><br><span class="line">wine --version</span><br></pre></td></tr></table></figure>
-
 <h2 id="安装winetricks"><a href="#安装winetricks" class="headerlink" title="安装winetricks"></a>安装winetricks</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 如果需要卸载已安装的旧版本</span><br><span class="line">sudo apt-get remove winetricks</span><br><span class="line">// 获取最新版本</span><br><span class="line">wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks</span><br><span class="line">// 添加执行权限</span><br><span class="line">chmod +x winetricks</span><br><span class="line">// 放到系统全局目录</span><br><span class="line">sudo mv -v winetricks /usr/local/bin</span><br></pre></td></tr></table></figure>
-
 <h2 id="配置Wine-bottle"><a href="#配置Wine-bottle" class="headerlink" title="配置Wine bottle"></a>配置Wine bottle</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir Wine</span><br><span class="line">cd Wine</span><br><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat winecfg</span><br><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat winetricks</span><br><span class="line"></span><br><span class="line">// 在弹出窗口里选择安装Windows DLL组件riched20.dll和riched32.dll</span><br></pre></td></tr></table></figure>
-
 <h2 id="配置中文环境"><a href="#配置中文环境" class="headerlink" title="配置中文环境"></a>配置中文环境</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">winetricks corefonts gdiplus riched20 riched30 wenquanyi</span><br><span class="line">winetricks regedit</span><br><span class="line"></span><br><span class="line">// 在弹出窗口中import中文注册表</span><br></pre></td></tr></table></figure>
-
 <h2 id="安装微信"><a href="#安装微信" class="headerlink" title="安装微信"></a>安装微信</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat wine WeChat_C1018.exe</span><br></pre></td></tr></table></figure>
-
 <h2 id="修改启动路径"><a href="#修改启动路径" class="headerlink" title="修改启动路径"></a>修改启动路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.local/share/applications/wine/Programs/WeChat/WeChat.desktop</span><br><span class="line"></span><br><span class="line">Exec = Exec=env WINEPREFIX="/home/xxx/Wine/WeChat" LC_ALL=zh_CN.UTF-8 wine /home/xxx/Wine/WeChat/drive_c/'Program Files (x86)'/Tencent/WeChat/WeChat.exe</span><br><span class="line"></span><br><span class="line">// 其中`LC_ALL=zh_CN.UTF-8`是为了加载中文环境（系统默认英文）。</span><br></pre></td></tr></table></figure>
-
 <p>重启，扫码登录</p>
 <h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
 <li><a href="https://wiki.winehq.org/Ubuntu" target="_blank" rel="noopener">WineHQ offical guide</a></li>
@@ -554,18 +524,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -591,11 +549,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 

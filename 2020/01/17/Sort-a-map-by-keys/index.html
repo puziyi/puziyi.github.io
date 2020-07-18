@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Sort a map by keys&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Golang/">Golang</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/01/17/Sort-a-map-by-keys/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -435,7 +411,6 @@
                     <article id="post-content">
                         <p>map虽然比较快，但是它不定序，而有时候需要使用map中有序的值，这时候一个解决方案是：遍历排序后的<code>key</code>数组，依次获得<code>map[key]</code>对应的值，代码流程大致如下：</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"sort"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> m <span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">string</span></span><br><span class="line"><span class="keyword">var</span> keys []<span class="keyword">int</span></span><br><span class="line"><span class="keyword">for</span> k := <span class="keyword">range</span> m &#123;</span><br><span class="line">    keys = <span class="built_in">append</span>(keys, k)</span><br><span class="line">&#125;</span><br><span class="line">sort.Ints(keys)</span><br><span class="line"><span class="keyword">for</span> _, k := <span class="keyword">range</span> keys &#123;</span><br><span class="line">    fmt.Println(<span class="string">"Key:"</span>, k, <span class="string">"Value:"</span>, m[k])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
 <li><a href="https://blog.golang.org/go-maps-in-action#TOC_7." target="_blank" rel="noopener">golang-Go maps in action</a></li>
 <li><a href="https://stackoverflow.com/questions/23330781/sort-go-map-values-by-keys" target="_blank" rel="noopener">stackoverflow-Sort Go map values by keys</a></li>
@@ -539,18 +514,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -576,11 +539,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 

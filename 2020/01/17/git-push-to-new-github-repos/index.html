@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=git push to new github repos&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Git/">Git</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/01/17/git-push-to-new-github-repos/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -435,10 +411,8 @@
                     <article id="post-content">
                         <p>很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。</p>
 <h2 id="基本操作顺序"><a href="#基本操作顺序" class="headerlink" title="基本操作顺序"></a>基本操作顺序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 0. 本地有一个git仓库</span><br><span class="line">&#x2F;&#x2F; 1. 在github创建一个新的仓库</span><br><span class="line">&#x2F;&#x2F; 2. 本地关联远程库</span><br><span class="line">git remote add origin git@github.com:xxxx&#x2F;yyyy.git</span><br><span class="line">&#x2F;&#x2F; 3. git推送，加-u参数是为了让本地和远程仓库的master分支关联起来</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-
 <p>一个坑点是如果新建时候点了Initialize this repository with a README的话，远程仓库不为空，README文件并不在本地仓库目录中，会报下面的错。这时或许可以重新创建一个真空库当然也可以按照hint写的这样，先把远程仓库pull下来 <code>git pull --rebase origin master</code>与本地合并之后再push上去。我本地也是有个README，当时没细想，觉得好像拉下来还要手动合一下，就直接点删除重新弄了个库，不过讲道理后者是更为合理普适的方法。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">To github.com:xxx/xxx.git</span><br><span class="line"> ! [rejected]        master -&gt; master (fetch first)</span><br><span class="line">error: failed to push some refs to 'git@github.com:xxx/xxx.git'</span><br><span class="line">hint: Updates were rejected because the remote contains work that you do</span><br><span class="line">hint: not have locally. This is usually caused by another repository pushing</span><br><span class="line">hint: to the same ref. You may want to first integrate the remote changes</span><br><span class="line">hint: (e.g., 'git pull ...') before pushing again.</span><br><span class="line">hint: See the 'Note about fast-forwards' in 'git push --help' for details.</span><br></pre></td></tr></table></figure>
-
 <h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
 <li><a href="https://blog.csdn.net/liuweixiao520/article/details/78971221" target="_blank" rel="noopener">blog-git 创建远程仓库并上传代码到远程仓库中</a></li>
 <li><a href="https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440" target="_blank" rel="noopener">blog-添加远程库</a></li>
@@ -533,18 +507,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -570,11 +532,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 

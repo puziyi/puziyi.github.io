@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Golang (Pseudo) Random Number Generator&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Golang/">Golang</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2020/03/13/Golang-PRNG/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -435,9 +411,7 @@
                     <article id="post-content">
                         <h2 id="Random-Number-Generator-PRNG-Code"><a href="#Random-Number-Generator-PRNG-Code" class="headerlink" title="Random Number Generator(PRNG) Code"></a>Random Number Generator(PRNG) Code</h2><p>The package would make contribution: <code>import &quot;math/rand&quot;</code></p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rand.Seed(time.Now().Unix())</span><br><span class="line"><span class="comment">// Setting a random seed</span></span><br><span class="line"><span class="comment">// -- it's about how computer generates or imitates random number</span></span><br><span class="line"><span class="comment">// -- see "Pseudorandomness"</span></span><br><span class="line">random := rand.Intn(a)</span><br><span class="line"><span class="comment">// here the 'random' is an integer digit in range [0, a]</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// The following func would return a number whose value are in the interval [min, max]</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">GenerateRangeNum</span><span class="params">(min, max <span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">    rand.Seed(time.Now().Unix())</span><br><span class="line">    random := rand.Intn(max - min) + min</span><br><span class="line">    <span class="keyword">return</span> random</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Pseudo-Random-Number"><a href="#Pseudo-Random-Number" class="headerlink" title="Pseudo-Random Number"></a>Pseudo-Random Number</h2><p><a href="https://blog.csdn.net/czc1997/article/details/78167705" target="_blank" rel="noopener">Read this article</a> and <a href="https://www.random.org/randomness/" target="_blank" rel="noopener">this one</a></p>
 
                     </article>
@@ -535,18 +509,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -572,11 +534,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 

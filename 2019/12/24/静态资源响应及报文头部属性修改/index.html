@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=静态资源响应及报文头部属性修改&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Golang/">Golang</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/12/24/%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E5%93%8D%E5%BA%94%E5%8F%8A%E6%8A%A5%E6%96%87%E5%A4%B4%E9%83%A8%E5%B1%9E%E6%80%A7%E4%BF%AE%E6%94%B9/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -434,9 +410,7 @@
                     
                     <article id="post-content">
                         <h2 id="a-step-of-improvement-in-front-end"><a href="#a-step-of-improvement-in-front-end" class="headerlink" title="a step of improvement in front end"></a>a step of improvement in front end</h2><h2 id="web-manifest-and-cache-control"><a href="#web-manifest-and-cache-control" class="headerlink" title="web manifest and cache-control"></a>web manifest and cache-control</h2><h2 id="to-access-static-resource-in-a-golang-http-container"><a href="#to-access-static-resource-in-a-golang-http-container" class="headerlink" title="to access static resource in a golang http container"></a>to access static resource in a golang http container</h2><figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// static resource handler</span></span><br><span class="line"></span><br><span class="line">http.Handle(<span class="string">"/static/"</span>, http.StripPrefix(<span class="string">"/static/"</span>, http.FileServer(http.Dir(<span class="string">"static"</span>))))</span><br><span class="line"></span><br><span class="line"><span class="comment">// http header modify, w is type of http.ResponseWriter</span></span><br><span class="line">w.Header().Set(key, value)</span><br></pre></td></tr></table></figure>
-
 <h2 id="http-handler-and-it’s-ServeHTTP-interface"><a href="#http-handler-and-it’s-ServeHTTP-interface" class="headerlink" title="http.handler and it’s ServeHTTP interface"></a><code>http.handler</code> and it’s <code>ServeHTTP</code> interface</h2><h2 id="Final-implementation"><a href="#Final-implementation" class="headerlink" title="Final implementation"></a>Final implementation</h2><figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// addHeader shows how to return a http.Handler</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">addHeader</span><span class="params">(handler http.Handler, header <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>)</span> <span class="title">http</span>.<span class="title">Handler</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> http.HandlerFunc(<span class="function"><span class="keyword">func</span><span class="params">(w http.ResponseWriter, r *http.Request)</span></span> &#123;</span><br><span class="line">		<span class="keyword">for</span> key, value := <span class="keyword">range</span> header &#123;</span><br><span class="line">			w.Header().Set(key, value)</span><br><span class="line">		&#125;</span><br><span class="line">		handler.ServeHTTP(w, r)</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// static resource web cache http header</span></span><br><span class="line">staticHeader := <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>&#123;</span><br><span class="line">	<span class="string">"Cache-Control"</span>: <span class="string">"public, max-age=604800"</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// call</span></span><br><span class="line">http.Handle(<span class="string">"/static/"</span>, http.StripPrefix(<span class="string">"/static/"</span>, addHeader(http.FileServer(http.Dir(<span class="string">"static"</span>)), staticHeader)))</span><br></pre></td></tr></table></figure>
-
 <p>By this way, these static resource can be checked in a web browser, in the zone of response headers, we can see the atrribute <code>Cache-Control</code> valid value.</p>
 
                     </article>
@@ -536,18 +510,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -573,11 +535,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 

@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=How to get string elements in gota-dataframe&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Golang/">Golang</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -433,20 +409,15 @@
                     <article id="post-content">
                         <p>In the gota-dataframe, we can easily get the numerical value in the dataframe. We can use the function <code>(Series) Float</code> to parse a <code>[]float64</code> type column of a certain dataframe, but we cannot similarly get non-number.</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ColFloat: [820, 821, 822, 823]</span></span><br><span class="line"></span><br><span class="line">number := dataframe.Col(<span class="string">"ColFloat"</span>).Float()[<span class="number">0</span>]</span><br><span class="line">fmt.Println(number)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Display: 820</span></span><br></pre></td></tr></table></figure>
-
 <p>If the compiler runs the code like <code>(Series) String</code>, it returns an unindexable string like <code>[C, C++, Golang, Python]</code> (yeah, including the pair of square brackets), according to the definition of it.</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ColString: ["C", "C++", "Golang", "Python"]</span></span><br><span class="line"></span><br><span class="line">str := dataframe.Col(<span class="string">"ColString"</span>).String()</span><br><span class="line">fmt.Println(str)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Display: [C, C++, Golang, Python]</span></span><br></pre></td></tr></table></figure>
-
 <p>So, how can I get the <code>Golang</code> string only, without square brackets or other elements?</p>
 <p>Since the function <code>(DataFrame) Col</code> returns value in <code>series.Series</code> type, elements can be returned by function <code>(Series) Elem</code>, which would return the element of a series for the given index(and be careful with the panic of “out of bounds”). So with code like the following block, the value <code>Goalng</code> should be printed on the screen.</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ColString: ["C", "C++", "Golang", "Python"]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// variableA1 := dataframe.Col("ColA").Elem(IndexA1).String()</span></span><br><span class="line"></span><br><span class="line">str := dataframe.Col(<span class="string">"ColString"</span>).Elem(<span class="number">2</span>).String()</span><br><span class="line">fmt.Println(str)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Display: Golang</span></span><br></pre></td></tr></table></figure>
-
 <p>One step further, we also can touch numbers with the <code>DataFrame.columns</code> and <code>(DataFrame) Elem</code>, whose demo had been written <a href="https://github.com/go-gota/gota#interfacing-with-gonum" target="_blank" rel="noopener">in the docs</a>.</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> matrix <span class="keyword">struct</span> &#123;</span><br><span class="line">	DataFrame</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(m matrix)</span> <span class="title">At</span><span class="params">(i, j <span class="keyword">int</span>)</span> <span class="title">float64</span></span> &#123;</span><br><span class="line">	<span class="keyword">return</span> m.columns[j].Elem(i).Float()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>And the way here to call columns is reasonable since the <a href="https://github.com/go-gota/gota/blob/master/dataframe/dataframe.go" target="_blank" rel="noopener">DataFrame struct</a> contains member <code>columns</code>:</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> DataFrame <span class="keyword">struct</span> &#123;</span><br><span class="line">	columns []series.Series</span><br><span class="line">	ncols   <span class="keyword">int</span></span><br><span class="line">	nrows   <span class="keyword">int</span></span><br><span class="line">	Err     error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>Or call a more concise function <code>(DataFrame) Elem</code>, if we have both row and column index of certain elements.</p>
 <p>Ref:</p>
 <ul>
@@ -553,18 +524,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -590,11 +549,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 

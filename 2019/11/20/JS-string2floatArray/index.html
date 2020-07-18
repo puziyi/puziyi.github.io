@@ -15,8 +15,6 @@
 
 <!-- busuanzi -->
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
 
 <!-- comment -->
 
@@ -36,12 +34,6 @@
 
     <!-- ## Preload ## -->
     
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
 
 
 
@@ -201,7 +193,7 @@
             "@type": "ImageObject",
             "url": "http://puzy.site/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Log Breaks."
     },
     "publisher": {
         "@type": "Organization",
@@ -240,7 +232,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Log Breaks.
             
         
     </p>
@@ -298,10 +290,6 @@
 
         <!-- Share QQ -->
         
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=JS-string2floatArray&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-        </li>
-        
 
         <!-- Share Telegram -->
         
@@ -348,14 +336,6 @@
             <a class="category-link" href="/categories/Javascript/">Javascript</a>
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
         
     </p>
     <div class="post-header-info-right">
@@ -400,10 +380,6 @@
 
     <!-- Share QQ -->
     
-    <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Zoey's Dev&title=Zoey's Dev&summary=&pics=http://puzy.site/img/suka-favicon.ico&url=http://puzy.site/2019/11/20/JS-string2floatArray/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
-    </li>
-    
 
     <!-- Share Telegram -->
     
@@ -437,21 +413,16 @@
 <p>先是查了一下，可以用<code>.map(Number)</code>来进行转换，这就是核心的部分，但是要怎么用呢？之前的工程师们给出了如下两种解决方法，适用于不同的<code>string</code>情况。</p>
 <h2 id="情景一：Array-of-strings"><a href="#情景一：Array-of-strings" class="headerlink" title="情景一：Array of strings"></a>情景一：Array of strings</h2><p>如下代码中的<code>array</code>的数据结构所示，这是最简单的一种情形，直接使用<code>.map(Number)</code>进行类型转换即可，实现如下所述代码。但是刚有说我这边的后台给到前端的是<em>一个字符串</em>，而不是情景一中的<em>一串字符</em>，所以这个方案并不能合理地满足我的需求。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 情景一：Array of strings</span></span><br><span class="line"><span class="keyword">var</span> array = [<span class="string">'6.35'</span>, <span class="string">'2.72'</span>, <span class="string">'11.79'</span>, <span class="string">'183.25'</span>],</span><br><span class="line">    numbers = array.map(<span class="built_in">Number</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(numbers);</span><br></pre></td></tr></table></figure>
-
 <h2 id="情景二：利用正则表达式在字符串中匹配数字"><a href="#情景二：利用正则表达式在字符串中匹配数字" class="headerlink" title="情景二：利用正则表达式在字符串中匹配数字"></a>情景二：利用正则表达式在字符串中匹配数字</h2><p>于是又参考到利用正则表达式在字符串中匹配数字的方法。这个方法其实最初的确是解决了我的问题的，通过正则表达式的匹配，选出“长得像数字”的字符们，再利用js的转换机制将它们转变为浮点数组，实现如下。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//情景二：利用正则表达式在字符串中匹配数字</span></span><br><span class="line"><span class="keyword">const</span> str = <span class="string">"['6.35', '2.72', '11.79', '183.25']"</span>,</span><br><span class="line">      array = str.match(<span class="regexp">/\d+(?:\.\d+)?/g</span>).map(<span class="built_in">Number</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(array)</span><br></pre></td></tr></table></figure>
-
 <h2 id="情景三：在情景二的基础上，掺杂位置不定的科学计数法小数"><a href="#情景三：在情景二的基础上，掺杂位置不定的科学计数法小数" class="headerlink" title="情景三：在情景二的基础上，掺杂位置不定的科学计数法小数"></a>情景三：在情景二的基础上，掺杂位置不定的科学计数法小数</h2><p>但是向来我写代码遇到的问题都比较奇特，这次也不例外，当我开开心心地用方法二读取了数据之后，发现原本在<code>[0, 1]</code>区间的数值中，出现了诸如<code>6</code>,<code>-2.8</code>,<code>5.1</code>,<code>5.001</code>,<code>-9</code>此类的数据，疑惑不解。老司机这时候帮我看了下数据，眼尖地发现原始数据中有<code>-9.795801837646119e-05</code>这样以科学计数法表示的小数，对于这样的数据，使用情景二的解决方法会导致代码将数据中的<code>e</code>作为字符，而不是数据的一部分进行处理，正则表达式会把这样的小数过滤处理成大于1的数字，是以导致前述的转换错误。</p>
 <p>本来我是想改正则表达式来匹配，但是老实说学艺不精，正则表达式也就只能勉勉强强知道简单一点的能匹配什么，自己写还是心里没底，查了一些匹配科学计数法的正则又不能同时匹配正常小数和科学计数法的小数，感觉改正则这个事情我处理起来会有些复杂，于是我开始使用一个有点笨但是很容易懂的解决方案，我的数据大概下面长这样，因为我有好多个数据要转换，所以写成了函数<code>readData(string)</code>，详情如下：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"[0.0009943319173588538 0.0003587556541581109 -9.795801837646119e-05 0.0004415548325776882 -0.0009701312148001267 -0.00018011650613344252 -0.001290679371014162 -0.0009877941483863318...]"</span></span><br></pre></td></tr></table></figure>
-
 <p>转换代码主要部分是这样的：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// String to float array</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">readData</span>(<span class="params">string</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 去掉两端的 '[' 和 ']' 符号</span></span><br><span class="line">	sf = string.slice(<span class="number">1</span>,<span class="number">-1</span>);</span><br><span class="line">	<span class="comment">// 将每一数据部分切出来</span></span><br><span class="line">	sf = sf.split(<span class="string">" "</span>);</span><br><span class="line">	<span class="comment">// 转换数据类型</span></span><br><span class="line">	sfArr = sf.map(<span class="built_in">Number</span>);</span><br><span class="line">	<span class="keyword">return</span> sfArr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="Plotly画图简记"><a href="#Plotly画图简记" class="headerlink" title="Plotly画图简记"></a>Plotly画图简记</h2><p>这样就解决了我的数据传输问题，之后用了<a href="https://plot.ly/javascript/" target="_blank" rel="noopener">Plotly(JS)</a>进行画图，画图倒是挺顺利的，Plotly的API很好用参考demo感觉也蛮完整的，大体是<code>data</code>和<code>layout</code>两部分，在<code>data</code>部分，可以通过自由叠加不同的<code>trace</code>（一个trace相当于是一个图层）来控制图片组成，<code>layout</code>部分则主要控制画布大小位置、横纵坐标轴、图例等布局元素。</p>
 <p>其中，每一<code>trace</code>可以设置不同的<code>type</code>和<code>mode</code>来调整显示方式，直接将要描绘的数据分别以<code>array</code>的形式绑定到<code>x</code>和<code>y</code>上即可，这里记录一个官网给到的<a href="https://codepen.io/plotly/pen/ZGVpmQ" target="_blank" rel="noopener">demo</a></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> trace1 = &#123;</span><br><span class="line">  x: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>],</span><br><span class="line">  y: [<span class="number">1</span>, <span class="number">6</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">1</span>],</span><br><span class="line">  mode: <span class="string">'markers'</span>,</span><br><span class="line">  type: <span class="string">'scatter'</span>,</span><br><span class="line">  name: <span class="string">'Team A'</span>,</span><br><span class="line">  text: [<span class="string">'A-1'</span>, <span class="string">'A-2'</span>, <span class="string">'A-3'</span>, <span class="string">'A-4'</span>, <span class="string">'A-5'</span>],</span><br><span class="line">  marker: &#123; <span class="attr">size</span>: <span class="number">12</span> &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> trace2 = &#123;</span><br><span class="line">  x: [<span class="number">1.5</span>, <span class="number">2.5</span>, <span class="number">3.5</span>, <span class="number">4.5</span>, <span class="number">5.5</span>],</span><br><span class="line">  y: [<span class="number">4</span>, <span class="number">1</span>, <span class="number">7</span>, <span class="number">1</span>, <span class="number">4</span>],</span><br><span class="line">  mode: <span class="string">'markers'</span>,</span><br><span class="line">  type: <span class="string">'scatter'</span>,</span><br><span class="line">  name: <span class="string">'Team B'</span>,</span><br><span class="line">  text: [<span class="string">'B-a'</span>, <span class="string">'B-b'</span>, <span class="string">'B-c'</span>, <span class="string">'B-d'</span>, <span class="string">'B-e'</span>],</span><br><span class="line">  marker: &#123; <span class="attr">size</span>: <span class="number">12</span> &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> data = [ trace1, trace2 ];</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> layout = &#123;</span><br><span class="line">  xaxis: &#123;</span><br><span class="line">    range: [ <span class="number">0.75</span>, <span class="number">5.25</span> ]</span><br><span class="line">  &#125;,</span><br><span class="line">  yaxis: &#123;</span><br><span class="line">    range: [<span class="number">0</span>, <span class="number">8</span>]</span><br><span class="line">  &#125;,</span><br><span class="line">  title:<span class="string">'Data Labels Hover'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Plotly.newPlot(<span class="string">'myDiv'</span>, data, layout);</span><br></pre></td></tr></table></figure>
-
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
 <li><p><a href="https://stackoverflow.com/questions/54531912/how-to-convert-an-array-of-strings-to-float-in-javascript" target="_blank" rel="noopener">string转float array问题在stackoverflow中的回答</a></p>
 </li>
@@ -573,18 +544,6 @@
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
         
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
-
-
-
 
         
         Powered by&nbsp;<!--
@@ -610,11 +569,6 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 </script>
 
 <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-<!-- Offset -->
-
 
 
 
