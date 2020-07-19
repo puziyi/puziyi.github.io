@@ -44,7 +44,7 @@
     <meta name="renderer" content="webkit">
 
     <!-- Title -->
-    <title>Latex 渲染测试用例 | Zoey&#39;s Dev</title>
+    <title>Box-Cox Transformation | Zoey&#39;s</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
@@ -141,15 +141,15 @@
     
 
 
-    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's Dev"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's Dev"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Latex 渲染测试用例 | Zoey&#39;s Dev"><meta property="og:site_name" content="Zoey&#39;s Dev"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/07/19/test/"><meta property="og:locale" content="en"><meta name="description" content="在suka theme中引入hexo-renderer-kramed对latex公式进行渲染（已成功） Have a test $f(x)&#x3D;ax+b$ $\sqrt(\frac{a^2+b^2}{a^2-b^2})$  f(n) &#x3D; \begin{cases}  \frac{n}{2},  &amp; \text{if } n\text{ is even}  \\ 3n+1, &amp; \text{if } n - Zoey Pu - Zoey&#39;s Dev"><meta property="article:published_time" content="2020-07-18T20:14:02.000Z"><meta property="article:modified_time" content="2020-07-18T23:18:57.455Z"><meta property="og:updated_time" content="2020-07-18T23:18:57.455Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Box-Cox Transformation | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/25/Box-Cox-Transformation/"><meta property="og:locale" content="en"><meta name="description" content="记录一下今天看的数据正态化方法Box-Cox，虽然其实发现它目前解决不了我们的需求，但是博客还是可以写一写的嘛。 异方差，不正态，得处理，方法之一是 - Zoey Pu - Zoey&#39;s"><meta property="article:published_time" content="2019-11-25T09:15:18.000Z"><meta property="article:modified_time" content="2020-07-19T01:06:03.754Z"><meta property="og:updated_time" content="2020-07-19T01:06:03.754Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
 
     
 
     <!-- ### Canonical link ### -->
-    <link rel="canonical" href="http://puzy.site/2020/07/19/test/">
+    <link rel="canonical" href="http://puzy.site/2019/11/25/Box-Cox-Transformation/">
 
     <meta name="generator" content="Hexo 4.2.1">
 
@@ -170,34 +170,34 @@
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "url": "http://puzy.site/2020/07/19/test/",
+    "url": "http://puzy.site/2019/11/25/Box-Cox-Transformation/",
     "@type": "BlogPosting",
     "logo": "http://puzy.site/img/suka-favicon.ico",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://puzy.site/2020/07/19/test/"
+        "@id": "http://puzy.site/2019/11/25/Box-Cox-Transformation/"
     },
-    "headline": "Latex 渲染测试用例 | Zoey&#39;s Dev",
+    "headline": "Box-Cox Transformation | Zoey&#39;s",
     
     "image": {
         "@type": "ImageObject",
         "url": "http://puzy.site/img/suka-favicon.ico"
     },
     
-    "datePublished": "2020-07-18T20:14:02.000Z",
-    "dateModified": "2020-07-18T23:18:57.455Z",
+    "datePublished": "2019-11-25T09:15:18.000Z",
+    "dateModified": "2020-07-19T01:06:03.754Z",
     "author": {
         "@type": "Person",
         "name": "Zoey Pu",
         "image": {
             "@type": "ImageObject",
-            "url": "http://puzy.site/img/default_avatar.png"
+            "url": "http://puzy.site/img/default_avatar.jpg"
         },
-        "description": "Log Breaks."
+        "description": "Log breaks, enjoy life and failure."
     },
     "publisher": {
         "@type": "Organization",
-        "name": "Zoey&#39;s Dev",
+        "name": "Zoey&#39;s",
         "logo": {
             "@type": "ImageObject",
             "url": "http://puzy.site/img/suka-favicon.ico"
@@ -211,7 +211,7 @@
     },
     
     "keywords": "",
-    "description": "在suka theme中引入hexo-renderer-kramed对latex公式进行渲染（已成功） Have a test $f(x)=ax+b$ $\sqrt(\frac{a^2+b^2}{a^2-b^2})$  f(n) = \begin{cases}  \frac{n}{2},  &amp;amp; \text{if } n\text{ is even}  \\ 3n+1, &amp;amp; \text{if } n - Zoey Pu - Zoey&#39;s Dev"
+    "description": "记录一下今天看的数据正态化方法Box-Cox，虽然其实发现它目前解决不了我们的需求，但是博客还是可以写一写的嘛。 异方差，不正态，得处理，方法之一是 - Zoey Pu - Zoey&#39;s"
 }
 </script>
 
@@ -227,12 +227,12 @@
             <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ### Main content ### -->
             <!-- ## Header ##-->
 <header>
-    <h1 class="header-title text-center"><a href="/">Zoey&#39;s Dev</a></h1>
+    <h1 class="header-title text-center"><a href="/">Zoey&#39;s</a></h1>
 
     <p class="text-center header-slogan">
         
             
-                Log Breaks.
+                Log breaks, enjoy life and failure.
             
         
     </p>
@@ -248,65 +248,8 @@
         <a href="/search" class="navbar-link">Search</a>
     
     
+        <a href="/about/" class="navbar-link">About</a>
     
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
-        
-        <li class="menu-item">
-            <a href="http://service.weibo.com/share/share.php?appkey=&title=Zoey's Dev&url=http://puzy.site&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
-        </li>
-        
-
-        <!-- Share Twitter -->
-        
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=Zoey's Dev&url=http://puzy.site&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-        </li>
-        
-
-        <!-- Share Facebook -->
-        
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-        </li>
-        
-
-        <!-- Share Google+ -->
-        
-        <li class="menu-item">
-            <a href="https://plus.google.com/share?url=http://puzy.site" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
-        </li>
-        
-
-        <!-- Share LinkedIn -->
-        
-        <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site&title=Latex 渲染测试用例" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
-        </li>
-        
-
-        <!-- Share QQ -->
-        
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://puzy.site&text=Latex 渲染测试用例" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABj0lEQVR42u3a266CQAyFYd7/pfXKRM10dRUEWvNzo8G9h++imemB7dHg2kCAADECsYnr9fv7330s8nXv+7taF0RvxDJoFg9X36P/V/dB9EZEAbkKxFWQrdbL1gUxE+E8dLkRgfhbhNqkFATEfIQ8aALYCnHKKQricoSb6FY/T8m2QZyOSIvWZPNykt7DVTmISxGqsIkOrWpBFK4DoiXCPaQUJjrAogQIxAyEk8jIINuTIIMYgUiDKSmAVeFjByaI2xFOQ8RpqDm/h4EJog2i0vxQG1iWCJUzKxC3IbLGeHZPDVqygAfRG1EpepwGWZY0geiNcAJvd8NUFVMg2iKyh1SHdE6zDURfhFPAWIWM2LTsRBdEC4RapPLCl2qeheuDaItwBnBOE2VLLhBzEFlyqiDZw342nAVxGcIZ2GfB6iQ+MtEF0Q7hDOqdA8ptzoOYgXBfFHaGL+4hBmImwk1YnBc4wkEciHGI6iDffTEERG+EUyAfLZZ2JzUgLkdUNh4nCXKH/SB6Iu68QIAA0RrxBGROKRjhDmMEAAAAAElFTkSuQmCC" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
     
     
 </nav>
@@ -322,15 +265,18 @@
                 <!-- # Post Header Info # -->
                 <div class="card-header">
                     
-    <h1 class="card-title h3 mb-2">Latex 渲染测试用例</h1>
+    <h1 class="card-title h3 mb-2">Box-Cox Transformation</h1>
 
 
 
 
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
-        <span>2020-07-19</span>
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.jpg" src="/img/suka-lazyload.gif" alt="Zoey Pu's Avatar">
+        <span>2019-11-25</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/Statistics/">Statistics</a>
         
         
         
@@ -343,35 +289,35 @@
     <!-- Share Weibo -->
     
     <li class="menu-item">
-        <a href="http://service.weibo.com/share/share.php?appkey=&title=Latex 渲染测试用例&url=http://puzy.site/2020/07/19/test/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=Box-Cox Transformation&url=http://puzy.site/2019/11/25/Box-Cox-Transformation/&pic=http://puzy.site/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
     </li>
     
 
     <!-- Share Twitter -->
     
     <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=Latex 渲染测试用例&url=http://puzy.site/2020/07/19/test/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        <a href="https://twitter.com/intent/tweet?text=Box-Cox Transformation&url=http://puzy.site/2019/11/25/Box-Cox-Transformation/&via=Zoey Pu" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
     </li>
     
 
     <!-- Share Facebook -->
     
     <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2020/07/19/test/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://puzy.site/2019/11/25/Box-Cox-Transformation/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
     </li>
     
 
     <!-- Share Google+ -->
     
     <li class="menu-item">
-        <a href="https://plus.google.com/share?url=http://puzy.site/2020/07/19/test/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        <a href="https://plus.google.com/share?url=http://puzy.site/2019/11/25/Box-Cox-Transformation/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
     </li>
     
 
     <!-- Share LinkedIn -->
     
     <li class="menu-item">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2020/07/19/test/&title=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://puzy.site/2019/11/25/Box-Cox-Transformation/&title=Zoey's" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
     </li>
     
 
@@ -381,14 +327,14 @@
     <!-- Share Telegram -->
     
     <li class="menu-item">
-        <a href="https://t.me/share/url?url=http://puzy.site/2020/07/19/test/&text=Zoey's Dev" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        <a href="https://t.me/share/url?url=http://puzy.site/2019/11/25/Box-Cox-Transformation/&text=Zoey's" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
     </li>
     
 
     <!-- QRCode -->
     
     <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABj0lEQVR42u3a266CQAyFYd7/pfXKRM10dRUEWvNzo8G9h++imemB7dHg2kCAADECsYnr9fv7330s8nXv+7taF0RvxDJoFg9X36P/V/dB9EZEAbkKxFWQrdbL1gUxE+E8dLkRgfhbhNqkFATEfIQ8aALYCnHKKQricoSb6FY/T8m2QZyOSIvWZPNykt7DVTmISxGqsIkOrWpBFK4DoiXCPaQUJjrAogQIxAyEk8jIINuTIIMYgUiDKSmAVeFjByaI2xFOQ8RpqDm/h4EJog2i0vxQG1iWCJUzKxC3IbLGeHZPDVqygAfRG1EpepwGWZY0geiNcAJvd8NUFVMg2iKyh1SHdE6zDURfhFPAWIWM2LTsRBdEC4RapPLCl2qeheuDaItwBnBOE2VLLhBzEFlyqiDZw342nAVxGcIZ2GfB6iQ+MtEF0Q7hDOqdA8ptzoOYgXBfFHaGL+4hBmImwk1YnBc4wkEciHGI6iDffTEERG+EUyAfLZZ2JzUgLkdUNh4nCXKH/SB6Iu68QIAA0RrxBGROKRjhDmMEAAAAAElFTkSuQmCC" alt="QRCode">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB40lEQVR42u3awW6DMBCEYd7/pdtLDxWyZ2YhB5j8XCKlFH9Im7V37ePngdcBChQoUAvUIa7zPcsH/X2/umf1DDkOqBqUGmx6z2qw+BmgqlDnh50/z8G8G2QV1Mk4oL4LtQt6lWB3LwcKlAr43eQ9Sa6gelHTxVsS1Lvvbq8SQD0epRb0n/z8WDUD6tEo23S4mVTVYvBy1wXUo1EqEFUxoDCrZJlgQXWhpkE+LTiTohZUF2r1kDtBv3tpuXgEVYFygbtMcpvE6X4g9oVA1aBUglOB6opMl1TtyhPUa1HpP8nJNAh+l0BB9aAmTfh0M2CXdGVxAaoK5Rb4yUZkUpDKiR5UFWpSNLhCI/lONvdBvRqVbu4kzdVJIyRumoF6HSotMpMgTpJw3OAA9XrUbvBkcyg9QOh+MKB6UJMCIZlY1eCy6Q+qAjU52J4UGurFLp8KAvValJp8k0LUBbMtdEFVodxBmejwqNnwVs0QUL2oZBKdHKyZHPIC1YGyh/dMEnUblpNNTFAdqOSgsVu4pc1a25gDVYNKA3xy4CZ9OVC9KLdRrX4U6aJwvGEEqhaV3Js0Zu1BZ1BfhXKBr5Lj5Z1RUK9GTTZ9pg39+O+galBq0kwaFm5zKC5OQFWgnnSBAgUK1L/rFxLAkSAmsFyUAAAAAElFTkSuQmCC" alt="QRCode">
     </li>
     
 
@@ -404,15 +350,9 @@
                         
                     
                     <article id="post-content">
-                        <p>在suka theme中引入hexo-renderer-kramed对latex公式进行渲染（已成功）</p>
-<p>Have a test $f(x)=ax+b$</p>
-<p>$\sqrt(\frac{a^2+b^2}{a^2-b^2})$</p>
-<script type="math/tex; mode=display">
-f(n) = \begin{cases}
- \frac{n}{2},
- & \text{if } n\text{ is even}
- \\ 3n+1, & \text{if } n\text{ is odd}
- \end{cases}</script>
+                        <p>记录一下今天看的数据正态化方法Box-Cox，虽然其实发现它目前解决不了我们的需求，但是博客还是可以写一写的嘛。</p>
+<p>异方差，不正态，得处理，方法之一是</p>
+
                     </article>
                     
 
@@ -434,10 +374,18 @@ f(n) = \begin{cases}
     </script>
 
 
-<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-07-18T20:14:02.000Z" itemprop="datePublished">2020-07-19</time>
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-11-25T09:15:18.000Z" itemprop="datePublished">2019-11-25</time>
+
+    , Updated at&nbsp;<time datetime="2020-07-19T01:06:03.754Z" itemprop="dateModified">2020-07-19</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/Statistics/'>Statistics</a>
+
+</span>
 
 
 
@@ -449,13 +397,20 @@ f(n) = \begin{cases}
 <ul class="pagination">
     <!-- Prev Nav -->
     
+        <li class="page-item page-prev">
+            <a href="/2019/11/27/Wine-on-Ubuntu-19-10/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Wine and WeChat on Ubuntu 19.10</div>
+            </a>
+        </li>
+    
 
     <!-- Next Nav -->
     
         <li class="page-item page-next">
-            <a href="/2020/07/18/%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E8%B0%88swufe%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BB%8F%E5%8E%86/" rel="next">
+            <a href="/2019/11/25/How-to-get-string-elements-in-gota-dataframe/" rel="next">
                 <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">最后一次谈SWUFE重点实验室的经历</div>
+                <div class="page-item-subtitle">How to get string elements in gota-dataframe</div>
             </a>
         </li>
     
@@ -470,33 +425,6 @@ f(n) = \begin{cases}
         </div>
     </div>
 </div>
-
-    
-        
-    <script type="text/x-mathjax-config">
-var mathId = document.getElementById("post-content");
-MathJax.Hub.Config({
-    showProcessingMessages: false,
-    messageStyle: "none",
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-        inlineMath:  [ ["$", "$"] ],
-        displayMath: [ ["$$","$$"] ],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
-        ignoreClass:"comment-content"
-    },
-    "HTML-CSS": {
-        availableFonts: ["STIX","TeX"],
-        showMathMenu: false
-    }
-});
-MathJax.Hub.Queue(["Typeset",MathJax.Hub,mathId]);
-</script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
     
 
 
@@ -505,7 +433,7 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub,mathId]);
     <!-- footer copyright -->
     
         <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
-            <a class="footer-copyright-a" href="http://puzy.site">Zoey's Dev</a>
+            <a class="footer-copyright-a" href="http://puzy.site">Zoey's</a>
         </p>
 
     <!-- footer custom text -->
@@ -534,7 +462,17 @@ window.lazyLoadOptions = {
     elements_selector: ".lazyload",
     threshold: 50
 };
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2019;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
 console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
 
 </script>
