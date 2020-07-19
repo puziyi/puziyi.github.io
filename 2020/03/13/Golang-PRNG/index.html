@@ -144,7 +144,7 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Golang (Pseudo) Random Number Generator | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/03/13/Golang-PRNG/"><meta property="og:locale" content="en"><meta name="description" content="Random Number Generator(PRNG) CodeThe package would make contribution: import &amp;quot;math&#x2F;rand&amp;quot; 123456rand.Seed(time.Now().Unix())&#x2F;&#x2F; Setting a random seed&#x2F;&#x2F; -- it&amp;apos;s about how computer generates or - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="prng"><meta property="article:published_time" content="2020-03-13T14:45:36.000Z"><meta property="article:modified_time" content="2020-07-19T00:21:39.570Z"><meta property="og:updated_time" content="2020-07-19T00:21:39.570Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="prng"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Golang (Pseudo) Random Number Generator | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/03/13/Golang-PRNG/"><meta property="og:locale" content="en"><meta name="description" content="Random Number Generator(PRNG) Code - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="prng"><meta property="article:published_time" content="2020-03-13T14:45:36.000Z"><meta property="article:modified_time" content="2020-07-19T01:30:19.529Z"><meta property="og:updated_time" content="2020-07-19T01:30:19.529Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="prng"><meta name="twitter:card" content="summary">
 
     
 
@@ -185,7 +185,7 @@
     },
     
     "datePublished": "2020-03-13T14:45:36.000Z",
-    "dateModified": "2020-07-19T00:21:39.570Z",
+    "dateModified": "2020-07-19T01:30:19.529Z",
     "author": {
         "@type": "Person",
         "name": "Zoey Pu",
@@ -211,7 +211,7 @@
     },
     
     "keywords": "prng",
-    "description": "Random Number Generator(PRNG) CodeThe package would make contribution: import &amp;amp;quot;math/rand&amp;amp;quot; 123456rand.Seed(time.Now().Unix())// Setting a random seed// -- it&amp;apos;s about how computer generates or - Zoey Pu - Zoey&#39;s"
+    "description": "Random Number Generator(PRNG) Code - Zoey Pu - Zoey&#39;s"
 }
 </script>
 
@@ -352,7 +352,8 @@
                         
                     
                     <article id="post-content">
-                        <h2 id="Random-Number-Generator-PRNG-Code"><a href="#Random-Number-Generator-PRNG-Code" class="headerlink" title="Random Number Generator(PRNG) Code"></a>Random Number Generator(PRNG) Code</h2><p>The package would make contribution: <code>import &quot;math/rand&quot;</code></p>
+                        <h2 id="Random-Number-Generator-PRNG-Code"><a href="#Random-Number-Generator-PRNG-Code" class="headerlink" title="Random Number Generator(PRNG) Code"></a>Random Number Generator(PRNG) Code</h2><a id="more"></a>
+<p>The package would make contribution: <code>import &quot;math/rand&quot;</code></p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rand.Seed(time.Now().Unix())</span><br><span class="line"><span class="comment">// Setting a random seed</span></span><br><span class="line"><span class="comment">// -- it's about how computer generates or imitates random number</span></span><br><span class="line"><span class="comment">// -- see "Pseudorandomness"</span></span><br><span class="line">random := rand.Intn(a)</span><br><span class="line"><span class="comment">// here the 'random' is an integer digit in range [0, a]</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// The following func would return a number whose value are in the interval [min, max]</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">GenerateRangeNum</span><span class="params">(min, max <span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">    rand.Seed(time.Now().Unix())</span><br><span class="line">    random := rand.Intn(max - min) + min</span><br><span class="line">    <span class="keyword">return</span> random</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Pseudo-Random-Number"><a href="#Pseudo-Random-Number" class="headerlink" title="Pseudo-Random Number"></a>Pseudo-Random Number</h2><p><a href="https://blog.csdn.net/czc1997/article/details/78167705" target="_blank" rel="noopener">Read this article</a> and <a href="https://www.random.org/randomness/" target="_blank" rel="noopener">this one</a></p>
@@ -380,7 +381,7 @@
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-03-13T14:45:36.000Z" itemprop="datePublished">2020-03-13</time>
 
-    , Updated at&nbsp;<time datetime="2020-07-19T00:21:39.570Z" itemprop="dateModified">2020-07-19</time>
+    , Updated at&nbsp;<time datetime="2020-07-19T01:30:19.529Z" itemprop="dateModified">2020-07-19</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

@@ -144,7 +144,7 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Wine and WeChat on Ubuntu 19.10 | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/"><meta property="og:locale" content="en"><meta name="description" content="弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境 安装 Wine1234567891011121314151617&#x2F;&#x2F; 启用i386架构sudo dpkg --add-architecture i386&#x2F;&#x2F; 下载仓库密钥wget -nc https:&#x2F;&#x2F;dl.winehq.org&#x2F;wine-builds&#x2F;winehq.keysudo apt-key add winehq.key&#x2F;&#x2F;  - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="wine, wechat"><meta property="article:published_time" content="2019-11-27T02:57:31.000Z"><meta property="article:modified_time" content="2020-07-19T00:23:16.086Z"><meta property="og:updated_time" content="2020-07-19T00:23:16.086Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="wine, wechat"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Wine and WeChat on Ubuntu 19.10 | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/27/Wine-on-Ubuntu-19-10/"><meta property="og:locale" content="en"><meta name="description" content="弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境 - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="wine, wechat"><meta property="article:published_time" content="2019-11-27T02:57:31.000Z"><meta property="article:modified_time" content="2020-07-19T01:40:38.768Z"><meta property="og:updated_time" content="2020-07-19T01:40:38.768Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="wine, wechat"><meta name="twitter:card" content="summary">
 
     
 
@@ -185,7 +185,7 @@
     },
     
     "datePublished": "2019-11-27T02:57:31.000Z",
-    "dateModified": "2020-07-19T00:23:16.086Z",
+    "dateModified": "2020-07-19T01:40:38.768Z",
     "author": {
         "@type": "Person",
         "name": "Zoey Pu",
@@ -211,7 +211,7 @@
     },
     
     "keywords": "wine, wechat",
-    "description": "弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境 安装 Wine1234567891011121314151617// 启用i386架构sudo dpkg --add-architecture i386// 下载仓库密钥wget -nc https://dl.winehq.org/wine-builds/winehq.keysudo apt-key add winehq.key//  - Zoey Pu - Zoey&#39;s"
+    "description": "弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境 - Zoey Pu - Zoey&#39;s"
 }
 </script>
 
@@ -352,7 +352,7 @@
                         
                     
                     <article id="post-content">
-                        <p>弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境</p>
+                        <p>弄了好一会儿终于在Ubuntu上安装好了微信并配置好了中文环境<a id="more"></a></p>
 <h2 id="安装-Wine"><a href="#安装-Wine" class="headerlink" title="安装 Wine"></a>安装 Wine</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 启用i386架构</span><br><span class="line">sudo dpkg --add-architecture i386</span><br><span class="line"></span><br><span class="line">// 下载仓库密钥</span><br><span class="line">wget -nc https://dl.winehq.org/wine-builds/winehq.key</span><br><span class="line">sudo apt-key add winehq.key</span><br><span class="line"></span><br><span class="line">// 添加库</span><br><span class="line">// For Ubuntu 19.10 only</span><br><span class="line">sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main'</span><br><span class="line"></span><br><span class="line">// 安装wine</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install --install-recommends winehq-stable</span><br><span class="line"></span><br><span class="line">// 安装完成检查版本</span><br><span class="line">wine --version</span><br></pre></td></tr></table></figure>
 <h2 id="安装winetricks"><a href="#安装winetricks" class="headerlink" title="安装winetricks"></a>安装winetricks</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 如果需要卸载已安装的旧版本</span><br><span class="line">sudo apt-get remove winetricks</span><br><span class="line">// 获取最新版本</span><br><span class="line">wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks</span><br><span class="line">// 添加执行权限</span><br><span class="line">chmod +x winetricks</span><br><span class="line">// 放到系统全局目录</span><br><span class="line">sudo mv -v winetricks /usr/local/bin</span><br></pre></td></tr></table></figure>
 <h2 id="配置Wine-bottle"><a href="#配置Wine-bottle" class="headerlink" title="配置Wine bottle"></a>配置Wine bottle</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir Wine</span><br><span class="line">cd Wine</span><br><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat winecfg</span><br><span class="line">WINARCH=win32 WINEPREFIX=/home/xxx/Wine/WeChat winetricks</span><br><span class="line"></span><br><span class="line">// 在弹出窗口里选择安装Windows DLL组件riched20.dll和riched32.dll</span><br></pre></td></tr></table></figure>
@@ -393,7 +393,7 @@
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-11-27T02:57:31.000Z" itemprop="datePublished">2019-11-27</time>
 
-    , Updated at&nbsp;<time datetime="2020-07-19T00:23:16.086Z" itemprop="dateModified">2020-07-19</time>
+    , Updated at&nbsp;<time datetime="2020-07-19T01:40:38.768Z" itemprop="dateModified">2020-07-19</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

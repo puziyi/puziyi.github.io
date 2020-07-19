@@ -144,7 +144,7 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="JS-string2floatArray | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/20/JS-string2floatArray/"><meta property="og:locale" content="en"><meta name="description" content="上周用go-echarts画直线愣是画出几条曲线，就类似y &#x3D; 1 + x这样的线性模型都是弯的，满脸问号，我也就是忙着改代码才没给他们提Issue的（其实是写了的，但我刚发现没有提交…应该是之前切换窗口啥的就忘了回去提交）；所以这周得修正一下项目里面分析图展示的部分。但由于最近弄的项目在构建的时候并没有用web框架甚至都没有很清楚地划分前后台，且我真的蛮久没好好写前端了，所以这两天在改画图代码时 - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="string, typecasting"><meta property="article:published_time" content="2019-11-20T12:20:05.000Z"><meta property="article:modified_time" content="2020-07-19T00:22:09.386Z"><meta property="og:updated_time" content="2020-07-19T00:22:09.386Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="string, typecasting"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="JS-string2floatArray | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2019/11/20/JS-string2floatArray/"><meta property="og:locale" content="en"><meta name="description" content="上周用go-echarts画直线愣是画出几条曲线，就类似y &#x3D; 1 + x这样的线性模型都是弯的，满脸问号，我也就是忙着改代码才没给他们提Issue的（其实是写了的，但我刚发现没有提交…应该是之前切换窗口啥的就忘了回去提交）；所以这周得修正一下项目里面分析图展示的部分。但由于最近弄的项目在构建的时候并没有用web框架甚至都没有很清楚地划分前后台，且我真的蛮久没好好写前端了，所以这两天在改画图代码时 - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="string, typecasting"><meta property="article:published_time" content="2019-11-20T12:20:05.000Z"><meta property="article:modified_time" content="2020-07-19T01:37:45.353Z"><meta property="og:updated_time" content="2020-07-19T01:37:45.353Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="string, typecasting"><meta name="twitter:card" content="summary">
 
     
 
@@ -185,7 +185,7 @@
     },
     
     "datePublished": "2019-11-20T12:20:05.000Z",
-    "dateModified": "2020-07-19T00:22:09.386Z",
+    "dateModified": "2020-07-19T01:37:45.353Z",
     "author": {
         "@type": "Person",
         "name": "Zoey Pu",
@@ -352,7 +352,7 @@
                         
                     
                     <article id="post-content">
-                        <p>上周用<code>go-echarts</code>画直线愣是画出几条曲线，就类似<code>y = 1 + x</code>这样的线性模型都是弯的，满脸问号，我也就是忙着改代码才没给他们提Issue的（其实是写了的，但我刚发现没有提交…应该是之前切换窗口啥的就忘了回去提交）；所以这周得修正一下项目里面分析图展示的部分。但由于最近弄的项目在构建的时候并没有用web框架甚至都没有很清楚地划分前后台，且我真的蛮久没好好写前端了，所以这两天在改画图代码时候遇到了挺多小问题的，其中有一个是这样的：后台传输<code>float64</code>的数组到前端时，默认转换成了<code>string</code>类型的一个值，于是需要在前端进行一些修改。</p>
+                        <p>上周用<code>go-echarts</code>画直线愣是画出几条曲线，就类似<code>y = 1 + x</code>这样的线性模型都是弯的，满脸问号，我也就是忙着改代码才没给他们提Issue的（其实是写了的，但我刚发现没有提交…应该是之前切换窗口啥的就忘了回去提交）；所以这周得修正一下项目里面分析图展示的部分。但由于最近弄的项目在构建的时候并没有用web框架甚至都没有很清楚地划分前后台，且我真的蛮久没好好写前端了，所以这两天在改画图代码时候遇到了挺多小问题的，其中有一个是这样的：后台传输<code>float64</code>的数组到前端时，默认转换成了<code>string</code>类型的一个值，于是需要在前端进行一些修改。<a id="more"></a></p>
 <p>先是查了一下，可以用<code>.map(Number)</code>来进行转换，这就是核心的部分，但是要怎么用呢？之前的工程师们给出了如下两种解决方法，适用于不同的<code>string</code>情况。</p>
 <h2 id="情景一：Array-of-strings"><a href="#情景一：Array-of-strings" class="headerlink" title="情景一：Array of strings"></a>情景一：Array of strings</h2><p>如下代码中的<code>array</code>的数据结构所示，这是最简单的一种情形，直接使用<code>.map(Number)</code>进行类型转换即可，实现如下所述代码。但是刚有说我这边的后台给到前端的是<em>一个字符串</em>，而不是情景一中的<em>一串字符</em>，所以这个方案并不能合理地满足我的需求。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 情景一：Array of strings</span></span><br><span class="line"><span class="keyword">var</span> array = [<span class="string">'6.35'</span>, <span class="string">'2.72'</span>, <span class="string">'11.79'</span>, <span class="string">'183.25'</span>],</span><br><span class="line">    numbers = array.map(<span class="built_in">Number</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(numbers);</span><br></pre></td></tr></table></figure>
@@ -413,7 +413,7 @@
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2019-11-20T12:20:05.000Z" itemprop="datePublished">2019-11-20</time>
 
-    , Updated at&nbsp;<time datetime="2020-07-19T00:22:09.386Z" itemprop="dateModified">2020-07-19</time>
+    , Updated at&nbsp;<time datetime="2020-07-19T01:37:45.353Z" itemprop="dateModified">2020-07-19</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

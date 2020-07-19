@@ -144,7 +144,7 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="git push to new github repos | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/01/17/git-push-to-new-github-repos/"><meta property="og:locale" content="en"><meta name="description" content="很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。 基本操作顺序123456&amp;#x2F;&amp;#x2F; 0. 本地有一个git仓库&amp;#x2F;&amp;#x2F; 1. 在github创建一个新的仓库&amp;#x2F;&amp;#x2F; 2. 本地关联远程库git remote add  - Zoey Pu - Zoey&#39;s"><meta property="article:published_time" content="2020-01-17T09:15:05.000Z"><meta property="article:modified_time" content="2020-07-19T00:21:25.494Z"><meta property="og:updated_time" content="2020-07-19T00:21:25.494Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="git push to new github repos | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/01/17/git-push-to-new-github-repos/"><meta property="og:locale" content="en"><meta name="description" content="很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。 - Zoey Pu - Zoey&#39;s"><meta property="article:published_time" content="2020-01-17T09:15:05.000Z"><meta property="article:modified_time" content="2020-07-19T01:28:31.361Z"><meta property="og:updated_time" content="2020-07-19T01:28:31.361Z"><meta property="article:author" content="Zoey Pu"><meta name="twitter:card" content="summary">
 
     
 
@@ -185,7 +185,7 @@
     },
     
     "datePublished": "2020-01-17T09:15:05.000Z",
-    "dateModified": "2020-07-19T00:21:25.494Z",
+    "dateModified": "2020-07-19T01:28:31.361Z",
     "author": {
         "@type": "Person",
         "name": "Zoey Pu",
@@ -211,7 +211,7 @@
     },
     
     "keywords": "",
-    "description": "很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。 基本操作顺序123456&amp;amp;#x2F;&amp;amp;#x2F; 0. 本地有一个git仓库&amp;amp;#x2F;&amp;amp;#x2F; 1. 在github创建一个新的仓库&amp;amp;#x2F;&amp;amp;#x2F; 2. 本地关联远程库git remote add  - Zoey Pu - Zoey&#39;s"
+    "description": "很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。 - Zoey Pu - Zoey&#39;s"
 }
 </script>
 
@@ -352,7 +352,7 @@
                         
                     
                     <article id="post-content">
-                        <p>很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。</p>
+                        <p>很多时候都是把代码clone到本地之后再做一些事情，今天突然想了想，本地库是要怎么推到github上去来着呢，origin是怎么指定的？于是建了一个demo仓库用来尝试，稍微记录一下。<a id="more"></a></p>
 <h2 id="基本操作顺序"><a href="#基本操作顺序" class="headerlink" title="基本操作顺序"></a>基本操作顺序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 0. 本地有一个git仓库</span><br><span class="line">&#x2F;&#x2F; 1. 在github创建一个新的仓库</span><br><span class="line">&#x2F;&#x2F; 2. 本地关联远程库</span><br><span class="line">git remote add origin git@github.com:xxxx&#x2F;yyyy.git</span><br><span class="line">&#x2F;&#x2F; 3. git推送，加-u参数是为了让本地和远程仓库的master分支关联起来</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 <p>一个坑点是如果新建时候点了Initialize this repository with a README的话，远程仓库不为空，README文件并不在本地仓库目录中，会报下面的错。这时或许可以重新创建一个真空库当然也可以按照hint写的这样，先把远程仓库pull下来 <code>git pull --rebase origin master</code>与本地合并之后再push上去。我本地也是有个README，当时没细想，觉得好像拉下来还要手动合一下，就直接点删除重新弄了个库，不过讲道理后者是更为合理普适的方法。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">To github.com:xxx/xxx.git</span><br><span class="line"> ! [rejected]        master -&gt; master (fetch first)</span><br><span class="line">error: failed to push some refs to 'git@github.com:xxx/xxx.git'</span><br><span class="line">hint: Updates were rejected because the remote contains work that you do</span><br><span class="line">hint: not have locally. This is usually caused by another repository pushing</span><br><span class="line">hint: to the same ref. You may want to first integrate the remote changes</span><br><span class="line">hint: (e.g., 'git pull ...') before pushing again.</span><br><span class="line">hint: See the 'Note about fast-forwards' in 'git push --help' for details.</span><br></pre></td></tr></table></figure>
@@ -384,7 +384,7 @@
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-01-17T09:15:05.000Z" itemprop="datePublished">2020-01-17</time>
 
-    , Updated at&nbsp;<time datetime="2020-07-19T00:21:25.494Z" itemprop="dateModified">2020-07-19</time>
+    , Updated at&nbsp;<time datetime="2020-07-19T01:28:31.361Z" itemprop="dateModified">2020-07-19</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

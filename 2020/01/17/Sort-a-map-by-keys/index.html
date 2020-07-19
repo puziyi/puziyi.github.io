@@ -144,7 +144,7 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Zoey's"><meta name="msapplication-starturl" content="http://puzy.site"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zoey's"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Sort a map by keys | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/01/17/Sort-a-map-by-keys/"><meta property="og:locale" content="en"><meta name="description" content="map虽然比较快，但是它不定序，而有时候需要使用map中有序的值，这时候一个解决方案是：遍历排序后的key数组，依次获得map[key]对应的值，代码流程大致如下： 1234567891011import &quot;sort&quot;var m map[int]stringvar keys []intfor k :&#x3D; range m &amp;#123;    keys &#x3D; append(keys, k)&amp;#125;so - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="map, hash table"><meta property="article:published_time" content="2020-01-17T12:36:18.000Z"><meta property="article:modified_time" content="2020-07-19T00:22:40.738Z"><meta property="og:updated_time" content="2020-07-19T00:22:40.738Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="map, hash table"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Sort a map by keys | Zoey&#39;s"><meta property="og:site_name" content="Zoey&#39;s"><meta property="og:type" content="article"><meta property="og:url" content="http://puzy.site/2020/01/17/Sort-a-map-by-keys/"><meta property="og:locale" content="en"><meta name="description" content="map虽然比较快，但是它不定序，而有时候需要使用map中有序的值 - Zoey Pu - Zoey&#39;s"><meta name="keywords" content="map, hash table"><meta property="article:published_time" content="2020-01-17T12:36:18.000Z"><meta property="article:modified_time" content="2020-07-19T01:39:33.691Z"><meta property="og:updated_time" content="2020-07-19T01:39:33.691Z"><meta property="article:author" content="Zoey Pu"><meta property="article:tag" content="map, hash table"><meta name="twitter:card" content="summary">
 
     
 
@@ -185,7 +185,7 @@
     },
     
     "datePublished": "2020-01-17T12:36:18.000Z",
-    "dateModified": "2020-07-19T00:22:40.738Z",
+    "dateModified": "2020-07-19T01:39:33.691Z",
     "author": {
         "@type": "Person",
         "name": "Zoey Pu",
@@ -211,7 +211,7 @@
     },
     
     "keywords": "map, hash table",
-    "description": "map虽然比较快，但是它不定序，而有时候需要使用map中有序的值，这时候一个解决方案是：遍历排序后的key数组，依次获得map[key]对应的值，代码流程大致如下： 1234567891011import &amp;quot;sort&amp;quot;var m map[int]stringvar keys []intfor k := range m &amp;amp;#123;    keys = append(keys, k)&amp;amp;#125;so - Zoey Pu - Zoey&#39;s"
+    "description": "map虽然比较快，但是它不定序，而有时候需要使用map中有序的值 - Zoey Pu - Zoey&#39;s"
 }
 </script>
 
@@ -352,7 +352,7 @@
                         
                     
                     <article id="post-content">
-                        <p>map虽然比较快，但是它不定序，而有时候需要使用map中有序的值，这时候一个解决方案是：遍历排序后的<code>key</code>数组，依次获得<code>map[key]</code>对应的值，代码流程大致如下：</p>
+                        <p>map虽然比较快，但是它不定序，而有时候需要使用map中有序的值<a id="more"></a>，这时候一个解决方案是：遍历排序后的<code>key</code>数组，依次获得<code>map[key]</code>对应的值，代码流程大致如下：</p>
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"sort"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> m <span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">string</span></span><br><span class="line"><span class="keyword">var</span> keys []<span class="keyword">int</span></span><br><span class="line"><span class="keyword">for</span> k := <span class="keyword">range</span> m &#123;</span><br><span class="line">    keys = <span class="built_in">append</span>(keys, k)</span><br><span class="line">&#125;</span><br><span class="line">sort.Ints(keys)</span><br><span class="line"><span class="keyword">for</span> _, k := <span class="keyword">range</span> keys &#123;</span><br><span class="line">    fmt.Println(<span class="string">"Key:"</span>, k, <span class="string">"Value:"</span>, m[k])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
 <li><a href="https://blog.golang.org/go-maps-in-action#TOC_7." target="_blank" rel="noopener">golang-Go maps in action</a></li>
@@ -383,7 +383,7 @@
 
 <p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-01-17T12:36:18.000Z" itemprop="datePublished">2020-01-17</time>
 
-    , Updated at&nbsp;<time datetime="2020-07-19T00:22:40.738Z" itemprop="dateModified">2020-07-19</time>
+    , Updated at&nbsp;<time datetime="2020-07-19T01:39:33.691Z" itemprop="dateModified">2020-07-19</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
