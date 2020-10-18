@@ -1,0 +1,13 @@
+.album{
+height:150px; 
+width:200px;
+float: left;
+margin-top:25px;
+margin-left:50px;
+}
+.album-cover{
+height:100px; 
+width:200px; 
+}
+.album p{text-align:center;
+font-size:16pt;}
